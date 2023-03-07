@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Register
-Mon Mar 06 19:18:54 2023
+Mon Mar 06 20:12:49 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Mar 06 19:18:54 2023               ;
+; Analysis & Synthesis Status        ; Failed - Mon Mar 06 20:12:49 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
-; Top-level Entity Name              ; Register                                        ;
+; Top-level Entity Name              ; MDR                                             ;
 ; Family                             ; Cyclone III                                     ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; Register           ; Register           ;
+; Top-level entity name                                                      ; MDR                ; Register           ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Mar 06 19:18:53 2023
+    Info: Processing started: Mon Mar 06 20:12:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file shr_tb.v
@@ -181,8 +181,9 @@ Info (12021): Found 4 design units, including 4 entities, in source file multipl
     Info (12023): Found entity 4: mux32_1
 Info (12021): Found 1 design units, including 1 entities, in source file mdrtb.v
     Info (12023): Found entity 1: MDR_TB
-Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
-    Info (12023): Found entity 1: MDR
+Error (10170): Verilog HDL syntax error at MDR.v(5) near text "wire";  expecting a direction File: C:/Users/Admin/Documents/ELEC374part2/MDR.v Line: 5
+Error (10112): Ignored design unit "MDR" at MDR.v(1) due to previous errors File: C:/Users/Admin/Documents/ELEC374part2/MDR.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file mdr.v
 Info (12021): Found 1 design units, including 1 entities, in source file encodertb.v
     Info (12023): Found entity 1: encoderTb
 Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
@@ -199,15 +200,10 @@ Info (12021): Found 3 design units, including 3 entities, in source file add_32.
     Info (12023): Found entity 3: CLA4
 Info (12021): Found 1 design units, including 1 entities, in source file shra_32bit.v
     Info (12023): Found entity 1: shra
-Warning (10236): Verilog HDL Implicit Net warning at shr_TB.v(6): created implicit net for "shr_result"
-Warning (10236): Verilog HDL Implicit Net warning at shl_TB.v(6): created implicit net for "shr_result"
-Warning (10236): Verilog HDL Implicit Net warning at MDR.v(10): created implicit net for "BusMuxIn"
-Warning (10236): Verilog HDL Implicit Net warning at MDR.v(11): created implicit net for "clr"
-Error (12007): Top-level design entity "Register" is undefined
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
-    Error: Peak virtual memory: 4563 megabytes
-    Error: Processing ended: Mon Mar 06 19:18:54 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4566 megabytes
+    Error: Processing ended: Mon Mar 06 20:12:49 2023
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
 
 
