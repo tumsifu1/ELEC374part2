@@ -1,5 +1,5 @@
-module encoder_325( input  wire[31:0] i, output reg [4:0] s);
-	always @(*) begin//this should maybe be always @(i) or @* begin 
+module encoder_325( input  wire[31:0] i, output wire [4:0]s);
+	always @(i) begin//this should maybe be always @(i) or @* begin 
 		 if(i[0]==1) s=5'b00000;
 		 else if(i[1]==1) s=5'b00001;
 		 else if(i[2]==1) s=5'b00010;

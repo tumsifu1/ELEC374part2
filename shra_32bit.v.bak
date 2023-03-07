@@ -1,10 +1,10 @@
 module shra(
     input [31:0] data_in,
     input [31:0] shift_num,
-    output reg[31:0] data_out
+    output [31:0] data_out
 );
 	 integer i;
-    reg temp;
+    wire[0] temp;
     always @(*) begin
         assign temp = data_in[31]; //save sign bit
         assign data_out = (data_in >>  shift_num);

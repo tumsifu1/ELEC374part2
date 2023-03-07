@@ -4,7 +4,6 @@ module MDR_TB;
     //input 
     reg clock;
     reg read;
-	 reg clear;
     reg [31:0] MDRin;
     reg [31:0] BusMuxOut;
     reg [31:0] MdataIn;
@@ -24,17 +23,17 @@ module MDR_TB;
         MdataIn = 0;
 
         #10 clear = 1;
-     
+        #10 clear = 0;
         
         #10 MDRin = 32'h12345678;
         #10 BusMuxOut = 32'h87654321;
-        #10 MdataIn = 32'habcdef01;
+        #10 Mdatain = 32'habcdef01;
         #10 read = 1;
         #10 read = 0;
         
         #10 MDRin = 32'hdeadbeef;
         #10 BusMuxOut = 32'h01234567;
-        #10 MdataIn = 32'hfedcba98;
+        #10 Mdatain = 32'hfedcba98;
         #10 read = 1;
         #10 read = 0;
         
