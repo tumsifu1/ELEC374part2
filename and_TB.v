@@ -5,7 +5,7 @@ module and_TB;
     reg [31:0] Rb;
     reg [31:0] Rz;
 
-    and_32bit add_instance(Ra,Rb,Rz);
+    and_32bit and_instance(Ra,Rb,Rz);
 
     initial begin
         Ra = 32'hffff_ffff;

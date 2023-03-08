@@ -10,7 +10,7 @@ module sub_32tb;
     wire [31:0] sum;
     wire cout;
 
-    sub_32bit add_instance(Ra, Rb, cin, sum, cout);
+    sub_32bit sub_instance(Ra, Rb, cin, sum, cout);
 	 
 	 initial begin
 
