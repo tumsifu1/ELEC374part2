@@ -2,7 +2,7 @@ module negate_tb();
 	reg[31:0] Ra;
 	reg[31:0]Rz; 
 
-	negate_32bit neg_instance(Ra,Rz);
+	negate_32bit neg-instance(Ra,Rz);
 	initial begin
 
 		Ra = 32'h1111_1111;

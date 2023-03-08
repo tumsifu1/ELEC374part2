@@ -4,7 +4,7 @@ module ror_tb();
   reg [31:0] rotate_num;
   wire [31:0] data_out;
 
-  rotateRight add_instance(data_in, rotate_num, data_out);
+  rotateRight add_instance;
 
   initial begin
 

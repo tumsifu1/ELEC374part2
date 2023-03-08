@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Register
-Tue Mar 07 17:10:50 2023
+Wed Mar 08 13:34:29 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,15 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "mux2_1:MDmux"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +44,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Mar 07 17:10:50 2023               ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 08 13:34:28 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
 ; Top-level Entity Name              ; MDR                                             ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 1                                               ;
+;     Total combinational functions  ; 1                                               ;
+;     Dedicated logic registers      ; 1                                               ;
+; Total registers                    ; 1                                               ;
+; Total pins                         ; 68                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -151,15 +159,167 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; Register.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/Register.v    ;         ;
+; multiplexer.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/multiplexer.v ;         ;
+; MDR.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/MDR.v         ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                  ;
++---------------------------------------------+--------------------------------+
+; Resource                                    ; Usage                          ;
++---------------------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 1                              ;
+;                                             ;                                ;
+; Total combinational functions               ; 1                              ;
+; Logic element usage by number of LUT inputs ;                                ;
+;     -- 4 input functions                    ; 1                              ;
+;     -- 3 input functions                    ; 0                              ;
+;     -- <=2 input functions                  ; 0                              ;
+;                                             ;                                ;
+; Logic elements by mode                      ;                                ;
+;     -- normal mode                          ; 1                              ;
+;     -- arithmetic mode                      ; 0                              ;
+;                                             ;                                ;
+; Total registers                             ; 1                              ;
+;     -- Dedicated logic registers            ; 1                              ;
+;     -- I/O registers                        ; 0                              ;
+;                                             ;                                ;
+; I/O pins                                    ; 68                             ;
+; Embedded Multiplier 9-bit elements          ; 0                              ;
+; Maximum fan-out node                        ; register:MDRegister|outputQ[0] ;
+; Maximum fan-out                             ; 2                              ;
+; Total fan-out                               ; 75                             ;
+; Average fan-out                             ; 0.54                           ;
++---------------------------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+; |MDR                       ; 1 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 68   ; 0            ; |MDR                     ; work         ;
+;    |register:MDRegister|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|register:MDRegister ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; register:MDRegister|outputQ[1..31]     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 31 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                          ;
++---------------------------------+---------------------------+----------------------------------------+
+; Register name                   ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------+---------------------------+----------------------------------------+
+; register:MDRegister|outputQ[30] ; Stuck at GND              ; register:MDRegister|outputQ[1]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[28] ; Stuck at GND              ; register:MDRegister|outputQ[2]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[26] ; Stuck at GND              ; register:MDRegister|outputQ[3]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[24] ; Stuck at GND              ; register:MDRegister|outputQ[4]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[22] ; Stuck at GND              ; register:MDRegister|outputQ[5]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[20] ; Stuck at GND              ; register:MDRegister|outputQ[6]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[18] ; Stuck at GND              ; register:MDRegister|outputQ[7]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[16] ; Stuck at GND              ; register:MDRegister|outputQ[8]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[14] ; Stuck at GND              ; register:MDRegister|outputQ[9]         ;
+;                                 ; due to stuck port data_in ;                                        ;
+; register:MDRegister|outputQ[12] ; Stuck at GND              ; register:MDRegister|outputQ[10]        ;
+;                                 ; due to stuck port data_in ;                                        ;
++---------------------------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux2_1:MDmux"                                                                                                                                                                        ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out    ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (32 bits) it drives.  The 31 most-significant bit(s) in the port expression will be connected to GND.            ;
+; input0 ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 07 17:10:49 2023
+    Info: Processing started: Wed Mar 08 13:34:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32tb.v
+    Info (12023): Found entity 1: sub_32tb
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32bit.v
+    Info (12023): Found entity 1: sub_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file ror_tb.v
+    Info (12023): Found entity 1: ror_tb
+Info (12021): Found 1 design units, including 1 entities, in source file ror_32bit.v
+    Info (12023): Found entity 1: rotateRight
+Info (12021): Found 1 design units, including 1 entities, in source file rol_tb.v
+    Info (12023): Found entity 1: rol_tb
+Info (12021): Found 1 design units, including 1 entities, in source file rol_32bit.v
+    Info (12023): Found entity 1: rotateLeft
+Info (12021): Found 1 design units, including 1 entities, in source file or_tb.v
+    Info (12023): Found entity 1: or_TB
+Info (12021): Found 1 design units, including 1 entities, in source file or_32bit.v
+    Info (12023): Found entity 1: or_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file not_tb.v
+    Info (12023): Found entity 1: not_tb
+Info (12021): Found 1 design units, including 1 entities, in source file not_32bit.v
+    Info (12023): Found entity 1: not_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file negate_tb.v
+    Info (12023): Found entity 1: negate_tb
+Info (12021): Found 1 design units, including 1 entities, in source file negate.v
+    Info (12023): Found entity 1: negate_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file mul_32bit.v
+    Info (12023): Found entity 1: mul_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file div_32bit.v
+    Info (12023): Found entity 1: division_32bit
 Info (12021): Found 1 design units, including 1 entities, in source file shr_tb.v
     Info (12023): Found entity 1: shr_TB
 Info (12021): Found 1 design units, including 1 entities, in source file shr_32bit.v
@@ -181,9 +341,8 @@ Info (12021): Found 4 design units, including 4 entities, in source file multipl
     Info (12023): Found entity 4: mux32_1
 Info (12021): Found 1 design units, including 1 entities, in source file mdrtb.v
     Info (12023): Found entity 1: MDR_TB
-Error (10170): Verilog HDL syntax error at MDR.v(5) near text "wire";  expecting a direction File: C:/Users/Admin/Documents/ELEC374part2/MDR.v Line: 5
-Error (10112): Ignored design unit "MDR" at MDR.v(1) due to previous errors File: C:/Users/Admin/Documents/ELEC374part2/MDR.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file mdr.v
+Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
+    Info (12023): Found entity 1: MDR
 Info (12021): Found 1 design units, including 1 entities, in source file encodertb.v
     Info (12023): Found entity 1: encoderTb
 Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
@@ -200,10 +359,124 @@ Info (12021): Found 3 design units, including 3 entities, in source file add_32.
     Info (12023): Found entity 3: CLA4
 Info (12021): Found 1 design units, including 1 entities, in source file shra_32bit.v
     Info (12023): Found entity 1: shra
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4566 megabytes
-    Error: Processing ended: Tue Mar 07 17:10:50 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (10236): Verilog HDL Implicit Net warning at shr_TB.v(6): created implicit net for "shr_result"
+Warning (10236): Verilog HDL Implicit Net warning at shl_TB.v(6): created implicit net for "shr_result"
+Warning (10236): Verilog HDL Implicit Net warning at MDR.v(10): created implicit net for "BusMuxIn"
+Warning (10236): Verilog HDL Implicit Net warning at MDR.v(11): created implicit net for "clr"
+Critical Warning (10846): Verilog HDL Instantiation warning at not_tb.v(5): instance has no name
+Info (12127): Elaborating entity "MDR" for the top level hierarchy
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:MDmux"
+Warning (10030): Net "s_bar" at multiplexer.v(5) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "register" for hierarchy "register:MDRegister"
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[31]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[30]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[29]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[28]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[27]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[26]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[25]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[24]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[23]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[22]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[21]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[20]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[19]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[18]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[17]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[16]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[15]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[14]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[13]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[12]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[11]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[10]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[9]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[8]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[7]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[6]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[5]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[4]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[3]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[2]" is missing source, defaulting to GND
+    Warning (12110): Net "BusMuxOut[1]" is missing source, defaulting to GND
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "memOut[1]" is stuck at GND
+    Warning (13410): Pin "memOut[2]" is stuck at GND
+    Warning (13410): Pin "memOut[3]" is stuck at GND
+    Warning (13410): Pin "memOut[4]" is stuck at GND
+    Warning (13410): Pin "memOut[5]" is stuck at GND
+    Warning (13410): Pin "memOut[6]" is stuck at GND
+    Warning (13410): Pin "memOut[7]" is stuck at GND
+    Warning (13410): Pin "memOut[8]" is stuck at GND
+    Warning (13410): Pin "memOut[9]" is stuck at GND
+    Warning (13410): Pin "memOut[10]" is stuck at GND
+    Warning (13410): Pin "memOut[11]" is stuck at GND
+    Warning (13410): Pin "memOut[12]" is stuck at GND
+    Warning (13410): Pin "memOut[13]" is stuck at GND
+    Warning (13410): Pin "memOut[14]" is stuck at GND
+    Warning (13410): Pin "memOut[15]" is stuck at GND
+    Warning (13410): Pin "memOut[16]" is stuck at GND
+    Warning (13410): Pin "memOut[17]" is stuck at GND
+    Warning (13410): Pin "memOut[18]" is stuck at GND
+    Warning (13410): Pin "memOut[19]" is stuck at GND
+    Warning (13410): Pin "memOut[20]" is stuck at GND
+    Warning (13410): Pin "memOut[21]" is stuck at GND
+    Warning (13410): Pin "memOut[22]" is stuck at GND
+    Warning (13410): Pin "memOut[23]" is stuck at GND
+    Warning (13410): Pin "memOut[24]" is stuck at GND
+    Warning (13410): Pin "memOut[25]" is stuck at GND
+    Warning (13410): Pin "memOut[26]" is stuck at GND
+    Warning (13410): Pin "memOut[27]" is stuck at GND
+    Warning (13410): Pin "memOut[28]" is stuck at GND
+    Warning (13410): Pin "memOut[29]" is stuck at GND
+    Warning (13410): Pin "memOut[30]" is stuck at GND
+    Warning (13410): Pin "memOut[31]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 32 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clear"
+    Warning (15610): No output dependent on input pin "Mdatain[1]"
+    Warning (15610): No output dependent on input pin "Mdatain[2]"
+    Warning (15610): No output dependent on input pin "Mdatain[3]"
+    Warning (15610): No output dependent on input pin "Mdatain[4]"
+    Warning (15610): No output dependent on input pin "Mdatain[5]"
+    Warning (15610): No output dependent on input pin "Mdatain[6]"
+    Warning (15610): No output dependent on input pin "Mdatain[7]"
+    Warning (15610): No output dependent on input pin "Mdatain[8]"
+    Warning (15610): No output dependent on input pin "Mdatain[9]"
+    Warning (15610): No output dependent on input pin "Mdatain[10]"
+    Warning (15610): No output dependent on input pin "Mdatain[11]"
+    Warning (15610): No output dependent on input pin "Mdatain[12]"
+    Warning (15610): No output dependent on input pin "Mdatain[13]"
+    Warning (15610): No output dependent on input pin "Mdatain[14]"
+    Warning (15610): No output dependent on input pin "Mdatain[15]"
+    Warning (15610): No output dependent on input pin "Mdatain[16]"
+    Warning (15610): No output dependent on input pin "Mdatain[17]"
+    Warning (15610): No output dependent on input pin "Mdatain[18]"
+    Warning (15610): No output dependent on input pin "Mdatain[19]"
+    Warning (15610): No output dependent on input pin "Mdatain[20]"
+    Warning (15610): No output dependent on input pin "Mdatain[21]"
+    Warning (15610): No output dependent on input pin "Mdatain[22]"
+    Warning (15610): No output dependent on input pin "Mdatain[23]"
+    Warning (15610): No output dependent on input pin "Mdatain[24]"
+    Warning (15610): No output dependent on input pin "Mdatain[25]"
+    Warning (15610): No output dependent on input pin "Mdatain[26]"
+    Warning (15610): No output dependent on input pin "Mdatain[27]"
+    Warning (15610): No output dependent on input pin "Mdatain[28]"
+    Warning (15610): No output dependent on input pin "Mdatain[29]"
+    Warning (15610): No output dependent on input pin "Mdatain[30]"
+    Warning (15610): No output dependent on input pin "Mdatain[31]"
+Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
+    Info: Peak virtual memory: 4584 megabytes
+    Info: Processing ended: Wed Mar 08 13:34:29 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

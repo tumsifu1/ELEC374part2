@@ -4,7 +4,7 @@ module mul_32bit(
     output reg [63:0] p
 );
 
-    reg [31:0] recoded_b;
+    wire [31:0] recoded_b;
 	 integer j,i;
     // recoding the multiplier using bit-pair
     always @* begin

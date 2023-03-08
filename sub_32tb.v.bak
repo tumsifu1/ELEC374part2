@@ -4,7 +4,7 @@ module sub_32tb;
     //input
     reg [31:0] Ra;
     reg [31:0] Rb;
-    reg cin;
+    wire cin;
 
     //output
     wire [31:0] sum;

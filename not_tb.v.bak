@@ -1,4 +1,4 @@
-module not_tb();
+module not_tb()
     reg [31:0] Ra;
     reg [32:0] Rz;
 

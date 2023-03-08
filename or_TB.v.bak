@@ -5,7 +5,7 @@ module or_TB;
     reg [31:0] Rb;
     reg [31:0] Rz;
 
-    or_32bit add_instance(Ra,Rb,Rz);
+    or_32bit add_instance(Ra,Rb,Rz)
     initial begin
         Ra = 32'hffff_ffff;
         Rb = 32'hffff_ffff;

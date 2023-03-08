@@ -49,6 +49,23 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE sub_32tb.v
+set_global_assignment -name VERILOG_FILE sub_32bit.v
+set_global_assignment -name VERILOG_FILE ror_tb.v
+set_global_assignment -name VERILOG_FILE ror_32bit.v
+set_global_assignment -name VERILOG_FILE rol_tb.v
+set_global_assignment -name VERILOG_FILE rol_32bit.v
+set_global_assignment -name VERILOG_FILE or_TB.v
+set_global_assignment -name VERILOG_FILE or_32bit.v
+set_global_assignment -name VERILOG_FILE not_tb.v
+set_global_assignment -name VERILOG_FILE not_32bit.v
+set_global_assignment -name VERILOG_FILE negate_tb.v
+set_global_assignment -name VERILOG_FILE negate.v
+set_global_assignment -name VERILOG_FILE mul_32bit.v
+set_global_assignment -name VERILOG_FILE div_32bit.v
 set_global_assignment -name VERILOG_FILE shr_TB.v
 set_global_assignment -name VERILOG_FILE shr_32bit.v
 set_global_assignment -name VERILOG_FILE shl_TB.v
@@ -66,7 +83,4 @@ set_global_assignment -name VERILOG_FILE and_32bit.v
 set_global_assignment -name VERILOG_FILE add_TB.v
 set_global_assignment -name VERILOG_FILE add_32.v
 set_global_assignment -name VERILOG_FILE shra_32bit.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
