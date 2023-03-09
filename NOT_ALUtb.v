@@ -28,18 +28,16 @@ module NOT_ALUtb();
     always @(posedge clk)
         begin
             case(PresentState)
-					Default : #40 Present_state = Reg_load1a;
-					Reg_load1a : #40 Present_state = Reg_load1b;
-					Reg_load1b : #40 Present_state = Reg_load2a;
-					Reg_load2a : #40 Present_state = Reg_load2b;
-					Reg_load2b : #40 Present_state = Reg_load3a;
-					Reg_load3a : #40 Present_state = Reg_load3b;
-					Reg_load3b : #40 Present_state = T0;
-					T0 : #40 Present_state = T1;
-					T1 : #40 Present_state = T2;
-					T2 : #40 Present_state = T3;
-					T3 : #40 Present_state = T4;
-					T4 : #40 Present_state = T5;
+					Default : #40 PresentState = Reg_load1a;
+					Reg_load1a : #40 PresentState = Reg_load1b;
+					Reg_load1b : #40 PresentState = Reg_load2b;
+					Reg_load2b : #40 PresentState = Reg_load3a;
+					Reg_load3a : #40 PresentState = T0;
+					T0 : #40 PresentState = T1;
+					T1 : #40 PresentState = T2;
+					T2 : #40 PresentState = T3;
+					T3 : #40 PresentState = T4;
+					T4 : #40 PresentState = T5;
             endcase
         end
     always @(PresentState)
@@ -59,7 +57,7 @@ module NOT_ALUtb();
 						Zin<=0;
 						IncPC <= 0;
 						Read <= 0;
-						testALUSelect <= 0;
+						ALUopCode <= 0;
 							
 						R1in <= 0;
 						R2in <= 0;
@@ -70,7 +68,7 @@ module NOT_ALUtb();
 						R3out<=0;
 						R4out<=0;
 						
-						testMdatain <= 32'h00000000;
+						MdataIn <= 32'h00000000;
 						R5in <=0;
 						R6in <=0;
 						R7in <=0;
@@ -111,7 +109,7 @@ module NOT_ALUtb();
                     end
                 Reg_load3a:
                     begin
-                        Mdatain <= 32'h00000012;
+                        MdataIn <= 32'h00000012;
                         #10 Read <=1; MDRin <=1;
                         #15 Read <=0; MDRin <=0;
                     end
@@ -131,7 +129,7 @@ module NOT_ALUtb();
                     begin	 
 					//R2out <=0; 
 					Yin <= 0; R2out <=0; 
-					Yout <= 1; testALUSelect = 5'b10010; Zin <=1; R1out<=1; 
+					Yout <= 1; ALUopCode = 5'b10010; Zin <=1; R1out<=1; 
 					ZLOin<=1;
 					ZLowSelect<=1;
 				    end
