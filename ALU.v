@@ -1,10 +1,8 @@
 
-module alu(input clk, 
-            clear, InPC, 
-            branc_flag,
+module ALU(input clk, 
             input [31:0] A_reg, //might need to be wires
             input [31:0] B_reg,
-            input [31:0] Y_reg,
+            //input [31:0] Y_reg,
             input [4:0] opcode,
             output reg [63:0] C_reg
 
