@@ -5,6 +5,7 @@ wire cout1;
 endmodule
 
 
+
 module CLA16(input wire [15:0] Ra, input wire [15:0] Rb, input wire cin, output wire [15:0] sum, output wire cout);
 wire cout1,cout2,cout3;
 
