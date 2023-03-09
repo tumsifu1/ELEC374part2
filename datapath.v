@@ -81,7 +81,7 @@ Register zhi(clr,clk,bus,ZHIin,busInZHI);
 Register zlo(clr,clk,bus,ZLOin,busInZLo);
 
 
-z_register_64_bits z_reg_from_alu(Zin, ZLowSelect, ZHighSelect, clk, clr, ZData, ZHighData, ZLowData); // this needs to be done 
+z_register z_reg(Zin, ZLowSelect, ZHighSelect, clk, clr, ZData, ZHighData, ZLowData);
 
 
 Register y(clr,clk,bus,Yin,YData);

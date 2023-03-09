@@ -111,7 +111,7 @@ begin
 				#15 R2out<= 0; Yin <= 0;
 		end
 		T4: begin
-				R4out<= 1; OR <= 5'b01010; ZLowIn <= 1; 
+				R4out<= 1; OR <= 5'b00110; ZLowIn <= 1; 
 				#25 R4out<= 0; ZLowIn <= 0; 
 		end
 		T5: begin
