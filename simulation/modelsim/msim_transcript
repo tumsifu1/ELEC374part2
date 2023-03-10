@@ -47,9 +47,6 @@
 # Loading work.MDR
 # Loading work.mux2_1
 # Loading work.Register
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDRTB.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MDRin'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/MDR.v(4).
-# 
-#         Region: /MDRTB/dut
 # ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/multiplexer.v(3).
 # 
 #         Region: /MDRTB/dut/MDmux

@@ -6,7 +6,7 @@ module MDRTB;
     reg clear;
     reg clock;
     reg read;
-    reg [31:0] MDRin;
+    reg MDRin;
     reg [31:0] Mdatain;
     reg [31:0] BusMuxOut;
 
@@ -34,7 +34,7 @@ module MDRTB;
 
     // Test case 1: write and read from memory
     initial begin
-        clear = 1;
+        clear = 0;
         MDRin = 0;
         Mdatain = 32'h12345678;
         BusMuxOut = 0;
