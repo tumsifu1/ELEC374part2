@@ -9,14 +9,10 @@ module div_tb;
 
     // instantiate the module
     div_32bit divInst(M, Q, z);
-
-    // clock signal
-    reg clk = 0;
-    always #5 clk = ~clk;
-
+	 assign z = 64'b0;
 
     initial begin
-	    z = 64'b0000000000000000000000000000000000000000000000000000000000000000;
+	    //z = 64'b0000000000000000000000000000000000000000000000000000000000000000;
         // initialize inputs
         M = 32'h0000_0000;
         Q = 32'h0000_0000;

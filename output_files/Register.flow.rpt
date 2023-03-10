@@ -1,5 +1,5 @@
 Flow report for Register
-Fri Mar 10 01:42:05 2023
+Fri Mar 10 09:10:59 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Mar 10 01:42:05 2023          ;
+; Flow Status                        ; Successful - Fri Mar 10 09:10:59 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
-; Top-level Entity Name              ; div_32bit                                       ;
+; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16F484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 3,483                                           ;
+;     Total combinational functions  ; 3,483                                           ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 134                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/10/2023 01:42:05 ;
+; Start date & time ; 03/10/2023 09:10:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Register            ;
 +-------------------+---------------------+
@@ -75,12 +75,13 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 101737509774602.167843052502188       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 101737509774602.167845745008864       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; and_TB         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; add_TB         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mul_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; div_tb         ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; div_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; DIV_ALUtb      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
@@ -88,29 +89,33 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; add_TB.v                              ; --            ; --          ; add_TB         ;
 ; EDA_TEST_BENCH_FILE                  ; mul_tb.v                              ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_FILE                  ; div_tb.v                              ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_FILE                  ; DIV_ALUtb.v                           ; --            ; --          ; DIV_ALUtb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; and_TB                                ; --            ; --          ; and_TB         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; add_TB                                ; --            ; --          ; add_TB         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mul_tb                                ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; div_tb                                ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; DIV_ALUtb                             ; --            ; --          ; DIV_ALUtb      ;
 ; EDA_TEST_BENCH_NAME                  ; and_TB                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; add_TB                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; mul_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; div_tb                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; and_TB         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 20 ns                                 ; --            ; --          ; add_TB         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 50 ns                                 ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; div_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; DIV_ALUtb      ;
 ; EDA_TIME_SCALE                       ; 1 ns                                  ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; div_32bit   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; div_32bit   ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; div_32bit   ; Top            ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; ALU         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; ALU         ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; ALU         ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; div_32bit                             ; Register      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; ALU                                   ; Register      ; --          ; --             ;
 ; VERILOG_SHOW_LMF_MAPPING_MESSAGES    ; Off                                   ; --            ; --          ; --             ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
@@ -120,8 +125,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4562 MB             ; 00:00:00                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4583 MB             ; 00:00:10                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

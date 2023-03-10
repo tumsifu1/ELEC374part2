@@ -32,7 +32,7 @@ module ALU(input clk,
 
     wire [31:0] IncPC;//put outputs of each module
     
-    add_32 adding(A_reg,B_reg,cin,add_sum,cout);
+    add_32_bit adding(A_reg,B_reg,cin,add_sum,cout);
     mul_32bit multiply(A_reg,B_reg,mul_out);
     sub_32bit subtraction(A_reg,B_reg,cin,sub_out,cout);
     div_32bit division(A_reg,B_reg,div_out);

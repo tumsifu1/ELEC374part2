@@ -11,28 +11,75 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/negate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module negate_32_bit
+# 
+# Top level modules:
+# 	negate_32_bit
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/add_32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add_32_bit
+# -- Compiling module CLA16
+# -- Compiling module CLA4
+# 
+# Top level modules:
+# 	add_32_bit
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
 # vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/div_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module div_32bit
 # 
 # Top level modules:
 # 	div_32bit
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/div_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module div_tb
+# -- Compiling module mul_32bit
 # 
 # Top level modules:
-# 	div_tb
+# 	mul_32bit
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_32bit
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  div_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps div_tb 
-# Loading work.div_tb
-# Loading work.div_32bit
+# Top level modules:
+# 	sub_32bit
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/not_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module not_32bit
 # 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 100 ns
+# Top level modules:
+# 	not_32bit
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/DIV_ALUtb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DIV_ALUtb
+# 
+# Top level modules:
+# 	DIV_ALUtb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  DIV_ALUtb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps DIV_ALUtb 
+# Loading work.DIV_ALUtb
+# ** Error: (vsim-3033) C:/Users/Admin/Documents/ELEC374part2/DIV_ALUtb.v(20): Instantiation of 'datapath' failed. The design unit was not found.
+# 
+#         Region: /DIV_ALUtb
+#         Searched libraries:
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/altera
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/220model
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/sgate
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_mf
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiii
+#             C:/Users/Admin/Documents/ELEC374part2/simulation/modelsim/rtl_work
+#             C:/Users/Admin/Documents/ELEC374part2/simulation/modelsim/rtl_work
+#             C:/Users/Admin/Documents/ELEC374part2/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Register_run_msim_rtl_verilog.do PAUSED at line 18

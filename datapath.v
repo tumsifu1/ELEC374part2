@@ -3,7 +3,7 @@
 //added ZHIin, ZLOin, Zin, ZLO, ZHI, ZHIout, ZLOout, to datapath, 
 //changed ZLowout/Highout to ZLow/HighSelect
 
-module CPU_Datapath(
+module CPU_datapath(
 
 
 //I/0 Definition
@@ -64,7 +64,7 @@ Register r15(clr,clk,bus,R15in,busInR15);
 
 //Program Counter and Instruction Register
 Register IR(clr, clk,  bus, IRin, IROut);
-program_counter_register PC(PCin, IncPC, clk, clr, bus, busInPC); // need to make this 
+PC PC(PCin, IncPC, clk, clr, bus, busInPC); // need to make this 
 
 //MAR and MDR
 

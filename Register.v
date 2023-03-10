@@ -1,4 +1,4 @@
-module register (clr,clk,inputD,enbl,outputQ); //declaring inputs and outputs for register
+module Register (clr,clk,inputD,enbl,outputQ); //declaring inputs and outputs for register
 	
 	input		enbl;
 	input		clr;

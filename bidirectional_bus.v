@@ -96,7 +96,7 @@ encoder_32to5 bus_encoder(
 	.Yout(encoderY),
 	
 	//output of the encoder feeds to connection, which will feed to the multiplexer
-	.encoderOutput(connection)
+	.Yout(connection)
 );
 
 multiplexer32to1 bus_multiplexer(

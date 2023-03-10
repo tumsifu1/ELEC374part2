@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Register
-Fri Mar 10 01:42:05 2023
+Fri Mar 10 09:10:59 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,20 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+ 12. Port Connectivity Checks: "sub_32bit:subtraction|add_32_bit:negative_sum"
+ 13. Port Connectivity Checks: "sub_32bit:subtraction|negate_32_bit:negative|add_32_bit:sum_op"
+ 14. Port Connectivity Checks: "sub_32bit:subtraction"
+ 15. Port Connectivity Checks: "add_32_bit:adding"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -36,20 +49,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Mar 10 01:42:05 2023               ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 10 09:10:59 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
-; Top-level Entity Name              ; div_32bit                                       ;
+; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 3,483                                           ;
+;     Total combinational functions  ; 3,483                                           ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 134                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -59,7 +72,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; div_32bit          ; Register           ;
+; Top-level entity name                                                      ; ALU                ; Register           ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -152,24 +165,675 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
+; negate.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/ELEC374part2/negate.v    ;         ;
+; add_32.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/ELEC374part2/add_32.v    ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/ELEC374part2/ALU.v       ;         ;
+; div_32bit.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Admin/Documents/ELEC374part2/div_32bit.v ;         ;
+; mul_32bit.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v ;         ;
+; sub_32bit.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v ;         ;
+; not_32bit.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/not_32bit.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 3,483          ;
+;                                             ;                ;
+; Total combinational functions               ; 3483           ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 1722           ;
+;     -- 3 input functions                    ; 1148           ;
+;     -- <=2 input functions                  ; 613            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 2863           ;
+;     -- arithmetic mode                      ; 620            ;
+;                                             ;                ;
+; Total registers                             ; 0              ;
+;     -- Dedicated logic registers            ; 0              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 134            ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; B_reg[4]~input ;
+; Maximum fan-out                             ; 221            ;
+; Total fan-out                               ; 11754          ;
+; Average fan-out                             ; 3.13           ;
++---------------------------------------------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; |ALU                       ; 3483 (1094)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 134  ; 0            ; |ALU                                        ; work         ;
+;    |add_32_bit:adding|     ; 57 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding                      ; work         ;
+;       |CLA16:CLA1|         ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA1           ; work         ;
+;          |CLA4:CLA1|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA1|CLA4:CLA1 ; work         ;
+;          |CLA4:CLA2|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA1|CLA4:CLA2 ; work         ;
+;          |CLA4:CLA3|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA1|CLA4:CLA3 ; work         ;
+;          |CLA4:CLA4|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA1|CLA4:CLA4 ; work         ;
+;       |CLA16:CLA2|         ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA2           ; work         ;
+;          |CLA4:CLA1|       ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA2|CLA4:CLA1 ; work         ;
+;          |CLA4:CLA2|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA2|CLA4:CLA2 ; work         ;
+;          |CLA4:CLA3|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA2|CLA4:CLA3 ; work         ;
+;          |CLA4:CLA4|       ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_32_bit:adding|CLA16:CLA2|CLA4:CLA4 ; work         ;
+;    |div_32bit:division|    ; 235 (235)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|div_32bit:division                     ; work         ;
+;    |mul_32bit:multiply|    ; 2097 (2097)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|mul_32bit:multiply                     ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                          ;
++------------------------------------------------------+------------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal          ; Free of Timing Hazards ;
++------------------------------------------------------+------------------------------+------------------------+
+; C_reg[0]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[1]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[2]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[3]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[4]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[5]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[6]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[7]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[8]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[9]$latch                                       ; Mux64                        ; yes                    ;
+; C_reg[10]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[11]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[12]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[13]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[14]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[15]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[16]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[17]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[18]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[19]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[20]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[21]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[22]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[23]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[24]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[25]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[26]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[27]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[28]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[29]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[30]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[31]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[32]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[33]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[34]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[35]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[36]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[37]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[38]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[39]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[40]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[41]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[42]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[43]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[44]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[45]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[46]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[47]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[48]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[49]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[50]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[51]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[52]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[53]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[54]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[55]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[56]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[57]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[58]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[59]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[60]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[61]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[62]$latch                                      ; Mux64                        ; yes                    ;
+; C_reg[63]$latch                                      ; Mux64                        ; yes                    ;
+; div_32bit:division|A_reg[0]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[1]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[2]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[3]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[4]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[5]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[6]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[7]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[8]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[9]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[10]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[11]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[12]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[13]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[14]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[15]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[16]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[17]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[18]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[19]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[20]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[21]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[22]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[23]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[24]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[25]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[26]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[27]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[28]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[29]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[30]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|A_reg[31]                         ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|Q_reg[0]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|Q_reg[1]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|Q_reg[2]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; div_32bit:division|Q_reg[3]                          ; div_32bit:division|LessThan0 ; yes                    ;
+; Number of user-specified and inferred latches = 160  ;                              ;                        ;
++------------------------------------------------------+------------------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftLeft1                ;
+; 3:1                ; 63 bits   ; 126 LEs       ; 63 LEs               ; 63 LEs                 ; No         ; |ALU|ShiftLeft1                ;
+; 3:1                ; 62 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; No         ; |ALU|ShiftLeft0                ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |ALU|mul_32bit:multiply|Mux27  ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 93 LEs               ; 31 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux524 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux434 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux391 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux310 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux255 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux168 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux101 ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux63  ;
+; 10:1               ; 30 bits   ; 180 LEs       ; 180 LEs              ; 0 LEs                  ; No         ; |ALU|Mux7                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux492 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux413 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux333 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux277 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux200 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux144 ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |ALU|mul_32bit:multiply|Mux97  ;
+; 13:1               ; 31 bits   ; 248 LEs       ; 155 LEs              ; 93 LEs                 ; No         ; |ALU|Mux58                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; Add            ; 00011 ; Unsigned Binary                            ;
+; Sub            ; 00100 ; Unsigned Binary                            ;
+; And            ; 00101 ; Unsigned Binary                            ;
+; Or             ; 00110 ; Unsigned Binary                            ;
+; Shift_Right    ; 00111 ; Unsigned Binary                            ;
+; Shift_RightA   ; 00100 ; Unsigned Binary                            ;
+; Shift_Left     ; 01001 ; Unsigned Binary                            ;
+; Rotate_Right   ; 01010 ; Unsigned Binary                            ;
+; Rotate_Left    ; 01011 ; Unsigned Binary                            ;
+; Mul            ; 01111 ; Unsigned Binary                            ;
+; Div            ; 10000 ; Unsigned Binary                            ;
+; Negate         ; 10001 ; Unsigned Binary                            ;
+; Not            ; 10010 ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sub_32bit:subtraction|add_32_bit:negative_sum"                                                           ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; sum  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sub_32bit:subtraction|negate_32_bit:negative|add_32_bit:sum_op"                          ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Rb[31..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Rb[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cin       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sub_32bit:subtraction"                                                                                                   ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; sum  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "sum[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_32_bit:adding"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:08     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 10 01:42:04 2023
+    Info: Processing started: Fri Mar 10 09:10:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: datapath
+Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
+    Info (12023): Found entity 1: encoder_32to5
+Info (12021): Found 1 design units, including 1 entities, in source file pc.v
+    Info (12023): Found entity 1: PC
+Info (12021): Found 4 design units, including 4 entities, in source file multiplexer.v
+    Info (12023): Found entity 1: mux2_1
+    Info (12023): Found entity 2: mux8_1
+    Info (12023): Found entity 3: mux16_1
+    Info (12023): Found entity 4: mux32_1
+Info (12021): Found 1 design units, including 1 entities, in source file negate.v
+    Info (12023): Found entity 1: negate_32_bit
+Info (12021): Found 3 design units, including 3 entities, in source file add_32.v
+    Info (12023): Found entity 1: add_32_bit
+    Info (12023): Found entity 2: CLA16
+    Info (12023): Found entity 3: CLA4
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: Register
+Info (12021): Found 1 design units, including 1 entities, in source file bidirectional_bus.v
+    Info (12023): Found entity 1: bidirectional_bus
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file div_alutb.v
+    Info (12023): Found entity 1: DIV_ALUtb
 Info (12021): Found 1 design units, including 1 entities, in source file div_32bit.v
     Info (12023): Found entity 1: div_32bit
-Info (12021): Found 1 design units, including 1 entities, in source file div_tb.v
-    Info (12023): Found entity 1: div_tb
-Error (10137): Verilog HDL Procedural Assignment error at div_tb.v(22): object "z" on left-hand side of assignment must have a variable data type File: C:/Users/Admin/Documents/ELEC374part2/div_tb.v Line: 22
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4562 megabytes
-    Error: Processing ended: Fri Mar 10 01:42:05 2023
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:00
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(81): created implicit net for "busInZLo"
+Warning (10236): Verilog HDL Implicit Net warning at ALU.v(37): created implicit net for "sub_out"
+Warning (10236): Verilog HDL Implicit Net warning at DIV_ALUtb.v(19): created implicit net for "testZRegister"
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (10272): Verilog HDL Case Statement warning at ALU.v(66): case item expression covers a value already covered by a previous case item
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(42): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(42): inferring latch(es) for variable "C_reg", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "C_reg[0]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[1]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[2]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[3]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[4]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[5]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[6]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[7]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[8]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[9]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[10]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[11]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[12]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[13]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[14]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[15]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[16]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[17]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[18]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[19]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[20]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[21]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[22]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[23]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[24]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[25]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[26]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[27]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[28]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[29]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[30]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[31]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[32]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[33]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[34]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[35]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[36]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[37]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[38]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[39]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[40]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[41]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[42]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[43]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[44]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[45]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[46]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[47]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[48]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[49]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[50]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[51]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[52]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[53]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[54]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[55]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[56]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[57]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[58]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[59]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[60]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[61]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[62]" at ALU.v(42)
+Info (10041): Inferred latch for "C_reg[63]" at ALU.v(42)
+Info (12128): Elaborating entity "add_32_bit" for hierarchy "add_32_bit:adding"
+Info (12128): Elaborating entity "CLA16" for hierarchy "add_32_bit:adding|CLA16:CLA1"
+Info (12128): Elaborating entity "CLA4" for hierarchy "add_32_bit:adding|CLA16:CLA1|CLA4:CLA1"
+Warning (12125): Using design file mul_32bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mul_32bit
+Info (12128): Elaborating entity "mul_32bit" for hierarchy "mul_32bit:multiply"
+Warning (10199): Verilog HDL Case Statement warning at mul_32bit.v(23): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at mul_32bit.v(25): case item expression never matches the case expression
+Warning (10199): Verilog HDL Case Statement warning at mul_32bit.v(27): case item expression never matches the case expression
+Warning (10230): Verilog HDL assignment warning at mul_32bit.v(34): truncated value with size 66 to match size of target (64)
+Warning (12125): Using design file sub_32bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: sub_32bit
+Info (12128): Elaborating entity "sub_32bit" for hierarchy "sub_32bit:subtraction"
+Warning (10034): Output port "sum" at sub_32bit.v(1) has no driver
+Info (12128): Elaborating entity "negate_32_bit" for hierarchy "sub_32bit:subtraction|negate_32_bit:negative"
+Warning (12125): Using design file not_32bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: not_32bit
+Info (12128): Elaborating entity "not_32bit" for hierarchy "sub_32bit:subtraction|negate_32_bit:negative|not_32bit:not_op"
+Info (12128): Elaborating entity "div_32bit" for hierarchy "div_32bit:division"
+Warning (10855): Verilog HDL warning at div_32bit.v(10): initial value for variable Q_reg should be constant
+Warning (10240): Verilog HDL Always Construct warning at div_32bit.v(17): inferring latch(es) for variable "A_reg", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at div_32bit.v(17): inferring latch(es) for variable "Q_reg", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at div_32bit.v(17): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "count[0]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[1]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[2]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[3]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[4]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[5]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[6]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[7]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[8]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[9]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[10]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[11]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[12]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[13]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[14]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[15]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[16]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[17]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[18]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[19]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[20]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[21]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[22]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[23]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[24]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[25]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[26]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[27]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[28]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[29]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[30]" at div_32bit.v(17)
+Info (10041): Inferred latch for "count[31]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[0]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[1]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[2]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[3]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[4]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[5]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[6]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[7]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[8]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[9]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[10]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[11]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[12]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[13]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[14]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[15]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[16]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[17]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[18]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[19]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[20]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[21]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[22]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[23]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[24]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[25]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[26]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[27]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[28]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[29]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[30]" at div_32bit.v(17)
+Info (10041): Inferred latch for "Q_reg[31]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[0]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[1]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[2]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[3]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[4]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[5]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[6]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[7]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[8]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[9]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[10]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[11]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[12]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[13]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[14]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[15]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[16]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[17]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[18]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[19]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[20]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[21]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[22]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[23]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[24]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[25]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[26]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[27]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[28]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[29]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[30]" at div_32bit.v(17)
+Info (10041): Inferred latch for "A_reg[31]" at div_32bit.v(17)
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "cin" is missing source, defaulting to GND
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch C_reg[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[1]
+Warning (13012): Latch C_reg[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[1]
+Warning (13012): Latch C_reg[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[4]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[5]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[6]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[7]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[8]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[9]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[10]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[11]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[12]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[13]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[14]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[15]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[16]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[17]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[18]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[19]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[20]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[21]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[22]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[23]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[24]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[25]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[26]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[27]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[28]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[29]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[30]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[31]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[32]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[33]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[34]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[35]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[36]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[37]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[38]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[39]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[40]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[41]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[42]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[43]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[44]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[45]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[46]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[47]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[48]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[49]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[50]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[51]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[52]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[53]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[54]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[55]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[56]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[57]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[58]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[59]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[60]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[61]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[62]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[4]
+Warning (13012): Latch C_reg[63]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal opcode[3]
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Admin/Documents/ELEC374part2/output_files/Register.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+Info (21057): Implemented 3617 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 70 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 3483 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 152 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Fri Mar 10 09:11:00 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Admin/Documents/ELEC374part2/output_files/Register.map.smsg.
 
 
