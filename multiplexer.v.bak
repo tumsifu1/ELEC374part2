@@ -3,7 +3,7 @@ module mux2_1(out, input1, input0, select); //2-1 multiplexer
     output out;
 
     wire s_bar, a ,b; //signals to connect to other blocks
-    assign s_bar = ~select;
+    s_bar <= ~select;
     and(b, input0, select);
     and(a, input0, s_bar);
     or(out, a, b);

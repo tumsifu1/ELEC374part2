@@ -69,7 +69,7 @@ PC PC(PCin, IncPC, clk, clr, bus, busInPC); // need to make this
 //MAR and MDR
 
 Register MAR(clr,clk,bus,MARin,busInMAR);
-MDR MDR_register(clr,clk,MDRread,MDRin,Mdatain,busInMDR);
+MDR MDR_register(.clear(clr),.clock(clk),.read(MDRread),.MDRin(MDRin),.Mdatain(Mdatain),.memOut(busInMDR));
 
 //Other Special Registers
 
