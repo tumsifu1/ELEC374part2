@@ -1,9 +1,12 @@
 Flow report for Register
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Mar 10 17:48:34 2023
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Fri Mar 10 17:13:00 2023
@@ -19,6 +22,9 @@ Fri Mar 10 16:20:01 2023
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -64,9 +70,12 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Flow Status                        ; Successful - Fri Mar 10 17:48:34 2023           ;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Flow Status                        ; Successful - Fri Mar 10 17:13:00 2023           ;
@@ -82,6 +91,9 @@ applicable agreement for further details.
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -93,6 +105,7 @@ applicable agreement for further details.
 ; Timing Models                      ; Final                                           ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Total logic elements               ; 32                                              ;
 ;     Total combinational functions  ; 32                                              ;
 ;     Dedicated logic registers      ; 32                                              ;
@@ -101,12 +114,17 @@ applicable agreement for further details.
 =======
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Total logic elements               ; 4,675                                           ;
 ;     Total combinational functions  ; 4,067                                           ;
 ;     Dedicated logic registers      ; 704                                             ;
 ; Total registers                    ; 704                                             ;
 ; Total pins                         ; 830                                             ;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -124,9 +142,12 @@ applicable agreement for further details.
 +-------------------+---------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Start date & time ; 03/10/2023 17:48:33 ;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Start date & time ; 03/10/2023 17:12:46 ;
@@ -142,6 +163,9 @@ applicable agreement for further details.
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -157,9 +181,12 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID                ; 101737509774602.167848851329712       ; --            ; --          ; --             ;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; COMPILER_SIGNATURE_ID                ; 13718485020974.167848636613816        ; --            ; --          ; --             ;
@@ -175,6 +202,9 @@ applicable agreement for further details.
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -188,9 +218,14 @@ applicable agreement for further details.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; MDRTB          ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; registerTB     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mux2to1TB      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; MDRTB                                 ; --            ; --          ; eda_simulation ;
+=======
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; RegisterTB     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; RegisterTB     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
@@ -212,8 +247,12 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; MDRTB.v                               ; --            ; --          ; MDRTB          ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; registerTB     ;
 ; EDA_TEST_BENCH_FILE                  ; mux2to1TB.v                           ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; RegisterTB     ;
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -230,8 +269,12 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; MDRTB                                 ; --            ; --          ; MDRTB          ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA_TEST_BENCH_MODULE_NAME           ; registerTB                            ; --            ; --          ; registerTB     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mux2to1TB                             ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_MODULE_NAME           ; RegisterTB                            ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; EDA_TEST_BENCH_MODULE_NAME           ; RegisterTB                            ; --            ; --          ; RegisterTB     ;
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -248,8 +291,12 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; MDRTB                                 ; --            ; --          ; eda_simulation ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA_TEST_BENCH_NAME                  ; registerTB                            ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; mux2to1TB                             ; --            ; --          ; eda_simulation ;
+=======
+; EDA_TEST_BENCH_NAME                  ; RegisterTB                            ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; EDA_TEST_BENCH_NAME                  ; RegisterTB                            ; --            ; --          ; eda_simulation ;
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -266,8 +313,12 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; MDRTB          ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; registerTB     ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; RegisterTB     ;
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -296,8 +347,13 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4572 MB             ; 00:00:02                           ;
 ; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+=======
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4600 MB             ; 00:00:14                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4600 MB             ; 00:00:14                           ;
 ; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;

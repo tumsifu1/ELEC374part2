@@ -4,6 +4,7 @@ K3
 cModel Technology
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z0 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
 vMDR
 I?j9j^oU6>;D^:3Eee6[500
@@ -13,6 +14,8 @@ w1678488087
 8C:/Users/Admin/Documents/ELEC374part2/MDR.v
 FC:/Users/Admin/Documents/ELEC374part2/MDR.v
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Z0 dC:\Users\19058\Documents\Code\ELEC374Part2\ELEC374part2\ELEC374part2\simulation\modelsim
@@ -208,6 +211,9 @@ w1678486318
 8C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v
 FC:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -221,7 +227,11 @@ n@m@d@r
 !i10b 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 !s100 9D`z^<n`_IL0HA=bNOcRO0
+=======
+!s100 aINd2?^iEJZ_fibj^i5gc0
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 !s100 aINd2?^iEJZ_fibj^i5gc0
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -232,6 +242,11 @@ n@m@d@r
 =======
 !s100 aINd2?^iEJZ_fibj^i5gc0
 !s85 0
+<<<<<<< HEAD
+!s108 1678486393.755000
+!s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v|
+=======
 <<<<<<< HEAD
 !s108 1678486393.755000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v|
@@ -257,6 +272,9 @@ n@m@d@r
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -277,10 +295,13 @@ R10
 !i10b 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 !s100 B[SV0XajCe]LICFzYkVW20
 I]IdB:YonGaNbzSKAQ[ZT61
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
@@ -328,7 +349,10 @@ R10
 !s85 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 !s108 1678486393.573000
@@ -336,6 +360,10 @@ R10
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer32to1.v|
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -351,6 +379,9 @@ R10
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -361,17 +392,23 @@ Vn4MKRlzda`Y]l`WFOLSh[3
 R1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z5 w1678486617
 Z6 8C:/Users/Admin/Documents/ELEC374part2/multiplexer.v
 Z7 FC:/Users/Admin/Documents/ELEC374part2/multiplexer.v
 L0 36
 R2
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Z11 w1678486338
 Z12 8C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v
 Z13 FC:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v
 L0 35
 R5
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 r1
 31
@@ -384,6 +421,9 @@ L0 35
 R5
 r1
 31
+<<<<<<< HEAD
+Z14 !s108 1678486393.631000
+=======
 <<<<<<< HEAD
 Z14 !s108 1678486393.631000
 =======
@@ -415,6 +455,9 @@ R4
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -483,6 +526,7 @@ R10
 !s85 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 !s101 -O0
 vRegister
 ID66jdM<hFj]38QEWo@nAJ3
@@ -493,6 +537,8 @@ w1678453864
 FC:/Users/Admin/Documents/ELEC374part2/Register.v
 L0 1
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 !s101 -O0
@@ -562,6 +608,9 @@ IOQMI4Zm:TZROfg@XKbA5O0
 VI>7n5W;N>XEEYK78`S9G93
 R1
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -574,7 +623,12 @@ r1
 31
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 R3
+=======
+R9
+R10
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 R9
 R10
@@ -588,7 +642,11 @@ R4
 !i10b 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 !s100 V:4g0PiDBaQa@LA]:ChNH3
+=======
+!s100 ?J>8ODU[J^;Ra[[D_:HaX2
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 !s100 ?J>8ODU[J^;Ra[[D_:HaX2
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -599,6 +657,11 @@ R4
 =======
 !s100 ?J>8ODU[J^;Ra[[D_:HaX2
 !s85 0
+<<<<<<< HEAD
+!s108 1678486394.197000
+!s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v|
+=======
 <<<<<<< HEAD
 !s108 1678486394.197000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v|
@@ -667,6 +730,9 @@ R10
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf

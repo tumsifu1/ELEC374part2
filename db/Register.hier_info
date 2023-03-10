@@ -1,11 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 |MDR
 clk => clk.IN1
 clr => clr.IN1
 MDR_read => MDR_read.IN1
 MDR_enable => MDR_enable.IN1
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 |datapath
@@ -4108,7 +4111,11 @@ Q[31] <= Register:MDRregister.port4
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 |MDR|mux2_1:my_MDR_Multiplexer
+=======
+|datapath|MDR:MDR_register|mux2_1:MDmux
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 |datapath|MDR:MDR_register|mux2_1:MDmux
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -4247,7 +4254,11 @@ out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 |MDR|Register:MDRregister
+=======
+|datapath|MDR:MDR_register|Register:MDRegister
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 |datapath|MDR:MDR_register|Register:MDRegister
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
