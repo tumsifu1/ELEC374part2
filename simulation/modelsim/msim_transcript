@@ -128,6 +128,7 @@
 # Loading work.PC
 # Loading work.MDR
 # Loading work.mux2_1
+<<<<<<< HEAD
 # Loading work.z_register
 # Loading work.ALU
 # Loading work.add_32_bit
@@ -142,6 +143,12 @@
 # Loading work.encoder_32to5
 # Loading work.multiplexer32to1
 # ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v(20): [PCDPC] - Port size (64 or 64) does not match connection size (1) for port 'Z_register'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(27).
+=======
+# Loading work.Register
+<<<<<<< HEAD
+=======
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDRTB.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MDRin'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/MDR.v(4).
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 # 
 #         Region: /DIV_ALUtb/testDP
 # ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v(2).
@@ -157,6 +164,14 @@
 # 
 #         Region: /DIV_ALUtb/testDP/alu_instance/subtraction/negative_sum
 # ** Warning: (vsim-3722) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Missing connection for port 'sum'.
+<<<<<<< HEAD
+=======
+=======
+#         Region: /MDRTB/dut
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/multiplexer.v(3).
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 # 
 # 
 # add wave *
