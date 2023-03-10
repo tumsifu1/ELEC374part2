@@ -46,8 +46,8 @@ begin					//changes on rising ede
 		T2				:	#40 Present_state = T3;
 		T3				:	#40 Present_state = T4;
 		T4				:	#40 Present_state = T5;
-		endcase
-	end
+	endcase
+end
 
 always @(Present_state)// do the required job ineach state
 begin
