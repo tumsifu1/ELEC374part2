@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY shr
+set_global_assignment -name TOP_LEVEL_ENTITY datapath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:59:08  MARCH 06, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -51,7 +51,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ns" -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH shr_TB -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DIV_ALUtb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME and_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id and_TB
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id and_TB
@@ -79,20 +79,32 @@ set_global_assignment -name EDA_TEST_BENCH_NAME multiplexerTB -section_id eda_si
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id multiplexerTB
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "150 ns" -section_id multiplexerTB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mux32_1_tb -section_id multiplexerTB
-set_global_assignment -name VERILOG_FILE shr_TB.v
-set_global_assignment -name VERILOG_FILE shr_32bit.v
+set_global_assignment -name EDA_TEST_BENCH_NAME shr_TB -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shr_TB
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "40 s" -section_id shr_TB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shr_TB -section_id shr_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE and_TB.v -section_id and_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE add_TB.v -section_id add_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE mul_tb.v -section_id mul_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE div_tb.v -section_id div_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE DIV_ALUtb.v -section_id DIV_ALUtb
 set_global_assignment -name EDA_TEST_BENCH_FILE multiplexerTB.v -section_id multiplexerTB
-set_global_assignment -name EDA_TEST_BENCH_NAME shr_TB -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shr_TB
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "40 s" -section_id shr_TB
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shr_TB -section_id shr_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE shr_TB.v -section_id shr_TB
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE add_32.v
+set_global_assignment -name VERILOG_FILE negate.v
+set_global_assignment -name VERILOG_FILE z_register.v
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VERILOG_FILE multiplexer32to1.v
+set_global_assignment -name VERILOG_FILE multiplexer.v
+set_global_assignment -name VERILOG_FILE MDR.v
+set_global_assignment -name VERILOG_FILE encoder.v
+set_global_assignment -name VERILOG_FILE DIV_ALUtb.v
+set_global_assignment -name VERILOG_FILE datapath.v
+set_global_assignment -name VERILOG_FILE bidirectional_bus.v
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name VERILOG_FILE shr_TB.v
+set_global_assignment -name VERILOG_FILE shr_32bit.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
