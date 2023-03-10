@@ -7,8 +7,8 @@ module add_TB;
     reg cin;
 
     //output
-    wire [31:0] sum;
-    wire cout;
+    reg [31:0] sum;
+    reg cout;
 
     add_32_bit add_instance(Ra, Rb, cin, sum, cout);
 	 
@@ -23,7 +23,7 @@ module add_TB;
     
     #10;
 
-    Ra = 32'h0000_0001;
+    Ra = 32'h7fff_ffff;
     Rb = 32'h0000_0001;
     cin = 1;
 
