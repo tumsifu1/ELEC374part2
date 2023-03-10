@@ -148,8 +148,8 @@ always @(posedge clk)//finite state machine
 					end
                 T6:
                     begin
-                        ZHighout<=1; HIin<=1;
-                        #25 ZHighout<=0; HIin<=0;
+                        ZHIout<=1; HIin<=1;
+                        #25 ZHIout<=0; HIin<=0;
                     end
             endcase
         end
