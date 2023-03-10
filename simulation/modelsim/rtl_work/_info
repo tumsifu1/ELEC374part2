@@ -14,7 +14,7 @@ L0 1
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1678478385.328000
+Z6 !s108 1678482481.644000
 Z7 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/add_32.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/add_32.v|
 Z9 o-vlog01compat -work work -O0
@@ -40,7 +40,7 @@ n@a@l@u
 !i10b 1
 !s100 znY>5ZWG6clWDfCEINEkM1
 !s85 0
-!s108 1678478386.518000
+!s108 1678482482.355000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v|
 !s101 -O0
@@ -60,7 +60,7 @@ R10
 !i10b 1
 !s100 R:557zlgf2RJV^o=^Y_IL3
 !s85 0
-!s108 1678478386.389000
+!s108 1678482482.291000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/bidirectional_bus.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/bidirectional_bus.v|
 !s101 -O0
@@ -107,10 +107,10 @@ n@c@l@a4
 !s85 0
 !s101 -O0
 vdatapath
-Ikl@1OXWQ:W2bAkCfdkLgE3
-VnNEX:F4004;1ho4_5]6:61
+I7SLOP0b>EJB]RGE:RZZ=20
+VDa_o0E;E?bQP_LLUHoFTh1
 R1
-w1678477164
+w1678481746
 8C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v
 FC:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v
 L0 6
@@ -120,9 +120,9 @@ r1
 R9
 R10
 !i10b 1
-!s100 PimNRb4k@0V;XAJabeo830
+!s100 KlFl17XPo;=A[c>k=l6Z43
 !s85 0
-!s108 1678478386.269000
+!s108 1678482482.231000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v|
 !s101 -O0
@@ -142,17 +142,17 @@ R10
 !i10b 1
 !s100 :BNOKn9Wco^YKE_HhNNNC0
 !s85 0
-!s108 1678478387.179000
+!s108 1678482482.672000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/div_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/div_32bit.v|
 !s101 -O0
 vDIV_ALUtb
 !i10b 1
-!s100 E?:c>[3P3HM[1^_E:Xjn21
-Iegh_L2`4Wjh9RFan4n_]G1
+!s100 ;iB?GVRIVVz;FFNG<0Hgd3
+I3hLKJV0WjG__7NeIkUD[Q2
 Vcz:a]KkDaQhTj1:o6zgDQ2
 R1
-w1678475639
+w1678482446
 8C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v
 FC:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v
 L0 2
@@ -160,7 +160,7 @@ R5
 r1
 !s85 0
 31
-!s108 1678478387.316000
+!s108 1678482482.728000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v|
 !s101 -O0
@@ -183,7 +183,7 @@ R10
 !i10b 1
 !s100 no6clol7?@J]J3aK@H^To2
 !s85 0
-!s108 1678478386.147000
+!s108 1678482482.171000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/encoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/encoder.v|
 !s101 -O0
@@ -204,7 +204,7 @@ n@m@d@r
 !i10b 1
 !s100 <lQg0IFBo[YYYY2>BN7ec2
 !s85 0
-!s108 1678478386.046000
+!s108 1678482482.110000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v|
 !s101 -O0
@@ -224,7 +224,7 @@ R10
 !i10b 1
 !s100 E62T;MJn?NKng9bP21^Y50
 !s85 0
-!s108 1678478386.779000
+!s108 1678482482.483000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/mul_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/mul_32bit.v|
 !s101 -O0
@@ -244,7 +244,7 @@ R10
 !i10b 1
 !s100 ;Ik[XaBUaD>n=Cif^YUe32
 !s85 0
-!s108 1678478385.728000
+!s108 1678482481.930000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer32to1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer32to1.v|
 !s101 -O0
@@ -259,7 +259,7 @@ L0 36
 R5
 r1
 31
-Z14 !s108 1678478385.864000
+Z14 !s108 1678482481.986000
 Z15 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v|
 Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v|
 R9
@@ -344,7 +344,7 @@ R10
 !i10b 1
 !s100 @^U:Gk^L76ODaGoQBO`bY2
 !s85 0
-!s108 1678478385.434000
+!s108 1678482481.737000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/negate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/negate.v|
 !s101 -O0
@@ -364,7 +364,7 @@ R10
 !i10b 1
 !s100 bGTifH5moJmD;TM<Sc07I1
 !s85 0
-!s108 1678478387.042000
+!s108 1678482482.608000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/not_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/not_32bit.v|
 !s101 -O0
@@ -385,7 +385,7 @@ n@p@c
 !i10b 1
 !s100 >i`WCnC_dCCa@>7n5PU:>0
 !s85 0
-!s108 1678478385.613000
+!s108 1678482481.862000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/PC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/PC.v|
 !s101 -O0
@@ -406,7 +406,7 @@ n@register
 !i10b 1
 !s100 7eVBcIKgWJUiP_BBG[Cf;3
 !s85 0
-!s108 1678478386.648000
+!s108 1678482482.411000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/register.v|
 !s101 -O0
@@ -426,7 +426,7 @@ R10
 !i10b 1
 !s100 4ISmUFBRD9CVb;KI848Lo0
 !s85 0
-!s108 1678478386.910000
+!s108 1678482482.543000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v|
 !s101 -O0
@@ -446,7 +446,7 @@ R10
 !i10b 1
 !s100 fRSa<na32MHL6zd=n`X8Y3
 !s85 0
-!s108 1678478385.513000
+!s108 1678482481.801000
 !s107 C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/z_register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2|C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/z_register.v|
 !s101 -O0

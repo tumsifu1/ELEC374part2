@@ -82,6 +82,7 @@ entity datapath is
         Y               : out    vl_logic_vector(31 downto 0);
         ZLO             : out    vl_logic_vector(31 downto 0);
         ZHI             : out    vl_logic_vector(31 downto 0);
+        TESTVALUE       : out    vl_logic_vector(31 downto 0);
         Z_register      : out    vl_logic_vector(63 downto 0)
     );
 end datapath;
