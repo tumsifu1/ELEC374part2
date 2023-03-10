@@ -3,86 +3,43 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
-vadd_32_bit
-I8Yjh]2KNZm?c@U:J_?H<b3
-VE9M7z8]`5^eDgBRdX@ilF0
+vdiv_32bit
+IR?a@JTa?MA`>bUfb0[DdQ3
+VDXC;MNXea8NdI7bj5Rf1@1
 Z1 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
-Z2 w1678419996
-Z3 8C:/Users/Admin/Documents/ELEC374part2/add_32.v
-Z4 FC:/Users/Admin/Documents/ELEC374part2/add_32.v
+w1678430245
+8C:/Users/Admin/Documents/ELEC374part2/div_32bit.v
+FC:/Users/Admin/Documents/ELEC374part2/div_32bit.v
 L0 1
-Z5 OV;L;10.1d;51
+Z2 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1678420044.430000
-Z7 !s107 C:/Users/Admin/Documents/ELEC374part2/add_32.v|
-Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/add_32.v|
-Z9 o-vlog01compat -work work -O0
-Z10 !s92 -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 -O0
+Z3 o-vlog01compat -work work -O0
 !i10b 1
-!s100 ab=9d=l24n9W>:aEhGfc>2
+!s100 YYzOO7]ValQ_c`hIG<]F32
 !s85 0
+!s108 1678430258.039000
+!s107 C:/Users/Admin/Documents/ELEC374part2/div_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/div_32bit.v|
 !s101 -O0
-vadd_TB
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 -O0
+vdiv_tb
 !i10b 1
-!s100 i4=8d8JefX@DdfaJ[K;zk2
-IgO54Q8he6mB@8KJkPn3]<3
-V7Uci]clm2SDZ>>9:LVz8G1
+!s100 PAD3XHRDRZ]Vk6M0Z_m:13
+IT9Z7Vc6MCh2nnSHRzf8jP3
+VEYhPPHADT:`VF246km9iA1
 R1
-w1678419339
-8C:/Users/Admin/Documents/ELEC374part2/add_TB.v
-FC:/Users/Admin/Documents/ELEC374part2/add_TB.v
-L0 3
-R5
-r1
-!s85 0
-31
-!s108 1678420044.576000
-!s107 C:/Users/Admin/Documents/ELEC374part2/add_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/add_TB.v|
-!s101 -O0
-R9
-R10
-nadd_@t@b
-vCLA16
-I1XWJ7DE3VBIMk^^fze[Af0
-VWTHGkRmzUXn>GUA3lgBhc0
-R1
+w1678429120
+8C:/Users/Admin/Documents/ELEC374part2/div_tb.v
+FC:/Users/Admin/Documents/ELEC374part2/div_tb.v
+L0 1
 R2
+r1
+!s85 0
+31
+!s108 1678430258.088000
+!s107 C:/Users/Admin/Documents/ELEC374part2/div_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/div_tb.v|
+!s101 -O0
 R3
 R4
-L0 9
-R5
-r1
-31
-R6
-R7
-R8
-R9
-R10
-n@c@l@a16
-!i10b 1
-!s100 XD]TmeI:iGcUhaii`I2NJ0
-!s85 0
-!s101 -O0
-vCLA4
-If<KGW<OUVfmWFN5<P7[6_3
-V4_T:9RFo2PhTCgOVX89jV3
-R1
-R2
-R3
-R4
-L0 18
-R5
-r1
-31
-R6
-R7
-R8
-R9
-R10
-n@c@l@a4
-!i10b 1
-!s100 FASe?3DjX84QdSfKcaSii0
-!s85 0
-!s101 -O0

@@ -1,0 +1,53 @@
+module division_32bit_tb();
+
+    // inputs
+    reg [31:0] M;
+    reg [31:0] Q;
+
+    // outputs
+    wire [63:0] z;
+
+    // instantiate the module
+    division_32bit dut(.M(M), .Q(Q), .z(z));
+
+    // clock signal
+    reg clk = 0;
+    always #5 clk = ~clk;
+
+    // reset signal
+    reg rst = 1;
+    always #10 rst = 0;
+
+    initial begin
+        // initialize inputs
+        M = 32'hAAAA_5555;
+        Q = 32'h1234_5678;
+
+        // wait for a few clock cycles
+        #20;
+
+        // de-assert reset signal
+        rst = 0;
+
+        // wait for a few clock cycles
+        #20;
+
+        // change inputs
+        M = 32'h1234_5678;
+        Q = 32'hAAAA_5555;
+
+        // wait for a few clock cycles
+        #20;
+
+        // change inputs again
+        M = 32'hFFFF_FFFF;
+        Q = 32'h0000_1234;
+
+        // wait for a few clock cycles
+        #20;
+
+        // finish the simulation
+        $finish;
+    end
+
+endmodule
