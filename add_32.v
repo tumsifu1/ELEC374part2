@@ -18,8 +18,11 @@ endmodule
 module CLA4(input wire [3:0] Ra, input wire [3:0] Rb, input wire cin, output wire[3:0] sum, output wire cout);
 	wire [3:0] P,G,C;
 
+	//propagate 
 	assign P=Ra^Rb;	
+	//Generate
 	assign G=Ra&Rb;
+	
 	
 	assign C[0]= cin;
 	assign C[1]= G[0] | (P[0]&C[0]);
