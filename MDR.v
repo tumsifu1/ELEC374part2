@@ -5,9 +5,9 @@ module MDR(input clear,
     input [31:0] Mdatain, 
     output [31:0] memOut);
 	
-	 wire [31:0] BusMuxOut;
+	wire [31:0] BusMuxOut;
     wire [31:0] regOut;
-    mux2_1 MDmux(BusMuxOut, BusMuxIn, Mdatain, read);
+    mux2_1 MDmux(BusMuxOut, MdataIn, MDRin, read);
     Register MDRegister(clr, clock, BusMuxOut, MDRin, regOut);
 
     assign memOut = regOut;
