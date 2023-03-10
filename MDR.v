@@ -2,10 +2,10 @@ module MDR(input clear,
     input clock, 
     input read,
     input MDRin,  
-    input [31:0] Mdatain, 
+    input [31:0] Mdatain,BusMuxOut 
     output [31:0] memOut);
 	
-	wire [31:0] BusMuxOut;
+	
     wire [31:0] regOut;
     mux2_1 MDmux(BusMuxOut, MdataIn, MDRin, read);
     Register MDRegister(clr, clock, BusMuxOut, MDRin, regOut);
