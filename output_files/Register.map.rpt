@@ -1,8 +1,11 @@
 Analysis & Synthesis report for Register
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Mar 10 17:48:34 2023
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Fri Mar 10 17:13:00 2023
 =======
 <<<<<<< HEAD
@@ -15,6 +18,9 @@ Fri Mar 10 16:20:01 2023
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
@@ -30,10 +36,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
 <<<<<<< HEAD
+<<<<<<< HEAD
   8. General Register Statistics
   9. Elapsed Time Per Partition
  10. Analysis & Synthesis Messages
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
   8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
@@ -50,6 +59,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  21. Elapsed Time Per Partition
  22. Analysis & Synthesis Messages
  23. Analysis & Synthesis Suppressed Messages
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 
 
@@ -77,9 +89,12 @@ applicable agreement for further details.
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Mar 10 17:48:34 2023           ;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Analysis & Synthesis Status        ; Successful - Fri Mar 10 17:13:00 2023           ;
 =======
 <<<<<<< HEAD
@@ -92,11 +107,15 @@ applicable agreement for further details.
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone III                                     ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 ; Total logic elements               ; 32                                              ;
 ;     Total combinational functions  ; 32                                              ;
@@ -104,11 +123,16 @@ applicable agreement for further details.
 ; Total registers                    ; 32                                              ;
 ; Total pins                         ; 100                                             ;
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Total logic elements               ; 4,675                                           ;
 ;     Total combinational functions  ; 4,067                                           ;
 ;     Dedicated logic registers      ; 704                                             ;
 ; Total registers                    ; 704                                             ;
 ; Total pins                         ; 830                                             ;
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -217,6 +241,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                      ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
@@ -268,6 +293,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |mux2_1:my_MDR_Multiplexer| ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|mux2_1:my_MDR_Multiplexer ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+--------------+
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                           ;
 +----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
@@ -370,6 +397,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |encoder_32to5:bus_encoder|        ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bidirectional_bus:my_bus|encoder_32to5:bus_encoder        ; work         ;
 ;       |multiplexer32to1:bus_multiplexer| ; 522 (522)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bidirectional_bus:my_bus|multiplexer32to1:bus_multiplexer ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -500,7 +530,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
@@ -642,6 +675,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
@@ -649,7 +685,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Top            ; 00:00:00     ;
+=======
+; Top            ; 00:00:12     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 ; Top            ; 00:00:12     ;
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -663,6 +703,7 @@ Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 <<<<<<< HEAD
+<<<<<<< HEAD
     Info: Processing started: Fri Mar 10 17:48:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -670,6 +711,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
     Info (12023): Found entity 1: Register
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
     Info: Processing started: Fri Mar 10 17:12:46 2023
 =======
 <<<<<<< HEAD
@@ -740,6 +783,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file multipl
     Info (12023): Found entity 1: mux32_1_tb
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexer32to1.v
     Info (12023): Found entity 1: multiplexer32to1
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Info (12021): Found 4 design units, including 4 entities, in source file multiplexer.v
     Info (12023): Found entity 1: mux2_1
@@ -751,10 +797,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file mdrtb.v
 Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
     Info (12023): Found entity 1: MDR
 <<<<<<< HEAD
+<<<<<<< HEAD
 Info (12127): Elaborating entity "MDR" for the top level hierarchy
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:my_MDR_Multiplexer"
 Info (12128): Elaborating entity "Register" for hierarchy "Register:MDRregister"
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Info (12021): Found 1 design units, including 1 entities, in source file encodertb.v
     Info (12023): Found entity 1: encoderTb
 Info (12021): Found 1 design units, including 1 entities, in source file encoder.v
@@ -1151,13 +1200,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ZLO[29]" is stuck at GND
     Warning (13410): Pin "ZLO[30]" is stuck at GND
     Warning (13410): Pin "ZLO[31]" is stuck at GND
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/output_files/Register.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Warning (21074): Design contains 39 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Yout"
     Warning (15610): No output dependent on input pin "ZLOin"
@@ -1214,6 +1269,10 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 229 warni
 +------------------------------------------+
 The suppressed messages can be found in C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/output_files/Register.map.smsg.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 =======
 =======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
@@ -1233,6 +1292,9 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Total CPU time (on all processors): 00:00:01
 >>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 >>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
 >>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 
 
