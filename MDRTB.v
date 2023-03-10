@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 10ps
 
 module MDRTB;
 
@@ -15,13 +15,13 @@ module MDRTB;
 
     // Instantiate the module to be tested
     MDR dut(
-        .clear(clear),
-        .clock(clock),
-        .read(read),
-        .MDRin(MDRin),
-        .Mdatain(Mdatain),
+        .clr(clear),
+        .clk(clock),
+        .MDR_read(read),
+        .MDR_enable(MDRin),
+        .MDataIn(Mdatain),
         .BusMuxOut(BusMuxOut),
-        .memOut(memOut)
+        .Q(memOut)
     );
 
     // Clock generator

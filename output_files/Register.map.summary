@@ -1,29 +1,13 @@
-<<<<<<< HEAD
-Analysis & Synthesis Status : Successful - Fri Mar 10 16:27:31 2023
-=======
-<<<<<<< HEAD
-Analysis & Synthesis Status : Successful - Fri Mar 10 16:07:43 2023
-=======
-Analysis & Synthesis Status : Successful - Fri Mar 10 16:20:01 2023
->>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
->>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+Analysis & Synthesis Status : Successful - Fri Mar 10 17:48:34 2023
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Register
 Top-level Entity Name : MDR
 Family : Cyclone III
-<<<<<<< HEAD
-Total logic elements : 4,672
-    Total combinational functions : 4,064
-    Dedicated logic registers : 704
-Total registers : 704
-Total pins : 862
-=======
 Total logic elements : 32
     Total combinational functions : 32
     Dedicated logic registers : 32
 Total registers : 32
 Total pins : 100
->>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
