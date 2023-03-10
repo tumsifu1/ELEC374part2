@@ -93,7 +93,6 @@ encoder_32to5 bus_encoder(
 	.MDROut(MDRSignal),
 	.InportOut(InportSignal),
 	.COut(CSignal),
-	.Yout(encoderY),
 	
 	//output of the encoder feeds to connection, which will feed to the multiplexer
 	.Yout(connection)

@@ -3,7 +3,7 @@
 //added ZHIin, ZLOin, Zin, ZLO, ZHI, ZHIout, ZLOout, to datapath, 
 //changed ZLowout/Highout to ZLow/HighSelect
 
-module CPU_datapath(
+module datapath(
 
 
 //I/0 Definition
