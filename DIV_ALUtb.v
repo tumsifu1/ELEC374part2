@@ -11,7 +11,7 @@ module DIV_ALUtb();
 
     reg[3:0] Present_state = Default;
 
-    CPU_datapath testDP(	.R0in(R0in),.R1in(R1in),.R2in(R2in),.R3in(R3in),.R4in(R4in),.R5in(R5in),.R6in(R6in),.R7in(R7in),.R8in(R8in),.R9in(R9in),.R10in(R10in),.R11in(R11in),.R12in(R12in),.R13in(R13in),.R14in(R14in),.R15in(R15in),
+    datapath testDP(	.R0in(R0in),.R1in(R1in),.R2in(R2in),.R3in(R3in),.R4in(R4in),.R5in(R5in),.R6in(R6in),.R7in(R7in),.R8in(R8in),.R9in(R9in),.R10in(R10in),.R11in(R11in),.R12in(R12in),.R13in(R13in),.R14in(R14in),.R15in(R15in),
 	                    .R0out(R0out),.R1out(R1out),.R2out(R2out),.R3out(R3out),.R4out(R4out),.R5out(R5out),.R6out(R6out),.R7out(R7out),.R8out(R8out),.R9out(R9out),.R10out(R10out),.R11out(R11out),.R12out(R12out),.R13out(R13out),.R14out(R14out),.R15out(R15out),.Yout(Yout),
 	                    .HIin(HIin),.Loin(Loin),.ZHIin(ZHIin),.ZLOin(ZLOin),.PCin(PCin),.MDRin(MDRin),.MARin(MARin),.IRin(IRin),.Yin(Yin),.Zin(Zin),.HIout(HIout),.Loout(Loout),.PCout(PCout),.MDRout(MDRout),.MDRread(Read),.Cout(Cout),.clk(clk),.clr(clear),.IncPC(IncPC),.ZHighSelect(ZHighSelect),.ZLowSelect(ZLowSelect),.ZHIout(ZHIout),.ZLOout(ZLOout),.InPortout(InPortout),
                         .ALU_opcode(ALUopCode),.Mdatain(MdataIn),
@@ -62,7 +62,8 @@ always @(posedge clk)//finite state machine
 						IncPC <= 0;
 						Read <= 0;
 						ALUopCode <= 0;
-							
+						
+						R0in <=0;
 						R1in <= 0;
 						R2in <= 0;
 						R3in <=0;
@@ -90,7 +91,7 @@ always @(posedge clk)//finite state machine
 
                 Reg_load1a:
                     begin
-                        MdataIn<=32'h0000000F;
+                        MdataIn<=32'h00000002;
                         Read = 0;
                         MDRin= 0;
                         #10 Read <=1; MDRin <= 1;
@@ -105,23 +106,23 @@ always @(posedge clk)//finite state machine
                     begin
                         MdataIn<=32'h00000004;
                         #10 Read <= 1; MDRin <=1;
-                        #15 Read <= 0; MDRin <=0;
+                        #25 Read <= 0; MDRin <=0;
                     end
                 Reg_load2b:
                     begin
                         #10 MDRout <= 1; R7in <= 1;
-                        #15 MDRout <= 0; R7in <= 0;
+                        #25 MDRout <= 0; R7in <= 0;
                     end
                 Reg_load3a:
                     begin
                         MdataIn <= 32'h00000012;
                         #10 Read <=1; MDRin <=1;
-                        #15 Read <=0; MDRin <=0;
+                        #25 Read <=0; MDRin <=0;
                     end
                 Reg_load3b:
                     begin
                         #10 Read <=1; R1in <=1;
-                        #15 Read <=0; R1in <=0;
+                        #25 Read <=0; R1in <=0;
                     end
                 T0: begin end
                 T1: begin end
