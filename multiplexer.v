@@ -1,7 +1,6 @@
 module mux2_1(
-input wire [31:0] inputOne, 
-input wire [31:0] inputTwo, 
-input wire signal, 
+input wire [31:0] inputOne,inputTwo, 
+input  signal, 
 output reg [31:0] out
 );
 
