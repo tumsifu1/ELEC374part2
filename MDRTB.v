@@ -1,47 +1,56 @@
-`timescale 1ns/10ps
-module MDR_TB;
+`timescale 1ns / 1ps
 
-    //input 
+module MDRTB;
+
+    // Inputs
+    reg clear;
     reg clock;
     reg read;
-	 reg clear;
     reg [31:0] MDRin;
+    reg [31:0] Mdatain;
     reg [31:0] BusMuxOut;
-    reg [31:0] MdataIn;
 
-    //output
+    // Outputs
     wire [31:0] memOut;
 
-    //instance of MDR
-    MDR mdrInstance(clear, clock, read, MDRin, BusMuxOut, MdataIn, memOut);
+    // Instantiate the module to be tested
+    MDR dut(
+        .clear(clear),
+        .clock(clock),
+        .read(read),
+        .MDRin(MDRin),
+        .Mdatain(Mdatain),
+        .BusMuxOut(BusMuxOut),
+        .memOut(memOut)
+    );
 
+    // Clock generator
+      initial
+        begin
+            clock=0;
+            forever #10 clock= ~clock;
+        end
+
+
+    // Test case 1: write and read from memory
     initial begin
-        clock = 0;
-        clear = 0;
-        read = 0;
+        clear = 1;
         MDRin = 0;
+        Mdatain = 32'h12345678;
         BusMuxOut = 0;
-        MdataIn = 0;
+        read = 0;
+			
+			#40;
+         clear = 0;
+         Mdatain = 32'h87654321;
+         BusMuxOut = 1;
+			MDRin = 1;
+         read = 1;
 
-        #10 clear = 1;
-     
-        
-        #10 MDRin = 32'h12345678;
-        #10 BusMuxOut = 32'h87654321;
-        #10 MdataIn = 32'habcdef01;
-        #10 read = 1;
-        #10 read = 0;
-        
-        #10 MDRin = 32'hdeadbeef;
-        #10 BusMuxOut = 32'h01234567;
-        #10 MdataIn = 32'hfedcba98;
-        #10 read = 1;
-        #10 read = 0;
-        
-        #10 $finish;
-    end
+        // Expected output after one clock cycle
+       // #10 expect(memOut == 32'h12345678);
 
-    // Add clock signal
-    always #5 clock = ~clock;
-
-endmodule
+        // Expected output after two clock cycles
+        //#10 expect(memOut == 32'h876543;
+		  end
+endmodule 
