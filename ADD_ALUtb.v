@@ -1,9 +1,9 @@
 `timescale 1ns/10ps
-module NOT_ALUtb();
+module ADD_ALUtb();
     reg R0in,R1in,R2in,R3in,R4in,R5in,R6in,R7in,R8in,R9in,R10in,R11in,R12in,R13in,R14in,R15in,R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, Yout;
     reg HIin, Loin, ZHIin, ZLOin, PCin, MDRin, MARin, IRin, Yin, Zin;
     reg HIout, Loout, PCout, MDRout, Read, Cout, clk, clear, IncPC, ZHighSelect, ZLowSelect, ZHIout, ZLOout, InPortout;
-    reg[4:0] ALUopCode = 5'b00110;//code for not operation
+    reg[4:0] ALUopCode = 5'b10000;//code for not operation
     reg[31:0] MdataIn;
     wire [31:0] R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, HI, LO, Y, ZLO, ZHI, IR, BusMuxOut, BUSSINY;
     wire[63:0] ZReg;
@@ -43,9 +43,9 @@ always @(posedge clk)//finite state machine
         endcase
     end
 
-    always @(Present_state)
+    always @(PresentState)
         begin
-            case(Present_state)
+            case(PresentState)
                 Default:
                     begin
                         PCout <= 0; 
@@ -97,8 +97,8 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load1b:
                     begin
-                        #10 MDRout <= 1; R6in <= 1;
-                        #15 MDRout <= 0; R6in <= 0;
+                        #10 MDRout <= 1; R0in <= 1;
+                        #15 MDRout <= 0; R0in <= 0;
                     end
                 Reg_load2a:
                     begin
@@ -108,8 +108,8 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load2b:
                     begin
-                        #10 MDRout <= 1; R3in <= 1;
-                        #15 MDRout <= 0; R3in <= 0;
+                        #10 MDRout <= 1; R4in <= 1;
+                        #15 MDRout <= 0; R4in <= 0;
                     end
                 Reg_load3a:
                     begin
@@ -119,37 +119,27 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load3b:
                     begin
-                        #10 Read <=1; R1in <=1;
-                        #15 Read <=0; R1in <=0;
+                        #10 Read <=1; R4in <=1;
+                        #15 Read <=0; R4in <=0;
                     end
-                T0: 
-                    begin
-                                
-                    end
+                T0: begin end
                 T1: begin end
                 T2: begin end 
                 T3: 
                     begin
-                        R2out<=1; Yin<=1;
+                        #10 R3out<=1; Yin<=1;
+                        #25 Yin <= 0; R2out <=0;
                     end
                 T4:
                     begin	 
-					//R2out <=0; 
-					Yin <= 0; R2out <=0; 
-					Yout <= 1; ALUopCode = 5'b10010; Zin <=1; R1out<=1; 
-					ZLOin<=1;
-					ZLowSelect<=1;
+                        ALUopCode = 5'b10000; Zin <=1; R5out<=1; 
+                        #25 Zin<=0; R7out<=0;
 				    end
 						
 				T5: 
                     begin
-						ZLOin<=0; 
-						R3out<=0;
-						ZLowSelect<=0;
-						Yout<=0; 
-						R1out<=0;
-						ZLOout<=1; R0in<=1; 
-
+						ZLOout<=1; R0<=1;
+                        #25 ZLOout<=0; R0<=0;
 					end
             endcase
         end
