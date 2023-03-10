@@ -1,5 +1,13 @@
 Analysis & Synthesis report for Register
+<<<<<<< HEAD
 Fri Mar 10 16:27:31 2023
+=======
+<<<<<<< HEAD
+Fri Mar 10 16:07:43 2023
+=======
+Fri Mar 10 16:20:01 2023
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,16 +50,32 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Mar 10 16:27:31 2023           ;
+=======
+<<<<<<< HEAD
+; Analysis & Synthesis Status        ; Successful - Fri Mar 10 16:07:43 2023           ;
+=======
+; Analysis & Synthesis Status        ; Successful - Fri Mar 10 16:20:01 2023           ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
 ; Top-level Entity Name              ; MDR                                             ;
 ; Family                             ; Cyclone III                                     ;
+<<<<<<< HEAD
+; Total logic elements               ; 4,672                                           ;
+;     Total combinational functions  ; 4,064                                           ;
+;     Dedicated logic registers      ; 704                                             ;
+; Total registers                    ; 704                                             ;
+; Total pins                         ; 862                                             ;
+=======
 ; Total logic elements               ; 32                                              ;
 ;     Total combinational functions  ; 32                                              ;
 ;     Dedicated logic registers      ; 32                                              ;
 ; Total registers                    ; 32                                              ;
 ; Total pins                         ; 100                                             ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -169,6 +193,86 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
 
 
+<<<<<<< HEAD
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 4,672     ;
+;                                             ;           ;
+; Total combinational functions               ; 4064      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 2157      ;
+;     -- 3 input functions                    ; 1219      ;
+;     -- <=2 input functions                  ; 688       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 3413      ;
+;     -- arithmetic mode                      ; 651       ;
+;                                             ;           ;
+; Total registers                             ; 704       ;
+;     -- Dedicated logic registers            ; 704       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 862       ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 673       ;
+; Total fan-out                               ; 18104     ;
+; Average fan-out                             ; 2.79      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+; |datapath                                ; 4064 (0)          ; 704 (0)      ; 0           ; 0            ; 0       ; 0         ; 862  ; 0            ; |datapath                                                           ; work         ;
+;    |ALU:alu_instance|                    ; 3441 (1015)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance                                          ; work         ;
+;       |add_32_bit:adding|                ; 97 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding                        ; work         ;
+;          |CLA16:CLA1|                    ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA1             ; work         ;
+;             |CLA4:CLA1|                  ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA1|CLA4:CLA1   ; work         ;
+;             |CLA4:CLA2|                  ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA1|CLA4:CLA2   ; work         ;
+;             |CLA4:CLA3|                  ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA1|CLA4:CLA3   ; work         ;
+;             |CLA4:CLA4|                  ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA1|CLA4:CLA4   ; work         ;
+;          |CLA16:CLA2|                    ; 49 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2             ; work         ;
+;             |CLA4:CLA1|                  ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2|CLA4:CLA1   ; work         ;
+;             |CLA4:CLA2|                  ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2|CLA4:CLA2   ; work         ;
+;             |CLA4:CLA3|                  ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2|CLA4:CLA3   ; work         ;
+;             |CLA4:CLA4|                  ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2|CLA4:CLA4   ; work         ;
+;       |div_32bit:division|               ; 235 (235)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|div_32bit:division                       ; work         ;
+;       |mul_32bit:multiply|               ; 2094 (2094)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:alu_instance|mul_32bit:multiply                       ; work         ;
+;    |MDR:MDR_register|                    ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|MDR:MDR_register                                          ; work         ;
+;       |Register:MDRegister|              ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|MDR:MDR_register|Register:MDRegister                      ; work         ;
+;       |mux2_1:MDmux|                     ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|MDR:MDR_register|mux2_1:MDmux                             ; work         ;
+;    |PC:PC|                               ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|PC:PC                                                     ; work         ;
+;    |Register:hi|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:hi                                               ; work         ;
+;    |Register:lo|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:lo                                               ; work         ;
+;    |Register:r0|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r0                                               ; work         ;
+;    |Register:r10|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r10                                              ; work         ;
+;    |Register:r11|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r11                                              ; work         ;
+;    |Register:r12|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r12                                              ; work         ;
+;    |Register:r13|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r13                                              ; work         ;
+;    |Register:r14|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r14                                              ; work         ;
+;    |Register:r15|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r15                                              ; work         ;
+;    |Register:r1|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r1                                               ; work         ;
+;    |Register:r2|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r2                                               ; work         ;
+;    |Register:r3|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r3                                               ; work         ;
+;    |Register:r4|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r4                                               ; work         ;
+;    |Register:r5|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r5                                               ; work         ;
+;    |Register:r6|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r6                                               ; work         ;
+;    |Register:r7|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r7                                               ; work         ;
+;    |Register:r8|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r8                                               ; work         ;
+;    |Register:r9|                         ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:r9                                               ; work         ;
+;    |Register:y|                          ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:y                                                ; work         ;
+;    |Register:zhi|                        ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Register:zhi                                              ; work         ;
+;    |bidirectional_bus:my_bus|            ; 558 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bidirectional_bus:my_bus                                  ; work         ;
+;       |encoder_32to5:bus_encoder|        ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bidirectional_bus:my_bus|encoder_32to5:bus_encoder        ; work         ;
+;       |multiplexer32to1:bus_multiplexer| ; 522 (522)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bidirectional_bus:my_bus|multiplexer32to1:bus_multiplexer ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
+=======
 +----------------------------------------------------------+
 ; Analysis & Synthesis Resource Usage Summary              ;
 +---------------------------------------------+------------+
@@ -208,6 +312,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |Register:MDRegister|   ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|Register:MDRegister ; work         ;
 ;    |mux2_1:MDmux|          ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MDR|mux2_1:MDmux        ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -226,6 +331,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
+<<<<<<< HEAD
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |datapath|PC:PC|Q[12]                                                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|ALU:alu_instance|ShiftLeft1                                     ;
+; 3:1                ; 63 bits   ; 126 LEs       ; 63 LEs               ; 63 LEs                 ; No         ; |datapath|ALU:alu_instance|ShiftRight0                                    ;
+; 3:1                ; 62 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; No         ; |datapath|ALU:alu_instance|ShiftRight1                                    ;
+; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux3                        ;
+; 6:1                ; 31 bits   ; 124 LEs       ; 93 LEs               ; 31 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux37                       ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux96                       ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux133                      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux200                      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux280                      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux349                      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux425                      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux477                      ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 480 LEs              ; 192 LEs                ; No         ; |datapath|bidirectional_bus:my_bus|multiplexer32to1:bus_multiplexer|Mux26 ;
+; 10:1               ; 30 bits   ; 180 LEs       ; 180 LEs              ; 0 LEs                  ; No         ; |datapath|ALU:alu_instance|Mux27                                          ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux117                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux181                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux233                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux328                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux390                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux457                      ;
+; 8:1                ; 30 bits   ; 150 LEs       ; 90 LEs               ; 60 LEs                 ; No         ; |datapath|ALU:alu_instance|mul_32bit:multiply|Mux509                      ;
+; 13:1               ; 31 bits   ; 248 LEs       ; 155 LEs              ; 93 LEs                 ; No         ; |datapath|ALU:alu_instance|Mux47                                          ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |datapath|bidirectional_bus:my_bus|encoder_32to5:bus_encoder|Yout[2]      ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 22 LEs               ; 10 LEs                 ; No         ; |datapath|bidirectional_bus:my_bus|encoder_32to5:bus_encoder|Yout[3]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:alu_instance ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; Add            ; 00011 ; Unsigned Binary                      ;
+; Sub            ; 00100 ; Unsigned Binary                      ;
+; And            ; 00101 ; Unsigned Binary                      ;
+; Or             ; 00110 ; Unsigned Binary                      ;
+; Shift_Right    ; 00111 ; Unsigned Binary                      ;
+; Shift_RightA   ; 00100 ; Unsigned Binary                      ;
+; Shift_Left     ; 01001 ; Unsigned Binary                      ;
+; Rotate_Right   ; 01010 ; Unsigned Binary                      ;
+; Rotate_Left    ; 01011 ; Unsigned Binary                      ;
+; Mul            ; 01111 ; Unsigned Binary                      ;
+; Div            ; 10000 ; Unsigned Binary                      ;
+; Negate         ; 10001 ; Unsigned Binary                      ;
+; Not            ; 10010 ; Unsigned Binary                      ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu_instance|sub_32bit:subtraction|add_32_bit:negative_sum"                                          ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; sum  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu_instance|sub_32bit:subtraction|negate_32_bit:negative|add_32_bit:sum_op"         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Rb[31..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Rb[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cin       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu_instance|sub_32bit:subtraction"                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; sum  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "sum[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu_instance|add_32_bit:adding"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "z_register:z_reg"                                                                           ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; ZHighDataOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ZLowDataOut  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Register:zlo"                                                                                                                   ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                      ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; outputQ ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "outputQ[31..1]" have no fanouts ;
+; outputQ ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                          ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
+=======
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "mux2_1:MDmux"                                                                                                                                         ;
 +----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -240,7 +462,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
+<<<<<<< HEAD
+; Top            ; 00:00:13     ;
+=======
 ; Top            ; 00:00:00     ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 +----------------+--------------+
 
 
@@ -250,7 +476,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Mar 10 16:27:30 2023
+=======
+<<<<<<< HEAD
+    Info: Processing started: Fri Mar 10 16:07:28 2023
+=======
+    Info: Processing started: Fri Mar 10 16:19:59 2023
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 4 design units, including 4 entities, in source file multiplexer.v
@@ -305,6 +539,23 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Mdatain[29]"
     Warning (15610): No output dependent on input pin "Mdatain[30]"
     Warning (15610): No output dependent on input pin "Mdatain[31]"
+<<<<<<< HEAD
+Info (21057): Implemented 5566 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 94 input pins
+    Info (21059): Implemented 768 output pins
+    Info (21061): Implemented 4704 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 228 warnings
+    Info: Peak virtual memory: 4605 megabytes
+    Info: Processing ended: Fri Mar 10 16:07:43 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:15
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/output_files/Register.map.smsg.
+=======
 Info (21057): Implemented 132 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 68 input pins
     Info (21059): Implemented 32 output pins
@@ -314,5 +565,6 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 37 warnin
     Info: Processing ended: Fri Mar 10 16:27:31 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 
 

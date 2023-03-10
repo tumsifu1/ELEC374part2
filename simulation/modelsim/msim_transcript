@@ -47,7 +47,30 @@
 # Loading work.MDR
 # Loading work.mux2_1
 # Loading work.Register
+<<<<<<< HEAD
+=======
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDRTB.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MDRin'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/MDR.v(4).
+# 
+<<<<<<< HEAD
+#         Region: /DIV_ALUtb/testDP
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v(3).
+# 
+#         Region: /DIV_ALUtb/testDP/MDR_register/MDmux
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(81): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/register.v(1).
+# 
+#         Region: /DIV_ALUtb/testDP/zlo
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v(37): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(1).
+# 
+#         Region: /DIV_ALUtb/testDP/alu_instance/subtraction
+# ** Warning: (vsim-3017) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /DIV_ALUtb/testDP/alu_instance/subtraction/negative_sum
+# ** Warning: (vsim-3722) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Missing connection for port 'sum'.
+=======
+#         Region: /MDRTB/dut
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
 # ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/multiplexer.v(3).
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
 # 
 #         Region: /MDRTB/dut/MDmux
 # 
@@ -56,4 +79,8 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
+<<<<<<< HEAD
+# run 500 ns
+=======
 # run 100 ns
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
