@@ -38,8 +38,7 @@ endmodule
 
 module mux32_1(input [31:0] i, input [4:0] s, output o);
 
-    wire o_m1, o_m2
-    ; //outputs for each of muxes
+    wire o_m1, o_m2; //outputs for each of muxes
     //level 1
     mux8_1 m1(o_m1, i[15:0], s[3:0]);
     mux8_1 m2(o_m2, i[31:16], s[3:0]);
