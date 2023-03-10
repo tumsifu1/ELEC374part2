@@ -144,7 +144,12 @@
 # ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v(20): [PCDPC] - Port size (64 or 64) does not match connection size (1) for port 'Z_register'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(27).
 # 
 #         Region: /DIV_ALUtb/testDP
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v(10): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v(1).
+# ** Warning: (vsim-3017) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(72): [TFMPC] - Too few port connections. Expected 7, found 6.
+# 
+#         Region: /DIV_ALUtb/testDP/MDR_register
+# ** Warning: (vsim-3722) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(72): [TFMPC] - Missing connection for port 'BusMuxOut'.
+# 
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v(3).
 # 
 #         Region: /DIV_ALUtb/testDP/MDR_register/MDmux
 # ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(81): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/register.v(1).
@@ -165,3 +170,4 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 500 ns
+# WARNING: No extended dataflow license exists

@@ -7,6 +7,7 @@ entity MDR is
         read            : in     vl_logic;
         MDRin           : in     vl_logic;
         Mdatain         : in     vl_logic_vector(31 downto 0);
+        BusMuxOut       : in     vl_logic_vector(31 downto 0);
         memOut          : out    vl_logic_vector(31 downto 0)
     );
 end MDR;
