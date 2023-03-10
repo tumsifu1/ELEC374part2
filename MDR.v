@@ -7,6 +7,6 @@ module MDR(input clear,
 	
 	wire [31:0] D;
     mux2_1 MDmux(BusMuxOut, MdataIn, read, D);
-    Register MDRegister(clr, clock, D, MDRin, memOut);
+    Register MDRegister(clear, clock, D, MDRin, memOut);
 
 endmodule 
