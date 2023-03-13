@@ -2,6 +2,7 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+<<<<<<< HEAD
 Type  : Slow 1200mV 85C Model Setup 'div_32bit:division|count[10]'
 Slack : -8.389
 TNS   : -424.938
@@ -74,4 +75,6 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_32bit:division|count[10]'
 Slack : 0.361
 TNS   : 0.000
 
+=======
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
 ------------------------------------------------------------

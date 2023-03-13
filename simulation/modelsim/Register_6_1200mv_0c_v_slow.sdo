@@ -28,8 +28,13 @@
 
 (DELAYFILE
   (SDFVERSION "2.1")
+<<<<<<< HEAD
   (DESIGN "ALU")
   (DATE "03/10/2023 11:45:36")
+=======
+  (DESIGN "mux2_1")
+  (DATE "03/10/2023 12:41:57")
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -37,6 +42,7 @@
   (TIMESCALE 1 ns)
 
   (CELL
+<<<<<<< HEAD
     (CELLTYPE "cycloneiii_lcell_comb")
     (INSTANCE multiply\|Add1\~2)
     (DELAY
@@ -53619,10 +53625,19 @@
         (IOPATH datab combout (0.325:0.325:0.325) (0.332:0.332:0.332))
         (IOPATH datad combout (0.119:0.119:0.119) (0.106:0.106:0.106))
         (IOPATH cin combout (0.408:0.408:0.408) (0.387:0.387:0.387))
+=======
+    (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE out\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (0.293:0.293:0.293) (0.287:0.287:0.287))
+        (IOPATH i o (2.226:2.226:2.226) (2.214:2.214:2.214))
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
       )
     )
   )
   (CELL
+<<<<<<< HEAD
     (CELLTYPE "cycloneiii_lcell_comb")
     (INSTANCE multiply\|z\[61\]\~62)
     (DELAY
@@ -53636,10 +53651,18 @@
         (IOPATH datad combout (0.119:0.119:0.119) (0.106:0.106:0.106))
         (IOPATH cin combout (0.408:0.408:0.408) (0.387:0.387:0.387))
         (IOPATH cin cout (0.05:0.05:0.05) (0.05:0.05:0.05))
+=======
+    (CELLTYPE "cycloneiii_io_ibuf")
+    (INSTANCE select\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.725:0.725:0.725) (0.886:0.886:0.886))
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
       )
     )
   )
   (CELL
+<<<<<<< HEAD
     (CELLTYPE "cycloneiii_lcell_comb")
     (INSTANCE Mux61\~3)
     (DELAY
@@ -53652,11 +53675,19 @@
         (IOPATH datab combout (0.306:0.306:0.306) (0.324:0.324:0.324))
         (IOPATH datac combout (0.218:0.218:0.218) (0.216:0.216:0.216))
         (IOPATH datad combout (0.119:0.119:0.119) (0.106:0.106:0.106))
+=======
+    (CELLTYPE "cycloneiii_io_ibuf")
+    (INSTANCE input0\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.725:0.725:0.725) (0.886:0.886:0.886))
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneiii_lcell_comb")
+<<<<<<< HEAD
     (INSTANCE Mux61\~4)
     (DELAY
       (ABSOLUTE
@@ -54030,6 +54061,14 @@
         (PORT datad (1.175:1.175:1.175) (1.185:1.185:1.185))
         (IOPATH dataa combout (0.318:0.318:0.318) (0.323:0.323:0.323))
         (IOPATH datac combout (0.218:0.218:0.218) (0.216:0.216:0.216))
+=======
+    (INSTANCE b)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2.166:2.166:2.166) (2.361:2.361:2.361))
+        (PORT datad (2.115:2.115:2.115) (2.311:2.311:2.311))
+        (IOPATH dataa combout (0.273:0.273:0.273) (0.269:0.269:0.269))
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
         (IOPATH datad combout (0.119:0.119:0.119) (0.106:0.106:0.106))
       )
     )

@@ -1,15 +1,18 @@
-module MDR(input clear,
-    input clock, 
-    input read,
-    input MDRin,  
-    input [31:0] Mdatain, 
-    output [31:0] memOut);
-	
-	 wire [31:0] BusMuxOut;
-    wire [31:0] regOut;
-    mux2_1 MDmux(BusMuxOut, BusMuxIn, Mdatain, read);
-    Register MDRegister(clr, clock, BusMuxOut, MDRin, regOut);
+module MDR(
+input clk, clr, MDR_read, MDR_enable,
+input [31:0] BusMuxOut, MDataIn,  //BusMuxOut is from bus, MDataIn is from memory chip
+output wire [31:0] Q
+);
 
-    assign memOut = regOut;
-    
-endmodule 
+wire [31:0] S; //connects the 2_to_1 multiplexer to the register
+
+mux2_1 my_MDR_Multiplexer(
+	.inputOne(BusMuxOut),
+	.inputTwo(MDataIn),
+	.signal(MDR_read),
+	.out(S)
+);
+
+Register MDRregister(clr,clk,S,MDR_enable,Q);
+
+endmodule

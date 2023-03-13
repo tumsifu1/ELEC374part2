@@ -1,5 +1,33 @@
 Flow report for Register
-Fri Mar 10 09:10:59 2023
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Fri Mar 10 17:48:34 2023
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+Fri Mar 10 17:13:00 2023
+=======
+<<<<<<< HEAD
+Fri Mar 10 16:27:31 2023
+=======
+<<<<<<< HEAD
+Fri Mar 10 16:07:43 2023
+=======
+Fri Mar 10 16:20:01 2023
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +68,66 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 10 09:10:59 2023           ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; Flow Status                        ; Successful - Fri Mar 10 17:48:34 2023           ;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+; Flow Status                        ; Successful - Fri Mar 10 17:13:00 2023           ;
+=======
+<<<<<<< HEAD
+; Flow Status                        ; Successful - Fri Mar 10 16:27:31 2023           ;
+=======
+<<<<<<< HEAD
+; Flow Status                        ; Successful - Fri Mar 10 16:07:43 2023           ;
+=======
+; Flow Status                        ; Successful - Fri Mar 10 16:20:01 2023           ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
-; Top-level Entity Name              ; ALU                                             ;
+; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16F484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,483                                           ;
-;     Total combinational functions  ; 3,483                                           ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 134                                             ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; Total logic elements               ; 32                                              ;
+;     Total combinational functions  ; 32                                              ;
+;     Dedicated logic registers      ; 32                                              ;
+; Total registers                    ; 32                                              ;
+; Total pins                         ; 100                                             ;
+=======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+; Total logic elements               ; 4,675                                           ;
+;     Total combinational functions  ; 4,067                                           ;
+;     Dedicated logic registers      ; 704                                             ;
+; Total registers                    ; 704                                             ;
+; Total pins                         ; 830                                             ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +140,35 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/10/2023 09:10:50 ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; Start date & time ; 03/10/2023 17:48:33 ;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+; Start date & time ; 03/10/2023 17:12:46 ;
+=======
+<<<<<<< HEAD
+; Start date & time ; 03/10/2023 16:27:30 ;
+=======
+<<<<<<< HEAD
+; Start date & time ; 03/10/2023 16:07:28 ;
+=======
+; Start date & time ; 03/10/2023 16:20:00 ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Register            ;
 +-------------------+---------------------+
@@ -75,13 +179,61 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 101737509774602.167845745008864       ; --            ; --          ; --             ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID                ; 101737509774602.167848851329712       ; --            ; --          ; --             ;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+; COMPILER_SIGNATURE_ID                ; 13718485020974.167848636613816        ; --            ; --          ; --             ;
+=======
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID                ; 101737509774602.167848365027068       ; --            ; --          ; --             ;
+=======
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID                ; 13718485020974.167848244820908        ; --            ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID                ; 101737509774602.167848319916936       ; --            ; --          ; --             ;
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; and_TB         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; add_TB         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mul_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; div_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; DIV_ALUtb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; multiplexerTB  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; shr_TB         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; MDRTB          ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; registerTB     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mux2to1TB      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; MDRTB                                 ; --            ; --          ; eda_simulation ;
+=======
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; RegisterTB     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; RegisterTB     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; RegisterTB     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
@@ -90,32 +242,100 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; mul_tb.v                              ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_FILE                  ; div_tb.v                              ; --            ; --          ; div_tb         ;
 ; EDA_TEST_BENCH_FILE                  ; DIV_ALUtb.v                           ; --            ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_FILE                  ; multiplexerTB.v                       ; --            ; --          ; multiplexerTB  ;
+; EDA_TEST_BENCH_FILE                  ; shr_TB.v                              ; --            ; --          ; shr_TB         ;
+; EDA_TEST_BENCH_FILE                  ; MDRTB.v                               ; --            ; --          ; MDRTB          ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; registerTB     ;
+; EDA_TEST_BENCH_FILE                  ; mux2to1TB.v                           ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_FILE                  ; registerTB.v                          ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_TEST_BENCH_MODULE_NAME           ; and_TB                                ; --            ; --          ; and_TB         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; add_TB                                ; --            ; --          ; add_TB         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mul_tb                                ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; div_tb                                ; --            ; --          ; div_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DIV_ALUtb                             ; --            ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mux32_1_tb                            ; --            ; --          ; multiplexerTB  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shr_TB                                ; --            ; --          ; shr_TB         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; MDRTB                                 ; --            ; --          ; MDRTB          ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; EDA_TEST_BENCH_MODULE_NAME           ; registerTB                            ; --            ; --          ; registerTB     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mux2to1TB                             ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_MODULE_NAME           ; RegisterTB                            ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_MODULE_NAME           ; RegisterTB                            ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_MODULE_NAME           ; RegisterTB                            ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_TEST_BENCH_NAME                  ; and_TB                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; add_TB                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; mul_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; div_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; DIV_ALUtb                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; multiplexerTB                         ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; shr_TB                                ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; MDRTB                                 ; --            ; --          ; eda_simulation ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; EDA_TEST_BENCH_NAME                  ; registerTB                            ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; mux2to1TB                             ; --            ; --          ; eda_simulation ;
+=======
+; EDA_TEST_BENCH_NAME                  ; RegisterTB                            ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_NAME                  ; RegisterTB                            ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_NAME                  ; RegisterTB                            ; --            ; --          ; eda_simulation ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; and_TB         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 20 ns                                 ; --            ; --          ; add_TB         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 50 ns                                 ; --            ; --          ; mul_tb         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; div_tb         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                ; --            ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 150 ns                                ; --            ; --          ; multiplexerTB  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 40 s                                  ; --            ; --          ; shr_TB         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; MDRTB          ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; registerTB     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --            ; --          ; mux2to1TB      ;
+=======
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 400 ns                                ; --            ; --          ; RegisterTB     ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 ; EDA_TIME_SCALE                       ; 1 ns                                  ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                              ; --            ; ALU         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; ALU         ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; ALU         ; Top            ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; datapath    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; datapath    ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; datapath    ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; ALU                                   ; Register      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; datapath                              ; Register      ; --          ; --             ;
 ; VERILOG_SHOW_LMF_MAPPING_MESSAGES    ; Off                                   ; --            ; --          ; --             ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
@@ -125,8 +345,23 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4583 MB             ; 00:00:10                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:10                           ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4572 MB             ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+=======
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4600 MB             ; 00:00:14                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4600 MB             ; 00:00:14                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4600 MB             ; 00:00:14                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -135,7 +370,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-FVO1TV74  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-9GT1TVJO  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

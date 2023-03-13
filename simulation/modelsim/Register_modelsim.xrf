@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+<<<<<<< HEAD
 source_file = 1, C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v
 source_file = 1, C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v
 source_file = 1, C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v
@@ -3635,3 +3636,13 @@ instance = comp, \Mux63~2 , Mux63~2, ALU, 1
 instance = comp, \Mux63~3 , Mux63~3, ALU, 1
 instance = comp, \C_reg[63]$latch , C_reg[63]$latch, ALU, 1
 instance = comp, \clk~input , clk~input, ALU, 1
+=======
+source_file = 1, C:/Users/Admin/Documents/ELEC374part2/multiplexerTB.v
+source_file = 1, C:/Users/Admin/Documents/ELEC374part2/multiplexer.v
+source_file = 1, C:/Users/Admin/Documents/ELEC374part2/db/Register.cbx.xml
+design_name = mux2_1
+instance = comp, \out~output , out~output, mux2_1, 1
+instance = comp, \select~input , select~input, mux2_1, 1
+instance = comp, \input0~input , input0~input, mux2_1, 1
+instance = comp, \input1~input , input1~input, mux2_1, 1
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f

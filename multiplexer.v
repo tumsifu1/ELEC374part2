@@ -1,13 +1,21 @@
-module mux2_1(out, input1, input0, select); //2-1 multiplexer 
-    input input1, input0, select;
-    output out;
+module mux2_1(
+input wire [31:0] inputOne,inputTwo, 
+input  signal, 
+output reg [31:0] out
+);
 
-    wire s_bar, a ,b; //signals to connect to other blocks
-    and(b, input0, select);
-    and(a, input0, s_bar);
-    or(out, a, b);
+always@(*)begin
+			if (signal) begin
+				out[31:0] <= inputTwo[31:0];
+				
+			end
+			else begin
+				out[31:0] <= inputOne[31:0];
+			end
+			
+	end
+	
 endmodule
-
 module mux8_1(input [7:0] i, input [2:0] s, output o);
 
     wire o_m1, o_m2, o_m3, o_m4, o_m5, o_m6; //outputs for each of the 2-1 muxes
@@ -38,8 +46,7 @@ endmodule
 
 module mux32_1(input [31:0] i, input [4:0] s, output o);
 
-    wire o_m1, o_m2
-    ; //outputs for each of muxes
+    wire o_m1, o_m2; //outputs for each of muxes
     //level 1
     mux8_1 m1(o_m1, i[15:0], s[3:0]);
     mux8_1 m2(o_m2, i[31:16], s[3:0]);

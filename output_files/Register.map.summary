@@ -1,13 +1,61 @@
-Analysis & Synthesis Status : Successful - Fri Mar 10 09:10:59 2023
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Fri Mar 10 17:48:34 2023
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+Analysis & Synthesis Status : Successful - Fri Mar 10 17:13:00 2023
+=======
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Fri Mar 10 16:27:31 2023
+=======
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Fri Mar 10 16:07:43 2023
+=======
+Analysis & Synthesis Status : Successful - Fri Mar 10 16:20:01 2023
+>>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
+>>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
+>>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Register
-Top-level Entity Name : ALU
+Top-level Entity Name : datapath
 Family : Cyclone III
-Total logic elements : 3,483
-    Total combinational functions : 3,483
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 134
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Total logic elements : 32
+    Total combinational functions : 32
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 100
+=======
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+Total logic elements : 4,675
+    Total combinational functions : 4,067
+    Dedicated logic registers : 704
+Total registers : 704
+Total pins : 830
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+=======
+>>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -16,7 +16,11 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
+<<<<<<< HEAD
 // DATE "03/10/2023 11:45:35"
+=======
+// DATE "03/10/2023 12:41:57"
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -28,6 +32,7 @@
 
 `timescale 1 ns/ 1 ps
 
+<<<<<<< HEAD
 module ALU (
 	clk,
 	A_reg,
@@ -175,6 +180,23 @@ output 	[63:0] C_reg;
 // opcode[1]	=>  Location: PIN_Y4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // opcode[0]	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // opcode[4]	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+=======
+module mux2_1 (
+	out,
+	input1,
+	input0,
+	select);
+output 	out;
+input 	input1;
+input 	input0;
+input 	select;
+
+// Design Ports Information
+// out	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// input1	=>  Location: PIN_J17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// input0	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// select	=>  Location: PIN_L6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
 
 
 wire gnd;
@@ -192,6 +214,7 @@ tri1 devoe;
 initial $sdf_annotate("Register_min_1200mv_0c_v_fast.sdo");
 // synopsys translate_on
 
+<<<<<<< HEAD
 wire \multiply|Add1~2_combout ;
 wire \multiply|Add1~6_combout ;
 wire \multiply|Add2~6_combout ;
@@ -66360,5 +66383,75 @@ assign C_reg[61] = \C_reg[61]~output_o ;
 assign C_reg[62] = \C_reg[62]~output_o ;
 
 assign C_reg[63] = \C_reg[63]~output_o ;
+=======
+wire \input1~input_o ;
+wire \out~output_o ;
+wire \select~input_o ;
+wire \input0~input_o ;
+wire \b~combout ;
+
+
+// Location: IOOBUF_X0_Y13_N16
+cycloneiii_io_obuf \out~output (
+	.i(\b~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out~output .bus_hold = "false";
+defparam \out~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y13_N1
+cycloneiii_io_ibuf \select~input (
+	.i(select),
+	.ibar(gnd),
+	.o(\select~input_o ));
+// synopsys translate_off
+defparam \select~input .bus_hold = "false";
+defparam \select~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y13_N8
+cycloneiii_io_ibuf \input0~input (
+	.i(input0),
+	.ibar(gnd),
+	.o(\input0~input_o ));
+// synopsys translate_off
+defparam \input0~input .bus_hold = "false";
+defparam \input0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y13_N16
+cycloneiii_lcell_comb b(
+// Equation(s):
+// \b~combout  = (\select~input_o  & \input0~input_o )
+
+	.dataa(\select~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\input0~input_o ),
+	.cin(gnd),
+	.combout(\b~combout ),
+	.cout());
+// synopsys translate_off
+defparam b.lut_mask = 16'hAA00;
+defparam b.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y24_N22
+cycloneiii_io_ibuf \input1~input (
+	.i(input1),
+	.ibar(gnd),
+	.o(\input1~input_o ));
+// synopsys translate_off
+defparam \input1~input .bus_hold = "false";
+defparam \input1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign out = \out~output_o ;
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
 
 endmodule

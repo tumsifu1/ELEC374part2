@@ -119,8 +119,8 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load3b:
                     begin
-                        #10 Read <=1; R1in <=1;
-                        #15 Read <=0; R1in <=0;
+                        #10 MDRout <=1; R1in <=1;
+                        #15 MDRout <=0; R1in <=0;
                     end
                 T0: 
                     begin
