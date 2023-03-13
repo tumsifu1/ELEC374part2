@@ -2,4 +2,79 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+<<<<<<< HEAD
+Type  : Slow 1200mV 85C Model Setup 'div_32bit:division|count[10]'
+Slack : -8.389
+TNS   : -424.938
+
+Type  : Slow 1200mV 85C Model Setup 'opcode[0]'
+Slack : -1.355
+TNS   : -64.502
+
+Type  : Slow 1200mV 85C Model Hold 'opcode[0]'
+Slack : -0.379
+TNS   : -10.983
+
+Type  : Slow 1200mV 85C Model Hold 'div_32bit:division|count[10]'
+Slack : -0.053
+TNS   : -0.053
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'opcode[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_32bit:division|count[10]'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'div_32bit:division|count[10]'
+Slack : -7.397
+TNS   : -369.637
+
+Type  : Slow 1200mV 0C Model Setup 'opcode[0]'
+Slack : -1.181
+TNS   : -55.034
+
+Type  : Slow 1200mV 0C Model Hold 'opcode[0]'
+Slack : -0.427
+TNS   : -13.518
+
+Type  : Slow 1200mV 0C Model Hold 'div_32bit:division|count[10]'
+Slack : -0.020
+TNS   : -0.020
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'opcode[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_32bit:division|count[10]'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_32bit:division|count[10]'
+Slack : -4.425
+TNS   : -209.017
+
+Type  : Fast 1200mV 0C Model Setup 'opcode[0]'
+Slack : -0.839
+TNS   : -41.886
+
+Type  : Fast 1200mV 0C Model Hold 'opcode[0]'
+Slack : -0.559
+TNS   : -26.819
+
+Type  : Fast 1200mV 0C Model Hold 'div_32bit:division|count[10]'
+Slack : -0.080
+TNS   : -0.149
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'opcode[0]'
+Slack : -3.000
+TNS   : -3.062
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_32bit:division|count[10]'
+Slack : 0.361
+TNS   : 0.000
+
+=======
+>>>>>>> dd8851dfb0e897f992c29e931a384ed3083f210f
 ------------------------------------------------------------

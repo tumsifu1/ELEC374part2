@@ -1,5 +1,9 @@
 Analysis & Synthesis report for Register
+<<<<<<< HEAD
 Sat Mar 11 19:36:08 2023
+=======
+Mon Mar 13 10:57:47 2023
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,7 +57,11 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Sat Mar 11 19:36:08 2023           ;
+=======
+; Analysis & Synthesis Status        ; Successful - Mon Mar 13 10:57:47 2023           ;
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register                                        ;
 ; Top-level Entity Name              ; datapath                                        ;
@@ -166,11 +174,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
+<<<<<<< HEAD
 ; Number detected on machine ; 8      ;
+=======
+; Number detected on machine ; 16     ;
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
+<<<<<<< HEAD
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                           ;
 +----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
@@ -193,6 +206,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v               ;         ;
 ; add_32.v                         ; yes             ; User Verilog HDL File  ; C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/add_32.v            ;         ;
 +----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------+---------+
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+; z_register.v                     ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v        ;         ;
+; sub_32bit.v                      ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v         ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v          ;         ;
+; negate.v                         ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/negate.v            ;         ;
+; multiplexer32to1.v               ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v  ;         ;
+; multiplexer.v                    ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v       ;         ;
+; mul_32bit.v                      ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v         ;         ;
+; MDR.v                            ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v               ;         ;
+; encoder.v                        ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v           ;         ;
+; div_32bit.v                      ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v         ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v          ;         ;
+; bidirectional_bus.v              ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v               ;         ;
+; add_32.v                         ; yes             ; User Verilog HDL File        ; C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v            ;         ;
+; pc.v                             ; yes             ; Auto-Found Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/pc.v                ;         ;
+; not_32bit.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v         ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 
 
 +---------------------------------------------+
@@ -521,7 +558,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
+<<<<<<< HEAD
 ; Top            ; 00:00:12     ;
+=======
+; Top            ; 00:00:15     ;
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 +----------------+--------------+
 
 
@@ -531,11 +572,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Sat Mar 11 19:35:54 2023
+=======
+    Info: Processing started: Mon Mar 13 10:57:28 2023
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374 -c Register
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file z_register.v
     Info (12023): Found entity 1: z_register
+<<<<<<< HEAD
 Info (12021): Found 1 design units, including 1 entities, in source file sub_alutb.v
     Info (12023): Found entity 1: SUB_ALUtb
 Info (12021): Found 1 design units, including 1 entities, in source file sub_32tb.v
@@ -580,12 +626,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file not_32b
     Info (12023): Found entity 1: not_32bit
 Info (12021): Found 1 design units, including 1 entities, in source file negate_tb.v
     Info (12023): Found entity 1: negate_tb
+=======
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32bit.v
+    Info (12023): Found entity 1: sub_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: Register
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (12021): Found 1 design units, including 1 entities, in source file negate_alutb.v
     Info (12023): Found entity 1: NEGATE_ALUtb
 Info (12021): Found 1 design units, including 1 entities, in source file negate.v
     Info (12023): Found entity 1: negate_32_bit
 Info (12021): Found 1 design units, including 1 entities, in source file mux2to1tb.v
     Info (12023): Found entity 1: mux2to1TB
+<<<<<<< HEAD
 Info (12021): Found 1 design units, including 1 entities, in source file mul_tb.v
     Info (12023): Found entity 1: multiplexer32to1_tb
 Info (12021): Found 1 design units, including 1 entities, in source file mul_alutb.v
@@ -594,6 +647,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file mul_32b
     Info (12023): Found entity 1: mul_32bit
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexertb.v
     Info (12023): Found entity 1: mux32_1_tb
+=======
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexer32to1.v
     Info (12023): Found entity 1: multiplexer32to1
 Info (12021): Found 4 design units, including 4 entities, in source file multiplexer.v
@@ -601,6 +656,15 @@ Info (12021): Found 4 design units, including 4 entities, in source file multipl
     Info (12023): Found entity 2: mux8_1
     Info (12023): Found entity 3: mux16_1
     Info (12023): Found entity 4: mux32_1
+<<<<<<< HEAD
+=======
+Info (12021): Found 1 design units, including 1 entities, in source file mul_tb.v
+    Info (12023): Found entity 1: multiplexer32to1_tb
+Info (12021): Found 1 design units, including 1 entities, in source file mul_alutb.v
+    Info (12023): Found entity 1: MUL_ALUtb
+Info (12021): Found 1 design units, including 1 entities, in source file mul_32bit.v
+    Info (12023): Found entity 1: mul_32bit
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (12021): Found 1 design units, including 1 entities, in source file mdrtb.v
     Info (12023): Found entity 1: MDRTB
 Info (12021): Found 1 design units, including 1 entities, in source file mdr.v
@@ -631,19 +695,29 @@ Info (12021): Found 3 design units, including 3 entities, in source file add_32.
     Info (12023): Found entity 1: add_32_bit
     Info (12023): Found entity 2: CLA16
     Info (12023): Found entity 3: CLA4
+<<<<<<< HEAD
 Warning (10236): Verilog HDL Implicit Net warning at SUB_ALUtb.v(19): created implicit net for "testZRegister"
 Warning (10236): Verilog HDL Implicit Net warning at shr_TB.v(6): created implicit net for "shr_result"
 Warning (10236): Verilog HDL Implicit Net warning at shl_TB.v(6): created implicit net for "shr_result"
 Warning (10236): Verilog HDL Implicit Net warning at NOT_ALUtb.v(19): created implicit net for "testZRegister"
+=======
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Warning (10236): Verilog HDL Implicit Net warning at NEGATE_ALUtb.v(19): created implicit net for "testZRegister"
 Warning (10236): Verilog HDL Implicit Net warning at MUL_ALUtb.v(19): created implicit net for "testZRegister"
 Warning (10236): Verilog HDL Implicit Net warning at DIV_ALUtb.v(19): created implicit net for "testZRegister"
 Warning (10236): Verilog HDL Implicit Net warning at datapath.v(81): created implicit net for "busInZLo"
 Warning (10236): Verilog HDL Implicit Net warning at ALU.v(37): created implicit net for "sub_out"
 Warning (10236): Verilog HDL Implicit Net warning at ADD_ALUtb.v(19): created implicit net for "testZRegister"
+<<<<<<< HEAD
 Critical Warning (10846): Verilog HDL Instantiation warning at not_tb.v(5): instance has no name
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
 Info (12128): Elaborating entity "Register" for hierarchy "Register:r0"
+=======
+Info (12127): Elaborating entity "datapath" for the top level hierarchy
+Info (12128): Elaborating entity "Register" for hierarchy "Register:r0"
+Warning (12125): Using design file pc.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PC
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (12128): Elaborating entity "PC" for hierarchy "PC:PC"
 Info (12128): Elaborating entity "MDR" for hierarchy "MDR:MDR_register"
 Info (12128): Elaborating entity "mux2_1" for hierarchy "MDR:MDR_register|mux2_1:my_MDR_Multiplexer"
@@ -727,6 +801,11 @@ Warning (10230): Verilog HDL assignment warning at mul_32bit.v(34): truncated va
 Info (12128): Elaborating entity "sub_32bit" for hierarchy "ALU:alu_instance|sub_32bit:subtraction"
 Warning (10034): Output port "sum" at sub_32bit.v(1) has no driver
 Info (12128): Elaborating entity "negate_32_bit" for hierarchy "ALU:alu_instance|sub_32bit:subtraction|negate_32_bit:negative"
+<<<<<<< HEAD
+=======
+Warning (12125): Using design file not_32bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: not_32bit
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (12128): Elaborating entity "not_32bit" for hierarchy "ALU:alu_instance|sub_32bit:subtraction|negate_32_bit:negative|not_32bit:not_op"
 Info (12128): Elaborating entity "div_32bit" for hierarchy "ALU:alu_instance|div_32bit:division"
 Warning (10855): Verilog HDL warning at div_32bit.v(10): initial value for variable Q_reg should be constant
@@ -997,7 +1076,11 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ZLO[30]" is stuck at GND
     Warning (13410): Pin "ZLO[31]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
+<<<<<<< HEAD
 Info (144001): Generated suppressed messages file C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.map.smsg
+=======
+Info (144001): Generated suppressed messages file C:/code/374pt2/ELEC374part2/ELEC374part2/Register.map.smsg
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 7 input pin(s) that do not drive logic
@@ -1012,16 +1095,28 @@ Info (21057): Implemented 5538 device resources after synthesis - the final reso
     Info (21058): Implemented 94 input pins
     Info (21059): Implemented 736 output pins
     Info (21061): Implemented 4708 logic cells
+<<<<<<< HEAD
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 196 warnings
     Info: Peak virtual memory: 4659 megabytes
     Info: Processing ended: Sat Mar 11 19:36:08 2023
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:14
+=======
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 193 warnings
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Mon Mar 13 10:57:47 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
+<<<<<<< HEAD
 The suppressed messages can be found in C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.map.smsg.
+=======
+The suppressed messages can be found in C:/code/374pt2/ELEC374part2/ELEC374part2/Register.map.smsg.
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 
 

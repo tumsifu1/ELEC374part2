@@ -62,7 +62,8 @@ always @(posedge clk)//finite state machine
 						IncPC <= 0;
 						Read <= 0;
 						ALUopCode <= 0;
-							
+						
+						R0in <=0;
 						R1in <= 0;
 						R2in <= 0;
 						R3in <=0;
@@ -90,7 +91,11 @@ always @(posedge clk)//finite state machine
 
                 Reg_load1a:
                     begin
+
+                        MdataIn<=32'h00000002;
+
                         MdataIn<=32'h00000F0F;
+
                         Read = 0;
                         MDRin= 0;
                         #10 Read <=1; MDRin <= 1;
@@ -105,23 +110,29 @@ always @(posedge clk)//finite state machine
                     begin
                         MdataIn<=32'h000FF0F;
                         #10 Read <= 1; MDRin <=1;
-                        #15 Read <= 0; MDRin <=0;
+                        #25 Read <= 0; MDRin <=0;
                     end
                 Reg_load2b:
                     begin
                         #10 MDRout <= 1; R7in <= 1;
-                        #15 MDRout <= 0; R7in <= 0;
+                        #25 MDRout <= 0; R7in <= 0;
                     end
                 Reg_load3a:
                     begin
+
+                        MdataIn <= 32'h00000012;
+                        #10 Read <=1; MDRin <=1;
+                        #25 Read <=0; MDRin <=0;
+
                         MdataIn <= 32'h00000062;
                         #10 Read <=1; MDRin <=1; 
                         #15 Read <=0; MDRin <=0;
+
                     end
                 Reg_load3b:
                     begin
                         #10 Read <=1; R1in <=1;
-                        #15 Read <=0; R1in <=0;
+                        #25 Read <=0; R1in <=0;
                     end
                 T0: begin end
                 T1: begin end

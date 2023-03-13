@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 Warning (10268): Verilog HDL information at SUB_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at OR_TBdatapath.v(52): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at NOT_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
+=======
+>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 Warning (10268): Verilog HDL information at NEGATE_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at MUL_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at DIV_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
