@@ -1,9 +1,9 @@
 `timescale 1ns/ 10ps
 
-module and_TB;
-    reg [31:0] Ra;
-    reg [31:0] Rb;
-    output [31:0] Rz;
+module and_TB(
+    reg [31:0] Ra,
+    reg [31:0] Rb,
+    output [31:0] Rz);
 
     and_32bit and_instance(Ra,Rb,Rz);
 

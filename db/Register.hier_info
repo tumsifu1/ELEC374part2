@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-|MDR
-clk => clk.IN1
-clr => clr.IN1
-MDR_read => MDR_read.IN1
-MDR_enable => MDR_enable.IN1
-=======
-=======
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
-=======
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 |datapath
 R0in => R0in.IN1
 R1in => R1in.IN1
@@ -3974,43 +3961,10 @@ outputQ[31] <= outputQ[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |datapath|MDR:MDR_register
-clear => clear.IN1
-clock => clock.IN1
-read => read.IN1
-MDRin => MDRin.IN1
-Mdatain[0] => ~NO_FANOUT~
-Mdatain[1] => ~NO_FANOUT~
-Mdatain[2] => ~NO_FANOUT~
-Mdatain[3] => ~NO_FANOUT~
-Mdatain[4] => ~NO_FANOUT~
-Mdatain[5] => ~NO_FANOUT~
-Mdatain[6] => ~NO_FANOUT~
-Mdatain[7] => ~NO_FANOUT~
-Mdatain[8] => ~NO_FANOUT~
-Mdatain[9] => ~NO_FANOUT~
-Mdatain[10] => ~NO_FANOUT~
-Mdatain[11] => ~NO_FANOUT~
-Mdatain[12] => ~NO_FANOUT~
-Mdatain[13] => ~NO_FANOUT~
-Mdatain[14] => ~NO_FANOUT~
-Mdatain[15] => ~NO_FANOUT~
-Mdatain[16] => ~NO_FANOUT~
-Mdatain[17] => ~NO_FANOUT~
-Mdatain[18] => ~NO_FANOUT~
-Mdatain[19] => ~NO_FANOUT~
-Mdatain[20] => ~NO_FANOUT~
-Mdatain[21] => ~NO_FANOUT~
-Mdatain[22] => ~NO_FANOUT~
-Mdatain[23] => ~NO_FANOUT~
-Mdatain[24] => ~NO_FANOUT~
-Mdatain[25] => ~NO_FANOUT~
-Mdatain[26] => ~NO_FANOUT~
-Mdatain[27] => ~NO_FANOUT~
-Mdatain[28] => ~NO_FANOUT~
-Mdatain[29] => ~NO_FANOUT~
-Mdatain[30] => ~NO_FANOUT~
-Mdatain[31] => ~NO_FANOUT~
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+clk => clk.IN1
+clr => clr.IN1
+MDR_read => MDR_read.IN1
+MDR_enable => MDR_enable.IN1
 BusMuxOut[0] => BusMuxOut[0].IN1
 BusMuxOut[1] => BusMuxOut[1].IN1
 BusMuxOut[2] => BusMuxOut[2].IN1
@@ -4109,19 +4063,7 @@ Q[30] <= Register:MDRregister.port4
 Q[31] <= Register:MDRregister.port4
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-|MDR|mux2_1:my_MDR_Multiplexer
-=======
-|datapath|MDR:MDR_register|mux2_1:MDmux
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
-=======
-|datapath|MDR:MDR_register|mux2_1:MDmux
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
-=======
-|datapath|MDR:MDR_register|mux2_1:MDmux
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+|datapath|MDR:MDR_register|mux2_1:my_MDR_Multiplexer
 inputOne[0] => out.DATAA
 inputOne[1] => out.DATAA
 inputOne[2] => out.DATAA
@@ -4252,19 +4194,7 @@ out[30] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-|MDR|Register:MDRregister
-=======
-|datapath|MDR:MDR_register|Register:MDRegister
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
-=======
-|datapath|MDR:MDR_register|Register:MDRegister
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
-=======
-|datapath|MDR:MDR_register|Register:MDRegister
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+|datapath|MDR:MDR_register|Register:MDRregister
 clr => outputQ[0]~reg0.ACLR
 clr => outputQ[1]~reg0.ACLR
 clr => outputQ[2]~reg0.ACLR
