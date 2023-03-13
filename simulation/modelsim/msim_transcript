@@ -1,5 +1,6 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do Register_run_msim_rtl_verilog.do 
+# ERROR: No extended dataflow license exists
+# do ELEC374Project_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,198 +11,37 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-<<<<<<< HEAD
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/z_register.v}
-=======
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v}
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module z_register
-# 
-# Top level modules:
-# 	z_register
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module sub_32bit
-# 
-# Top level modules:
-# 	sub_32bit
-<<<<<<< HEAD
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Register
-# 
-# Top level modules:
-# 	Register
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/PC.v}
-=======
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v}
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Register
-# 
-# Top level modules:
-# 	Register
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/negate.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module negate_32_bit
-# 
-# Top level modules:
-# 	negate_32_bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module multiplexer32to1
-# 
-# Top level modules:
-# 	multiplexer32to1
-<<<<<<< HEAD
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v}
-=======
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v}
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mux2_1
-# -- Compiling module mux8_1
-# -- Compiling module mux16_1
-# -- Compiling module mux32_1
-# 
-# Top level modules:
-# 	mux16_1
-# 	mux32_1
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mul_32bit
 # 
 # Top level modules:
 # 	mul_32bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v}
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module MDR
+# -- Compiling module mul_32bit_tb
 # 
 # Top level modules:
-# 	MDR
-<<<<<<< HEAD
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/encoder.v}
-=======
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v}
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module encoder_32to5
+# 	mul_32bit_tb
 # 
-# Top level modules:
-# 	encoder_32to5
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module div_32bit
-# 
-# Top level modules:
-# 	div_32bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module bidirectional_bus
-# 
-# Top level modules:
-# 	bidirectional_bus
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module add_32_bit
-# -- Compiling module CLA16
-# -- Compiling module CLA4
-# 
-# Top level modules:
-# 	add_32_bit
-<<<<<<< HEAD
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/NOT_ALUtb.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NOT_ALUtb
-# 
-# Top level modules:
-# 	NOT_ALUtb
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  NOT_ALUtb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps NOT_ALUtb 
-# Loading work.NOT_ALUtb
-# Loading work.datapath
-# Loading work.Register
-# Loading work.PC
-# Loading work.MDR
-# Loading work.mux2_1
-# Loading work.z_register
-# Loading work.ALU
-# Loading work.add_32_bit
-# Loading work.CLA16
-# Loading work.CLA4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  mul_32bit_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mul_32bit_tb 
+# Loading work.mul_32bit_tb
 # Loading work.mul_32bit
-# Loading work.sub_32bit
-# Loading work.negate_32_bit
-# Loading work.not_32bit
-# Loading work.div_32bit
-# Loading work.bidirectional_bus
-# Loading work.encoder_32to5
-# Loading work.multiplexer32to1
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/NOT_ALUtb.v(20): [PCDPC] - Port size (64 or 64) does not match connection size (1) for port 'Z_register'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(27).
-# 
-#         Region: /NOT_ALUtb/testDP
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(81): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v(3).
-# 
-#         Region: /NOT_ALUtb/testDP/zlo
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v(37): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(1).
-# 
-#         Region: /NOT_ALUtb/testDP/alu_instance/subtraction
-# ** Warning: (vsim-3017) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Too few port connections. Expected 5, found 4.
-# 
-#         Region: /NOT_ALUtb/testDP/alu_instance/subtraction/negative_sum
-# ** Warning: (vsim-3722) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Missing connection for port 'sum'.
-# 
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 500 ns
-run 1000 ns
-=======
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/pc.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module PC
-# 
-# Top level modules:
-# 	PC
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module not_32bit
-# 
-# Top level modules:
-# 	not_32bit
-# 
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/NEGATE_ALUtb.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module NEGATE_ALUtb
-# 
-# Top level modules:
-# 	NEGATE_ALUtb
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  NEGATE_ALUtb.v
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps NEGATE_ALUtb.v 
-# ** Error: (vsim-19) Failed to access library 'NEGATE_ALUtb' at "NEGATE_ALUtb".
-# 
-# No such file or directory. (errno = ENOENT)
-# Error loading design
-# Error: Error loading design 
-#        Pausing macro execution 
-# MACRO ./Register_run_msim_rtl_verilog.do PAUSED at line 27
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
+# run 100 sec
+# a =          16, b =          10, z =                    x
+# a =          16, b =          10, z =                  160
+# ** Note: $finish    : C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v(21)
+#    Time: 10 ps  Iteration: 0  Instance: /mul_32bit_tb
+# 1
+# Break in Module mul_32bit_tb at C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v line 21
+# Simulation Breakpoint: 1
+# Break in Module mul_32bit_tb at C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v line 21
+# MACRO ./ELEC374Project_run_msim_rtl_verilog.do PAUSED at line 17

@@ -3,6 +3,7 @@ module mul_32bit(input signed [31:0] a, b, output[32*2-1:0] z);
 	reg [32:0] pp[(32 / 2) - 1:0];
 	reg[32*2-1:0] spp[(32 / 2) - 1:0];
 	
+
 	reg [32*2-1:0] product;
 	
 	integer j,i;
