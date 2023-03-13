@@ -10,15 +10,6 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-<<<<<<< HEAD
-# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/Register.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Register
-# 
-# Top level modules:
-# 	Register
-# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/multiplexer.v}
-=======
 # vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/z_register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module z_register
@@ -31,6 +22,12 @@
 # 
 # Top level modules:
 # 	sub_32bit
+# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Register
+# 
+# Top level modules:
+# 	Register
 # vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/PC.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PC
@@ -62,7 +59,6 @@
 # Top level modules:
 # 	multiplexer32to1
 # vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v}
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux2_1
 # -- Compiling module mux8_1
@@ -78,8 +74,6 @@
 # 
 # Top level modules:
 # 	MDR
-<<<<<<< HEAD
-=======
 # vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/encoder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module encoder_32to5
@@ -118,30 +112,22 @@
 # 
 # Top level modules:
 # 	add_32_bit
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v}
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/NOT_ALUtb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Register
+# -- Compiling module NOT_ALUtb
 # 
 # Top level modules:
-# 	Register
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+# 	NOT_ALUtb
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2 {C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module DIV_ALUtb
-# 
-# Top level modules:
-# 	DIV_ALUtb
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  DIV_ALUtb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps DIV_ALUtb 
-# Loading work.DIV_ALUtb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  NOT_ALUtb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps NOT_ALUtb 
+# Loading work.NOT_ALUtb
 # Loading work.datapath
 # Loading work.Register
 # Loading work.PC
 # Loading work.MDR
 # Loading work.mux2_1
-<<<<<<< HEAD
 # Loading work.z_register
 # Loading work.ALU
 # Loading work.add_32_bit
@@ -155,48 +141,25 @@
 # Loading work.bidirectional_bus
 # Loading work.encoder_32to5
 # Loading work.multiplexer32to1
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/DIV_ALUtb.v(20): [PCDPC] - Port size (64 or 64) does not match connection size (1) for port 'Z_register'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(27).
-=======
-# Loading work.Register
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDRTB.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MDRin'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/MDR.v(4).
->>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/NOT_ALUtb.v(20): [PCDPC] - Port size (64 or 64) does not match connection size (1) for port 'Z_register'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(27).
 # 
-#         Region: /DIV_ALUtb/testDP
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/multiplexer.v(2).
+#         Region: /NOT_ALUtb/testDP
+# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(81): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v(3).
 # 
-#         Region: /DIV_ALUtb/testDP/MDR_register/MDmux
-# ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/datapath.v(81): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/Register.v(1).
-# 
-#         Region: /DIV_ALUtb/testDP/zlo
+#         Region: /NOT_ALUtb/testDP/zlo
 # ** Warning: (vsim-3015) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/ALU.v(37): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'sum'. The port definition is at: C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(1).
 # 
-#         Region: /DIV_ALUtb/testDP/alu_instance/subtraction
+#         Region: /NOT_ALUtb/testDP/alu_instance/subtraction
 # ** Warning: (vsim-3017) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Too few port connections. Expected 5, found 4.
 # 
-#         Region: /DIV_ALUtb/testDP/alu_instance/subtraction/negative_sum
+#         Region: /NOT_ALUtb/testDP/alu_instance/subtraction/negative_sum
 # ** Warning: (vsim-3722) C:/Users/19058/Documents/Code/ELEC374Part2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Missing connection for port 'sum'.
-<<<<<<< HEAD
-=======
-=======
-#         Region: /MDRTB/dut
->>>>>>> 3baf3cba4b9d2f181269b4b51ef30ffd28973f06
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/MDR.v(9): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'inputTwo'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/multiplexer.v(3).
->>>>>>> d993f119af51d5875823bdab516b1f1ff7b5f2ab
->>>>>>> e1d824393e5ff9fd78b46eb6ad1269610a39ec0c
 # 
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-<<<<<<< HEAD
-# run 100 ns
-=======
 # run 500 ns
->>>>>>> 90c4481dba0fa4a91b8519f555f80354ee5343bf
+run 1000 ns
