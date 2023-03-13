@@ -33,5 +33,4 @@ module multiplexer32to1_tb;
     // Output
     wire [31:0] BusMuxOut;
 
-    inoto
 endmodule

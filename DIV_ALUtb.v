@@ -90,7 +90,7 @@ always @(posedge clk)//finite state machine
 
                 Reg_load1a:
                     begin
-                        MdataIn<=32'h0000000F;
+                        MdataIn<=32'h00000F0F;
                         Read = 0;
                         MDRin= 0;
                         #10 Read <=1; MDRin <= 1;
@@ -103,7 +103,7 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load2a:
                     begin
-                        MdataIn<=32'h00000004;
+                        MdataIn<=32'h000FF0F;
                         #10 Read <= 1; MDRin <=1;
                         #15 Read <= 0; MDRin <=0;
                     end
@@ -114,8 +114,8 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load3a:
                     begin
-                        MdataIn <= 32'h00000012;
-                        #10 Read <=1; MDRin <=1;
+                        MdataIn <= 32'h00000062;
+                        #10 Read <=1; MDRin <=1; 
                         #15 Read <=0; MDRin <=0;
                     end
                 Reg_load3b:
