@@ -2,6 +2,7 @@ m255
 K3
 13
 cModel Technology
+<<<<<<< HEAD
 Z0 dC:\code\374pt2\ELEC374part2\ELEC374part2\simulation\modelsim
 vadd_32_bit
 IYg^@HV8`KR^o_X2MK:Y`L0
@@ -187,20 +188,23 @@ n@m@d@r
 !s107 C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v|
 !s101 -O0
+=======
+Z0 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 vmul_32bit
-IlFL:bgA4LNzL_>POQ26CW2
+II2f`G:=`a[daG2JgNH<g32
 VD:O7[`lbBF]of9VBCSSJF1
-R1
-R2
-8C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v
-FC:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v
+Z1 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
+w1678736504
+8C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v
+FC:/Users/Admin/Documents/ELEC374part2/mul_32bit.v
 L0 1
-R5
+Z2 OV;L;10.1d;51
 r1
 31
-R9
-R10
+Z3 o-vlog01compat -work work -O0
 !i10b 1
+<<<<<<< HEAD
 !s100 I>aVOBje06]^71DRVbS040
 !s85 0
 !s108 1678749092.809000
@@ -449,4 +453,32 @@ R10
 !s108 1678749092.426000
 !s107 C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v|
+=======
+!s100 ]QRL=4V3NmZQ3E9bldKJM3
+!s85 0
+!s108 1678736972.249000
+!s107 C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v|
 !s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 -O0
+vmul_32bit_tb
+!i10b 1
+!s100 S9Z:B<I5;Q=66@PRh]]MK0
+IKE1VOM<LbMUMba?8=jM]E1
+VgHlM6CL1dfb]dmdNImmQk3
+R1
+w1678735881
+8C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v
+FC:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1678736972.315000
+!s107 C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v|
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
+!s101 -O0
+R3
+R4

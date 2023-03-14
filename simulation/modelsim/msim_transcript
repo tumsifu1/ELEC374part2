@@ -1,5 +1,6 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do Register_run_msim_rtl_verilog.do 
+# ERROR: No extended dataflow license exists
+# do ELEC374Project_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,6 +11,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module z_register
@@ -47,11 +49,15 @@
 # Top level modules:
 # 	negate_32_bit
 # vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v}
+=======
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v}
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mul_32bit
 # 
 # Top level modules:
 # 	mul_32bit
+<<<<<<< HEAD
 # vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module multiplexer32to1
@@ -75,10 +81,15 @@
 # Top level modules:
 # 	MDR
 # vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v}
+=======
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v}
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module encoder_32to5
+# -- Compiling module mul_32bit_tb
 # 
 # Top level modules:
+<<<<<<< HEAD
 # 	encoder_32to5
 # vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -152,10 +163,31 @@
 #         Region: /NEGATE_ALUtb/testDP/alu_instance/subtraction/negative_sum
 # ** Warning: (vsim-3722) C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v(4): [TFMPC] - Missing connection for port 'sum'.
 # 
+=======
+# 	mul_32bit_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  mul_32bit_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mul_32bit_tb 
+# Loading work.mul_32bit_tb
+# Loading work.mul_32bit
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
+<<<<<<< HEAD
 # run 1000 ns
+=======
+# run 100 sec
+# a =          16, b =          10, z =                    x
+# a =          16, b =          10, z =                  160
+# ** Note: $finish    : C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v(21)
+#    Time: 10 ps  Iteration: 0  Instance: /mul_32bit_tb
+# 1
+# Break in Module mul_32bit_tb at C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v line 21
+# Simulation Breakpoint: 1
+# Break in Module mul_32bit_tb at C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v line 21
+# MACRO ./ELEC374Project_run_msim_rtl_verilog.do PAUSED at line 17
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
