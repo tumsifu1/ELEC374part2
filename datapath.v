@@ -77,12 +77,10 @@ MDR MDR_register(.clr(clr),.clk(clk),.MDR_read(MDRread),.BusMuxOut(bus),.MDR_ena
 Register hi(clr,clk,bus,HIin,busInHI);
 Register lo(clr,clk,bus,Loin,busInLo);
 
-Register zhi(clr,clk,bus,ZHIin,busInZHI);
-Register zlo(clr,clk,bus,ZLOin,busInZLo);
-
-
 z_register z_reg(Zin, ZLowSelect, ZHighSelect, clk, clr, ZData, ZHighData, ZLowData);
 
+Register zhi(clr,clk,bus,ZHIin,busInZHI);
+Register zlo(clr,clk,bus,ZLOin,busInZLo);
 
 Register y(clr,clk,bus,Yin,YData);
 
@@ -97,11 +95,14 @@ ALU alu_instance(clk, bus,YData, ALU_opcode, ZData);
 //Bus
 bidirectional_bus my_bus(
 //enable signals for the encoder
-R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, HIout, Loout, ZHIout, ZLOout, PCout, MDRout, InPortout, Cout, Yout,
+R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out,
+ R10out, R11out, R12out, R13out, R14out, R15out, HIout, Loout, ZHIout, ZLOout, PCout, MDRout, InPortout, Cout, Yout,
 //Yout,
 
 //inputs for the multiplexer
-busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8, busInR9, busInR10, busInR11, busInR12, busInR13,busInR14, busInR15, busInHI, busInLo, busInZHI, busInZLO, busInPC, busInMDR,  busInInPort, busInC, busInY,
+busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8,
+ busInR9, busInR10, busInR11, busInR12, busInR13,busInR14, busInR15, busInHI, busInLo, ZHighData,
+  ZLowData, busInPC, busInMDR,  busInInPort, busInC, busInY,
 //busInY,
 
 //output of bus
@@ -112,7 +113,7 @@ bus
 
 assign R0 = busInR0;
 assign R1 = busInR1;
-assign R2 = busInR2;
+assign R2 = busInR2; // debugging 
 assign R3 = busInR3;
 
 assign R4 = busInR4;
@@ -121,7 +122,7 @@ assign R6 = busInR6;
 assign R7 = busInR7;
 assign R8 = busInR8;
 assign R9 = busInR9;
-assign R10 = busInR10;
+assign R10 = busInR10; //debugging change later
 assign R11 = busInR11;
 assign R12 = busInR12;
 assign R13 = busInR13;
@@ -130,8 +131,8 @@ assign R15 = busInR15;
 assign HI = busInHI;
 assign LO = busInLo;
 assign Y = YData;
-assign ZLO = busInZLO;
-assign ZHI = busInZHI;
+assign ZLO = ZLowData;
+assign ZHI = ZHighData;
 assign Z_register = ZData;
 
 

@@ -28,11 +28,11 @@ module bidirectional_bus(
     input wire MDRSignal,
     input wire InportSignal,
     input wire CSignal,
-	 input wire encoderY,
+	input wire encoderY,
 	 
 	 
 	 //mux inputs start
-   input [31:0] BusMuxInputs_R0,
+   	input [31:0] BusMuxInputs_R0,
 	input [31:0] BusMuxInputs_R1,
 	input [31:0] BusMuxInputs_R2,
 	input [31:0] BusMuxInputs_R3, 

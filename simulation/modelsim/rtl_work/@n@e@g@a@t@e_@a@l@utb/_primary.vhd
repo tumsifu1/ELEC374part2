@@ -1,10 +1,6 @@
 library verilog;
 use verilog.vl_types.all;
-<<<<<<<< HEAD:simulation/modelsim/rtl_work/@n@o@t_@a@l@utb/_primary.vhd
-entity NOT_ALUtb is
-========
 entity NEGATE_ALUtb is
->>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547:simulation/modelsim/rtl_work/@n@e@g@a@t@e_@a@l@utb/_primary.vhd
     generic(
         Default         : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi0);
         Reg_load1a      : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi1);
@@ -34,8 +30,4 @@ entity NEGATE_ALUtb is
     attribute mti_svvh_generic_type of T3 : constant is 1;
     attribute mti_svvh_generic_type of T4 : constant is 1;
     attribute mti_svvh_generic_type of T5 : constant is 1;
-<<<<<<<< HEAD:simulation/modelsim/rtl_work/@n@o@t_@a@l@utb/_primary.vhd
-end NOT_ALUtb;
-========
 end NEGATE_ALUtb;
->>>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547:simulation/modelsim/rtl_work/@n@e@g@a@t@e_@a@l@utb/_primary.vhd

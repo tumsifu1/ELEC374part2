@@ -18,11 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-<<<<<<< HEAD
-# Date created = 17:59:00  March 10, 2023
-=======
-# Date created = 10:52:09  March 13, 2023
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
+# Date created = 11:05:02  March 13, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -44,15 +40,12 @@ set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
 set_global_assignment -name TOP_LEVEL_ENTITY datapath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
-<<<<<<< HEAD
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:59:00  MARCH 10, 2023"
-=======
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:52:09  MARCH 13, 2023"
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:05:02  MARCH 13, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name VERILOG_FILE z_register.v
+set_global_assignment -name VERILOG_FILE SUB_ALUtb.v
+set_global_assignment -name VERILOG_FILE sub_32tb.v
 set_global_assignment -name VERILOG_FILE sub_32bit.v
-<<<<<<< HEAD
 set_global_assignment -name VERILOG_FILE shr_TB.v
 set_global_assignment -name VERILOG_FILE shr_32bit.v
 set_global_assignment -name VERILOG_FILE shra_32bit.v
@@ -75,17 +68,12 @@ set_global_assignment -name VERILOG_FILE negate_tb.v
 set_global_assignment -name VERILOG_FILE NEGATE_ALUtb.v
 set_global_assignment -name VERILOG_FILE negate.v
 set_global_assignment -name VERILOG_FILE mux2to1TB.v
-=======
-set_global_assignment -name VERILOG_FILE Register.v
-set_global_assignment -name VERILOG_FILE NEGATE_ALUtb.v
-set_global_assignment -name VERILOG_FILE negate.v
-set_global_assignment -name VERILOG_FILE mux2to1TB.v
-set_global_assignment -name VERILOG_FILE multiplexer32to1.v
-set_global_assignment -name VERILOG_FILE multiplexer.v
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
 set_global_assignment -name VERILOG_FILE mul_tb.v
 set_global_assignment -name VERILOG_FILE MUL_ALUtb.v
 set_global_assignment -name VERILOG_FILE mul_32bit.v
+set_global_assignment -name VERILOG_FILE multiplexerTB.v
+set_global_assignment -name VERILOG_FILE multiplexer32to1.v
+set_global_assignment -name VERILOG_FILE multiplexer.v
 set_global_assignment -name VERILOG_FILE MDRTB.v
 set_global_assignment -name VERILOG_FILE MDR.v
 set_global_assignment -name VERILOG_FILE encoderTB.v
@@ -94,40 +82,22 @@ set_global_assignment -name VERILOG_FILE div_tb.v
 set_global_assignment -name VERILOG_FILE DIV_ALUtb.v
 set_global_assignment -name VERILOG_FILE div_32bit.v
 set_global_assignment -name VERILOG_FILE datapath.v
-set_global_assignment -name VERILOG_FILE bidirectional_bus.v
-set_global_assignment -name VERILOG_FILE and_32bit.v
-set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VERILOG_FILE add_TB.v
 set_global_assignment -name VERILOG_FILE ADD_ALUtb.v
 set_global_assignment -name VERILOG_FILE add_32.v
-<<<<<<< HEAD
-=======
+set_global_assignment -name VERILOG_FILE bidirectional_bus.v
+set_global_assignment -name VERILOG_FILE and_32bit.v
+set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH NEGATE_ALUtb.v -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME NEGATE_ALUtb.v -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id NEGATE_ALUtb.v
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id NEGATE_ALUtb.v
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME NEGATE_ALUtb.v -section_id NEGATE_ALUtb.v
-set_global_assignment -name EDA_TEST_BENCH_FILE NEGATE_ALUtb.v -section_id NEGATE_ALUtb.v
->>>>>>> 30867ceee1f31f70d3d422537c0a53b0c2a3b547
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH NEGATE_ALUtb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME NEGATE_ALUtb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id NEGATE_ALUtb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id NEGATE_ALUtb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME NEGATE_ALUtb -section_id NEGATE_ALUtb
+set_global_assignment -name EDA_TEST_BENCH_FILE NEGATE_ALUtb.v -section_id NEGATE_ALUtb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_TIME_SCALE "10 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH NOT_ALUtb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME DIV_ALUtb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DIV_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id DIV_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DIV_ALUtb -section_id DIV_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_NAME NOT_ALUtb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id NOT_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id NOT_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME NOT_ALUtb -section_id NOT_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_FILE DIV_ALUtb.v -section_id DIV_ALUtb
-set_global_assignment -name EDA_TEST_BENCH_FILE NOT_ALUtb.v -section_id NOT_ALUtb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

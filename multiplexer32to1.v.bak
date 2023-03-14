@@ -57,13 +57,13 @@ always@(*) begin
 	5'b10001:begin BusMuxOut <= BusMuxIn_HI[31:0]; end
    5'b10010:begin BusMuxOut <= BusMuxIn_LO[31:0]; end
    5'b10011:begin BusMuxOut <= BusMuxIn_Z_high[31:0]; end
-   5'b10100:begin BusMuxOut <= BusMuxIn_Z_low[31:0]; end
+   5'b10100:begin BusMuxOut <= 32'hffff_ffff//BusMuxIn_Z_low[31:0]; end
 	5'b10101:begin BusMuxOut <= BusMuxIn_PC[31:0]; end
    5'b10110:begin BusMuxOut <= BusMuxIn_MDR[31:0]; end
    5'b10111:begin BusMuxOut <= BusMuxIn_InPort[31:0]; end
    5'b11000:begin BusMuxOut <= C_sign_extended[31:0]; end
 	5'b11001:begin BusMuxOut <= BusMuxIn_Y[31:0]; end
-	default:begin BusMuxOut <= 32'h0000_1000; end
+	default:begin BusMuxOut <= 32'h0000_1000+select_signal; end
 	endcase
 end
 

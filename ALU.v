@@ -42,11 +42,15 @@ module ALU(input clk,
             case(opcode)
                 Add:begin
                     C_reg[31:0]<= add_sum;
-                    C_reg[63:32]<= 32'd0;
+                    C_reg[63:32]<= 32'b0;
                 end
+				Negate:begin
+							C_reg[31:0]<=~B_reg+1;
+							C_reg[63:32]<=32'b0;
+					 end
                 Sub: begin
                     C_reg[31:0]<= sub_out;
-                    C_reg[63:32]<= 32'd0;
+                    C_reg[63:32]<= 32'b0;
                 end
                 Mul: begin
                     C_reg<= mul_out;
