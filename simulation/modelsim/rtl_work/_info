@@ -2,7 +2,195 @@ m255
 K3
 13
 cModel Technology
+<<<<<<< HEAD
+Z0 dC:\code\374pt2\ELEC374part2\ELEC374part2\simulation\modelsim
+vadd_32_bit
+IYg^@HV8`KR^o_X2MK:Y`L0
+VE9M7z8]`5^eDgBRdX@ilF0
+Z1 dC:\code\374pt2\ELEC374part2\ELEC374part2\simulation\modelsim
+Z2 w1678469939
+Z3 8C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v
+Z4 FC:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v
+L0 1
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s108 1678749093.257000
+Z7 !s107 C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v|
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 -O0
+!i10b 1
+!s100 [X;FdzAIzjTDK3eb_BX6B1
+!s85 0
+!s101 -O0
+vALU
+Ig9@1KmbNnk@@RP39A>o?23
+Vn]c75VAD?R^GZ44jaF3]g2
+R1
+w1678743603
+8C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v
+L0 2
+R5
+r1
+31
+R9
+R10
+n@a@l@u
+!i10b 1
+!s100 ]j]C_cUo6=Y9ga_:zLodJ2
+!s85 0
+!s108 1678749093.407000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v|
+!s101 -O0
+vbidirectional_bus
+I]6mCHMjOKA5I[Ez4A80Sc1
+VSY5Q8fHF0eMkZ@C^=e^A`0
+R1
+w1678740603
+8C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 hhWZ113_l=?b@njIZZoKC0
+!s85 0
+!s108 1678749093.346000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v|
+!s101 -O0
+vCLA16
+Ib^[V:EbbP;6nii6NLZB4[3
+VWTHGkRmzUXn>GUA3lgBhc0
+R1
+R2
+R3
+R4
+L0 9
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+n@c@l@a16
+!i10b 1
+!s100 6X9S@hedzNlNmM[hUNW7O2
+!s85 0
+!s101 -O0
+vCLA4
+IPA8O]Zh1c:6mE`?K:iAPi2
+V4_T:9RFo2PhTCgOVX89jV3
+R1
+R2
+R3
+R4
+L0 18
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+n@c@l@a4
+!i10b 1
+!s100 RIh;[XD84Xk1>RI>eTAVn2
+!s85 0
+!s101 -O0
+vdatapath
+IYn>9g2Q>@dn=]gO_B4i`i3
+VnNEX:F4004;1ho4_5]6:61
+R1
+w1678749040
+8C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v
+L0 6
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 RegQ`BfUb5CCMK^nXW@691
+!s85 0
+!s108 1678749093.195000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v|
+!s101 -O0
+vdiv_32bit
+IlkKFVY^Y^<kcG7oaMB^1m2
+VDXC;MNXea8NdI7bj5Rf1@1
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 6A]j]9cb3ETTW2Ul_3_@E3
+!s85 0
+!s108 1678749093.135000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v|
+!s101 -O0
+vencoder_32to5
+Ig@H2H763kES^;@<=BzcK61
+VD;G3V=0cjjONEk=COM?6e1
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 a;B0^z^<bGbdjc?JBUCKP2
+!s85 0
+!s108 1678749093.074000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v|
+!s101 -O0
+vMDR
+IP<E4DY^DAE2nLg^:9VLT?3
+V8Kd9bFA^QQeQ_c@4J^j>d2
+R1
+Z11 w1678718922
+8C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v
+L0 1
+R5
+r1
+31
+R9
+R10
+n@m@d@r
+!i10b 1
+!s100 FM6YOfFzZNaRa21O5MS=30
+!s85 0
+!s108 1678749093.014000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v|
+!s101 -O0
+=======
 Z0 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 vmul_32bit
 II2f`G:=`a[daG2JgNH<g32
 VD:O7[`lbBF]of9VBCSSJF1
@@ -16,6 +204,256 @@ r1
 31
 Z3 o-vlog01compat -work work -O0
 !i10b 1
+<<<<<<< HEAD
+!s100 I>aVOBje06]^71DRVbS040
+!s85 0
+!s108 1678749092.809000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v|
+!s101 -O0
+vmultiplexer32to1
+I:EdJk8J`4STbePWA?dz]_3
+VHd^170[P9cBYHG1Zec7YE2
+R1
+w1678746545
+8C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 [@o0ia2fCMF;hoi;?_Rc71
+!s85 0
+!s108 1678749092.867000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v|
+!s101 -O0
+vmux16_1
+IW6dL_]_E5?>3R`M67ChI?3
+Vn4MKRlzda`Y]l`WFOLSh[3
+R1
+R11
+Z12 8C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v
+Z13 FC:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v
+L0 35
+R5
+r1
+31
+Z14 !s108 1678749092.927000
+Z15 !s107 C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v|
+Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v|
+R9
+R10
+!i10b 1
+!s100 H7mHE:Y9@85[4D424L6jg0
+!s85 0
+!s101 -O0
+vmux2_1
+IOl?HF=GW78k@MS5`CXahb0
+VN>nZlfQ>o[[Q@1azB4?j_1
+R1
+R11
+R12
+R13
+L0 1
+R5
+r1
+31
+R14
+R15
+R16
+R9
+R10
+!i10b 1
+!s100 QWkH8_o>FVl809UbN8dRQ2
+!s85 0
+!s101 -O0
+vmux32_1
+I`6>5P2d;EO@6>BU5?0;eJ1
+V=V>U?0G50=PlTdoN7><C02
+R1
+R11
+R12
+R13
+L0 47
+R5
+r1
+31
+R14
+R15
+R16
+R9
+R10
+!i10b 1
+!s100 =Iez2@TmNz6RAd>zLhQ8V1
+!s85 0
+!s101 -O0
+vmux8_1
+IfkEW?bT>N3RZ;LEM1gb?V2
+VlRLOSOLjz];?bUmU6_8CR1
+R1
+R11
+R12
+R13
+L0 19
+R5
+r1
+31
+R14
+R15
+R16
+R9
+R10
+!i10b 1
+!s100 1cR_LaN^H30MZoIVE6SCj3
+!s85 0
+!s101 -O0
+vnegate_32_bit
+IFPV^6fQ]@NXkG_Y6J0>kM3
+VbTnc;TLa_7=Ok]Wz?M1=63
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/negate.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/negate.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 Q[MA19RC[NaUT8f4ZLRFk2
+!s85 0
+!s108 1678749092.751000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/negate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/negate.v|
+!s101 -O0
+vNEGATE_ALUtb
+!i10b 1
+!s100 T`3:Of_iahni6Y53n;Kco0
+I_PAPJORRJHR4Q^Y2H07fm3
+VUen1TCdBDbV]ePfSGc@PQ1
+R1
+w1678748952
+8C:/code/374pt2/ELEC374part2/ELEC374part2/NEGATE_ALUtb.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/NEGATE_ALUtb.v
+L0 2
+R5
+r1
+!s85 0
+31
+!s108 1678749093.467000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/NEGATE_ALUtb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/NEGATE_ALUtb.v|
+!s101 -O0
+R9
+R10
+n@n@e@g@a@t@e_@a@l@utb
+vnot_32bit
+IU^j1W6kg@lIYEMG9gbW=]2
+Va_Q]W7AhPD9[YeMK]F1SQ1
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 ?F^[X4LlT`kF;mUSoA`:n1
+!s85 0
+!s108 1678749092.694000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/not_32bit.v|
+!s101 -O0
+vPC
+IQHIVV@3>US3Oo1VOzXVS42
+VCALSk39f56dLKGFNibbCD3
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/PC.v
+L0 1
+R5
+r1
+31
+R9
+R10
+n@p@c
+!i10b 1
+!s100 g]hM7:KO3TXKzQ62ZkQ9j1
+!s85 0
+!s108 1678749092.633000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v|
+!s101 -O0
+vRegister
+IDVmCZ=W;U<O2kTS41Ugo:2
+VI>7n5W;N>XEEYK78`S9G93
+R1
+w1678719818
+8C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/Register.v
+L0 3
+R5
+r1
+31
+R9
+R10
+n@register
+!i10b 1
+!s100 lzmHElMYZ_GiD_`82]OoQ2
+!s85 0
+!s108 1678749092.575000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v|
+!s101 -O0
+vsub_32bit
+I=ZR^`:injPnb<SXz]c^cW2
+VBWGOnNnSdSl5X`=5k_KOT3
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 4[7;95P8m45SJbl9m=KNJ3
+!s85 0
+!s108 1678749092.489000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v|
+!s101 -O0
+vz_register
+I6BV:bhC^l[;BWj8c992^<1
+VO[iY111Nec3D1YPiUH`YX3
+R1
+R2
+8C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v
+FC:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 ak;4XgSL3VzC1[4iS=a462
+!s85 0
+!s108 1678749092.426000
+!s107 C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v|
+=======
 !s100 ]QRL=4V3NmZQ3E9bldKJM3
 !s85 0
 !s108 1678736972.249000
@@ -40,6 +478,7 @@ r1
 !s108 1678736972.315000
 !s107 C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/mul_32bit_tb.v|
+>>>>>>> 90e263ae9d269faeee4fe7cfca2132c6e5125626
 !s101 -O0
 R3
 R4

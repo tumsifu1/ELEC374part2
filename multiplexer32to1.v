@@ -38,32 +38,32 @@ module multiplexer32to1(
 always@(*) begin
 	//always begin even if any change
 	case(select_signal)
-	5'b00001 : BusMuxOut <= BusMuxIn_R0[31:0];
-   5'b00010 : BusMuxOut <= BusMuxIn_R1[31:0];
-   5'b00011 : BusMuxOut <= BusMuxIn_R2[31:0];
-   5'b00100 : BusMuxOut <= BusMuxIn_R3[31:0];
-	5'b00101 : BusMuxOut <= BusMuxIn_R4[31:0];
-   5'b00110 : BusMuxOut <= BusMuxIn_R5[31:0];
-   5'b00111 : BusMuxOut <= BusMuxIn_R6[31:0];
-   5'b01000 : BusMuxOut <= BusMuxIn_R7[31:0];
-	5'b01001 : BusMuxOut <= BusMuxIn_R8[31:0];
-   5'b01010 : BusMuxOut <= BusMuxIn_R9[31:0];
-   5'b01011: BusMuxOut <= BusMuxIn_R10[31:0];
-   5'b01100: BusMuxOut <= BusMuxIn_R11[31:0];
-	5'b01101: BusMuxOut <= BusMuxIn_R12[31:0];
-	5'b01110: BusMuxOut <= BusMuxIn_R13[31:0];
-   5'b01111: BusMuxOut <= BusMuxIn_R14[31:0];
-   5'b10000: BusMuxOut <= BusMuxIn_R15[31:0];
-	5'b10001: BusMuxOut <= BusMuxIn_HI[31:0];
-   5'b10010: BusMuxOut <= BusMuxIn_LO[31:0];
-   5'b10011: BusMuxOut <= BusMuxIn_Z_high[31:0];
-   5'b10100: BusMuxOut <= BusMuxIn_Z_low[31:0];
-	5'b10101: BusMuxOut <= BusMuxIn_PC[31:0];
-   5'b10110: BusMuxOut <= BusMuxIn_MDR[31:0];
-   5'b10111: BusMuxOut <= BusMuxIn_InPort[31:0];
-   5'b11000: BusMuxOut <= C_sign_extended[31:0];
-	5'b11001: BusMuxOut <= BusMuxIn_Y[31:0];
-	default: BusMuxOut <= 32'd0;
+	5'b00001 :begin BusMuxOut <= BusMuxIn_R0[31:0]; end
+   5'b00010 :begin BusMuxOut <= BusMuxIn_R1[31:0]; end
+   5'b00011 :begin BusMuxOut <= BusMuxIn_R2[31:0]; end
+   5'b00100 :begin BusMuxOut <= BusMuxIn_R3[31:0]; end
+	5'b00101 :begin BusMuxOut <= BusMuxIn_R4[31:0]; end
+   5'b00110 :begin BusMuxOut <= BusMuxIn_R5[31:0]; end
+   5'b00111 :begin BusMuxOut <= BusMuxIn_R6[31:0]; end
+   5'b01000 :begin BusMuxOut <= BusMuxIn_R7[31:0]; end
+	5'b01001 :begin BusMuxOut <= BusMuxIn_R8[31:0]; end
+   5'b01010 :begin BusMuxOut <= BusMuxIn_R9[31:0]; end
+   5'b01011:begin BusMuxOut <= BusMuxIn_R10[31:0]; end
+   5'b01100:begin BusMuxOut <= BusMuxIn_R11[31:0]; end
+	5'b01101:begin BusMuxOut <= BusMuxIn_R12[31:0]; end
+	5'b01110:begin BusMuxOut <= BusMuxIn_R13[31:0]; end
+   5'b01111:begin BusMuxOut <= BusMuxIn_R14[31:0]; end
+   5'b10000:begin BusMuxOut <= BusMuxIn_R15[31:0]; end
+	5'b10001:begin BusMuxOut <= BusMuxIn_HI[31:0]; end
+   5'b10010:begin BusMuxOut <= BusMuxIn_LO[31:0]; end
+   5'b10011:begin BusMuxOut <= BusMuxIn_Z_high[31:0]; end
+   5'b10100:begin BusMuxOut <= BusMuxIn_Z_low[31:0]; end
+	5'b10101:begin BusMuxOut <= BusMuxIn_PC[31:0]; end
+   5'b10110:begin BusMuxOut <= BusMuxIn_MDR[31:0]; end
+   5'b10111:begin BusMuxOut <= BusMuxIn_InPort[31:0]; end
+   5'b11000:begin BusMuxOut <= C_sign_extended[31:0]; end
+	5'b11001:begin BusMuxOut <= BusMuxIn_Y[31:0]; end
+	default:begin BusMuxOut <= 32'h0000_1000; end
 	endcase
 end
 
