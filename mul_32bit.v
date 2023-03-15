@@ -42,3 +42,8 @@ module mul_32bit(input signed [31:0] a, b, output[32*2-1:0] z);
 	end
 	assign z = product;	
 endmodule
+
+/*
+
+
+/*
