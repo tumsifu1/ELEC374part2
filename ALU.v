@@ -25,8 +25,9 @@ module ALU(input clk,
     wire [31:0] IncPC_out, shr_out, shl_out, lor_out, land_out,
                 neg_out, not_out, add_sum, adder_cout, sub_sum,
                 sub_cout, rol_out, ror_out;
-    wire cin,cout;
-
+    wire cin;
+    wire cout;
+    assign cin=0;
 	wire [63:0] mul_out, div_out;
 // think this is all we need 
 
@@ -41,15 +42,19 @@ module ALU(input clk,
         begin
             case(opcode)
                 Add:begin
-                    C_reg[31:0]<= add_sum;
+                    C_reg[31:0]<= A_reg+B_reg;
                     C_reg[63:32]<= 32'b0;
                 end
 				Negate:begin
 							C_reg[31:0]<=~B_reg+1;
 							C_reg[63:32]<=32'b0;
 					 end
+                Not:begin
+                    		C_reg[31:0]<=~B_reg;
+							C_reg[63:32]<=32'b0;
+                end
                 Sub: begin
-                    C_reg[31:0]<= sub_out;
+                    C_reg[31:0]<= A_reg-B_reg;
                     C_reg[63:32]<= 32'b0;
                 end
                 Mul: begin
