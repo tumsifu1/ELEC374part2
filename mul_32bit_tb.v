@@ -3,27 +3,28 @@
 module mul_32bit_tb;
 
   // Declare the signals
-  reg signed [31:0] a;
-  reg signed [31:0] b;
-  wire [32*2-1:0] z;
+  reg signed [31:0] multiplicand;
+  reg signed [31:0] multiplier;
+  wire [32*2-1:0] product;
 
   // Instantiate the DUT
   mul_32bit dut(
-    .a(a),
-    .b(b),
-    .z(z)
+    .multiplicand(multiplicand),
+    .multiplier(multiplier),
+    .product(product)
   );
 
   // Initialize the inputs
   initial begin
-    a = 16;
-    b = 10;
-    #10 $finish;
+	 #10; 
+    multiplicand = 16;
+    multiplier = 10;
+    
   end
 
   // Print the output
   always @* begin
-    $display("a = %d, b = %d, z = %d", a, b, z);
+    $display("multiplicand = %d, multiplier = %d, product = %d", multiplicand, multiplier, product);
   end
 
 endmodule

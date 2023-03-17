@@ -1,39 +1,50 @@
-module div_32bit(
-    input [31:0] M,
-    input [31:0] Q,
-    output [63:0] z
+//Restoring division alg
+
+module div_32bit (
+    input [31:0] dividend, // input dividend
+    input [31:0] divisor, // input divisor
+    output reg[31:0] quotient // output quotient
 );
 
-    reg [31:0] A_reg, Q_reg;
-    integer count;
+reg [31:0] remainder_reg = 0; // register to hold the remainder
+reg [31:0] dividend_reg, divisor_reg; // registers to hold the dividend and divisor
+integer i; // loop counter
 
-    initial begin
-        A_reg = 32'b0; // initialize A_reg to zero
-        Q_reg = Q;
-        count = 32; // initialize count to number of bits in Q
-    end
+// Assign inputs to registers
+always @ (dividend, divisor)
+begin
+    dividend_reg = dividend;
+    divisor_reg = divisor;
 
-    always @(*) begin
-        if (count > 0) begin
-            // shift left
-            A_reg = A_reg << 1;
-            A_reg[0] = Q_reg[31];
-            Q_reg = Q_reg << 1;
+    remainder_reg = 0;
 
-            // subtract
-            A_reg = A_reg - M;
+    // Perform binary long division for 32 bits
+    for (i = 0; i < 32; i = i + 1)
+    begin
+        // Shift remainder and dividend left by one bit(A and Q)
+        remainder_reg = {remainder_reg[30:0], dividend_reg[31]}; //a
+        dividend_reg = {dividend_reg[30:0], 1'b0};
 
-            // A < 0?
-            if (A_reg[31] == 1) begin
-                Q_reg[0] = 0;
-                A_reg = A_reg + M;
-            end else begin
-                Q_reg[0] = 1;
-            end
+        // Subtract divisor from remainder
+        remainder_reg = remainder_reg - divisor_reg; //A-M
 
-            count = count - 1;
+        // Check if result is 1
+        if (remainder_reg[31] == 1'b1)
+        begin
+            // Add divisor back to remainder and set quotient bit to 0
+            dividend_reg[0] = 1'b0;//Q0 = 0
+            remainder_reg = remainder_reg + divisor_reg; //restore A( A = A + M)
+        end
+        else
+        begin
+            // Set quotient bit to 1
+            dividend_reg[0] = 1'b1;
         end
     end
 
-    assign z = {Q_reg[31:0], A_reg[31:0]};
+    // Assign quotient to output register
+	 quotient = dividend_reg;
+    
+end
+	
 endmodule
