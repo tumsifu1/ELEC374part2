@@ -16,7 +16,7 @@ module ADD_ALUtb();
 	                    .HIin(HIin),.Loin(Loin),.ZHIin(ZHIin),.ZLOin(ZLOin),.PCin(PCin),.MDRin(MDRin),.MARin(MARin),.IRin(IRin),.Yin(Yin),.Zin(Zin),.HIout(HIout),.Loout(Loout),.PCout(PCout),.MDRout(MDRout),.MDRread(Read),.Cout(Cout),.clk(clk),.clr(clear),.IncPC(IncPC),.ZHighSelect(ZHighSelect),.ZLowSelect(ZLowSelect),.ZHIout(ZHIout),.ZLOout(ZLOout),.InPortout(InPortout),
                         .ALU_opcode(ALUopCode),.Mdatain(MdataIn),
                         .R0(R0),.R1(R1),.R2(R2),.R3(R3),.R4(R4),.R5(R5),.R6(R6),.R7(R7),.R8(R8),.R9(R9),.R10(R10),.R11(R11),.R12(R12),.R13(R13),.R14(R14),.R15(R15),.HI(HI),.LO(LO),.Y(Y),.ZLO(ZLO),.ZHI(ZHI),
-	                    .Z_register(testZRegister)
+	                    .Z_register(ZReg)
                     );
 
     initial
@@ -61,7 +61,8 @@ always @(posedge clk)//finite state machine
 						IncPC <= 0;
 						Read <= 0;
 						ALUopCode <= 0;
-							
+
+                        R0in<=0;	
 						R1in <= 0;
 						R2in <= 0;
 						R3in <=0;
@@ -119,27 +120,27 @@ always @(posedge clk)//finite state machine
                     end
                 Reg_load3b:
                     begin
-                        #10 Read <=1; R4in <=1;
-                        #15 Read <=0; R4in <=0;
+                        #10 Read <=1; R5in <=1;
+                        #15 Read <=0; R5in <=0;
                     end
                 T0: begin end
                 T1: begin end
                 T2: begin end 
                 T3: 
                     begin
-                        #10 R3out<=1; Yin<=1;
-                        #25 Yin <= 0; R2out <=0;
+                        #10 R4out<=1; Yin<=1;
+                        #10 Yin <= 0; R4out <=0;
                     end
                 T4:
                     begin	 
-                        ALUopCode = 5'b00011; Zin <=1; R5out<=1; 
-                        #25 Zin<=0; R7out<=0;
+                        ALUopCode = 5'b00011; Zin <=1; R5out<=1; ZLOin=1; ZLowSelect<=1;
 				    end
 						
 				T5: 
                     begin
-						ZLOout<=1; R0out<=1;
-                   #25 ZLOout<=0; R0out<=0;
+                        R5out<=0; ZLOin=0; Zin=0;
+						#15 ZLOout<=1; R0in<=1;
+                        
 					end
             endcase
         end
