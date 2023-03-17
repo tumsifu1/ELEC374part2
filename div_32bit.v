@@ -3,7 +3,8 @@
 module div_32bit (
     input [31:0] dividend, // input dividend
     input [31:0] divisor, // input divisor
-    output reg[31:0] quotient // output quotient
+    output reg[31:0] quotient, // output quotient
+    output reg[31:0] remainder
 );
 
 reg [31:0] remainder_reg = 0; // register to hold the remainder
@@ -44,6 +45,7 @@ begin
 
     // Assign quotient to output register
 	 quotient = dividend_reg;
+     remainder = remainder_reg;
     
 end
 	
