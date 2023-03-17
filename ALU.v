@@ -24,11 +24,11 @@ module ALU(input clk,
 
     wire [31:0] IncPC_out, shr_out, shl_out, lor_out, land_out,
                 neg_out, not_out, add_sum, adder_cout, sub_sum,
-                sub_cout, rol_out, ror_out;
+                sub_cout, rol_out, ror_out,div_out,remainder_out;
     wire cin;
     wire cout;
     assign cin=0;
-	wire [63:0] mul_out, div_out;
+	wire [63:0] mul_out;
 // think this is all we need 
 
     wire [31:0] IncPC;//put outputs of each module
@@ -36,7 +36,7 @@ module ALU(input clk,
     add_32_bit adding(A_reg,B_reg,cin,add_sum,cout);
     mul_32bit multiply(A_reg,B_reg,mul_out);
     sub_32bit subtraction(A_reg,B_reg,cin,sub_out,cout);
-    div_32bit division(A_reg,B_reg,div_out);
+    div_32bit division(A_reg,B_reg,div_out,remainder_out);
     
     always @(*)
         begin
@@ -61,7 +61,8 @@ module ALU(input clk,
                     C_reg<= mul_out;
                 end
                 Div: begin
-                    C_reg<= div_out;
+                    C_reg[31:0]<= div_out;
+                    C_reg[63:31]<= remainder_out;
                 end
                 And: begin
                     C_reg[31:0]<= A_reg & B_reg;
