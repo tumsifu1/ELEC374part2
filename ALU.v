@@ -64,10 +64,12 @@ module ALU(input clk,
                     C_reg<= div_out;
                 end
                 And: begin
-                    C_reg<= A_reg & B_reg;
+                    C_reg[31:0]<= A_reg & B_reg;
+                    C_reg[63:32]<= 32'b0;
                 end
                 Or: begin
-                    C_reg<= A_reg | B_reg;
+                    C_reg[31:0]<= A_reg | B_reg;
+                    C_reg[63:32]<= 32'b0;
                 end
                 Shift_Right: begin
                     C_reg<= A_reg>>B_reg;
