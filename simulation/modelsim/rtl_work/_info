@@ -4,6 +4,7 @@ K3
 cModel Technology
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z0 dC:\Users\Admin\Documents\ELEC374part2\simulation\modelsim
 vdiv_32bit
 IRBI5JQeaN[ILaeAhaMM5X0
@@ -13,6 +14,8 @@ w1679077555
 8C:/Users/Admin/Documents/ELEC374part2/div_32bit.v
 FC:/Users/Admin/Documents/ELEC374part2/div_32bit.v
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 Z0 dC:\code\374pt2\ELEC374part2\ELEC374part2\simulation\modelsim
@@ -229,6 +232,7 @@ R11
 8C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v
 FC:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 L0 3
 Z2 OV;L;10.1d;51
@@ -403,6 +407,8 @@ w1678719818
 FC:/code/374pt2/ELEC374part2/ELEC374part2/Register.v
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 L0 3
 R5
 r1
@@ -410,7 +416,10 @@ r1
 R9
 R10
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 !i10b 1
 !s100 874^fJ5=lG83E^HNKYWig1
 !s85 0
@@ -552,6 +561,9 @@ r1
 31
 R9
 R10
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 n@register
 !i10b 1
@@ -602,6 +614,9 @@ R10
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/code/374pt2/ELEC374part2/ELEC374part2|C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v|
 !s101 -O0
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6

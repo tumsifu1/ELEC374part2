@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 |div_32bit
 dividend[0] => Add62.IN64
 dividend[1] => Add60.IN64
@@ -2146,6 +2147,8 @@ remainder[29] <= remainder_reg.DB_MAX_OUTPUT_PORT_TYPE
 remainder[30] <= remainder_reg.DB_MAX_OUTPUT_PORT_TYPE
 remainder[31] <= remainder_reg.DB_MAX_OUTPUT_PORT_TYPE
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 |datapath
@@ -8610,6 +8613,7 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 |datapath|ALU:alu_instance|add_32_bit:adding|CLA16:CLA2|CLA4:CLA4
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ra[0] => P[0].IN0
 Ra[0] => G[0].IN0
 Ra[1] => P[1].IN0
@@ -12049,6 +12053,8 @@ cout <= CLA4:CLA4.cout
 
 
 |datapath|ALU:alu_instance|sub_32bit:subtraction|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA1
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 Ra[0] => P[0].IN0
@@ -12080,7 +12086,10 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 |datapath|ALU:alu_instance|mul_32bit:multiply
 multiplicand[0] => Mux64.IN4
 multiplicand[0] => Mux65.IN4
@@ -15519,6 +15528,9 @@ sum[3] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 |datapath|ALU:alu_instance|sub_32bit:subtraction|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA2
 Ra[0] => P[0].IN0

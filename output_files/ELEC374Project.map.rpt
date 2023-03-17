@@ -1,7 +1,11 @@
 Analysis & Synthesis report for ELEC374Project
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Fri Mar 17 14:33:28 2023
+=======
+Fri Mar 17 14:16:50 2023
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 Fri Mar 17 14:16:50 2023
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -62,6 +66,7 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Mar 17 14:33:27 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
@@ -85,12 +90,22 @@ applicable agreement for further details.
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone III                                     ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
+; Analysis & Synthesis Status        ; Successful - Fri Mar 17 14:16:50 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; ELEC374Project                                  ;
+; Top-level Entity Name              ; datapath                                        ;
+; Family                             ; Cyclone III                                     ;
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 ; Total logic elements               ; 7,402                                           ;
 ;     Total combinational functions  ; 6,826                                           ;
 ;     Dedicated logic registers      ; 736                                             ;
 ; Total registers                    ; 736                                             ;
 ; Total pins                         ; 830                                             ;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -109,7 +124,11 @@ applicable agreement for further details.
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Top-level entity name                                                      ; div_32bit          ; ELEC374Project     ;
+=======
+; Top-level entity name                                                      ; datapath           ; ELEC374Project     ;
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 ; Top-level entity name                                                      ; datapath           ; ELEC374Project     ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -207,6 +226,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -362,6 +382,60 @@ Parallel compilation was disabled, but you have multiple processors available. E
 
 
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; z_register.v                     ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v        ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v          ;         ;
+; PC.v                             ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v                ;         ;
+; mul_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v         ;         ;
+; multiplexer32to1.v               ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v  ;         ;
+; multiplexer.v                    ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v       ;         ;
+; MDR.v                            ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v               ;         ;
+; encoder.v                        ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v           ;         ;
+; div_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v         ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v          ;         ;
+; bidirectional_bus.v              ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v               ;         ;
+; add_32.v                         ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v            ;         ;
+; sub_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v         ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 7,402     ;
+;                                             ;           ;
+; Total combinational functions               ; 6826      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 2069      ;
+;     -- 3 input functions                    ; 3918      ;
+;     -- <=2 input functions                  ; 839       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 4253      ;
+;     -- arithmetic mode                      ; 2573      ;
+;                                             ;           ;
+; Total registers                             ; 736       ;
+;     -- Dedicated logic registers            ; 736       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 830       ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clr~input ;
+; Maximum fan-out                             ; 739       ;
+; Total fan-out                               ; 26214     ;
+; Average fan-out                             ; 2.84      ;
++---------------------------------------------+-----------+
+
+
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
@@ -400,6 +474,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |z_register:z_reg|                    ; 66 (66)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|z_register:z_reg                                          ; work         ;
 +------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+--------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -625,7 +702,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Top            ; 00:00:02     ;
+=======
+; Top            ; 00:00:19     ;
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 ; Top            ; 00:00:19     ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -643,6 +724,7 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Info: Processing started: Fri Mar 17 14:33:24 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374Project -c ELEC374Project
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -650,6 +732,11 @@ Warning (20028): Parallel compilation is not licensed and has been disabled
     Info: Processing started: Fri Mar 17 14:16:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374Project -c ELEC374Project
 Warning (20028): Parallel compilation is not licensed and has been disabled
+=======
+    Info: Processing started: Fri Mar 17 14:16:29 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374Project -c ELEC374Project
+Warning (20028): Parallel compilation is not licensed and has been disabled
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
     Info: Processing started: Fri Mar 17 14:16:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374Project -c ELEC374Project
@@ -723,6 +810,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file encoder
 Info (12021): Found 1 design units, including 1 entities, in source file div_alutb.v
     Info (12023): Found entity 1: DIV_ALUtb
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -732,8 +822,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file div_32b
     Info (12023): Found entity 1: div_32bit
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Info (12127): Elaborating entity "div_32bit" for the top level hierarchy
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
@@ -983,6 +1076,9 @@ Warning (13012): Latch ALU:alu_instance|C_reg[62] has unsafe behavior
 Warning (13012): Latch ALU:alu_instance|C_reg[63] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU_opcode[3]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -990,6 +1086,7 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/code/374pt2/ELEC374part2/ELEC374part2/output_files/ELEC374Project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Info (21057): Implemented 3138 device resources after synthesis - the final resource count might be different
@@ -1002,6 +1099,8 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
@@ -1026,6 +1125,9 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 149 warni
 +------------------------------------------+
 The suppressed messages can be found in C:/code/374pt2/ELEC374part2/ELEC374part2/output_files/ELEC374Project.map.smsg.
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
