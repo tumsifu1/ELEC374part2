@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ELEC374Project
-Wed Mar 15 19:43:29 2023
+Fri Mar 17 00:09:14 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 15 19:43:29 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 17 00:09:14 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
-; Top-level Entity Name              ; div_32bit                                       ;
+; Top-level Entity Name              ; sub_32bit                                       ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 2,946                                           ;
-;     Total combinational functions  ; 2,946                                           ;
+; Total logic elements               ; 165                                             ;
+;     Total combinational functions  ; 165                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 96                                              ;
+; Total pins                         ; 98                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; div_32bit          ; ELEC374Project     ;
+; Top-level entity name                                                      ; sub_32bit          ; ELEC374Project     ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,47 +161,59 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; div_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/div_32bit.v ;         ;
+; add_32.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/add_32.v    ;         ;
+; sub_32bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 2,946             ;
-;                                             ;                   ;
-; Total combinational functions               ; 2946              ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 6                 ;
-;     -- 3 input functions                    ; 2833              ;
-;     -- <=2 input functions                  ; 107               ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 1024              ;
-;     -- arithmetic mode                      ; 1922              ;
-;                                             ;                   ;
-; Total registers                             ; 0                 ;
-;     -- Dedicated logic registers            ; 0                 ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 96                ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-; Maximum fan-out node                        ; divisor[30]~input ;
-; Maximum fan-out                             ; 63                ;
-; Total fan-out                               ; 8864              ;
-; Average fan-out                             ; 2.82              ;
-+---------------------------------------------+-------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 165     ;
+;                                             ;         ;
+; Total combinational functions               ; 165     ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 91      ;
+;     -- 3 input functions                    ; 21      ;
+;     -- <=2 input functions                  ; 53      ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 134     ;
+;     -- arithmetic mode                      ; 31      ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 98      ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+; Maximum fan-out node                        ; Add0~10 ;
+; Maximum fan-out                             ; 8       ;
+; Total fan-out                               ; 663     ;
+; Average fan-out                             ; 1.84    ;
++---------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |div_32bit                 ; 2946 (2946)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |div_32bit          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
+; |sub_32bit                   ; 165 (32)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 98   ; 0            ; |sub_32bit                                              ; work         ;
+;    |add_32_bit:negative_sum| ; 133 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum                      ; work         ;
+;       |CLA16:CLA1|           ; 69 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA1           ; work         ;
+;          |CLA4:CLA1|         ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA1 ; work         ;
+;          |CLA4:CLA2|         ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA2 ; work         ;
+;          |CLA4:CLA3|         ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA3 ; work         ;
+;          |CLA4:CLA4|         ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA4 ; work         ;
+;       |CLA16:CLA2|           ; 64 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA2           ; work         ;
+;          |CLA4:CLA1|         ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA2|CLA4:CLA1 ; work         ;
+;          |CLA4:CLA2|         ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA2|CLA4:CLA2 ; work         ;
+;          |CLA4:CLA3|         ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA2|CLA4:CLA3 ; work         ;
+;          |CLA4:CLA4|         ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sub_32bit|add_32_bit:negative_sum|CLA16:CLA2|CLA4:CLA4 ; work         ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -235,25 +247,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Mar 15 19:43:25 2023
+    Info: Processing started: Fri Mar 17 00:09:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ELEC374Project -c ELEC374Project
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file div_tb.v
-    Info (12023): Found entity 1: div_32bit_tb
-Info (12021): Found 1 design units, including 1 entities, in source file div_32bit.v
-    Info (12023): Found entity 1: div_32bit
-Info (12127): Elaborating entity "div_32bit" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file negate.v
+    Info (12023): Found entity 1: negate_32_bit
+Info (12021): Found 3 design units, including 3 entities, in source file add_32.v
+    Info (12023): Found entity 1: add_32_bit
+    Info (12023): Found entity 2: CLA16
+    Info (12023): Found entity 3: CLA4
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32tb.v
+    Info (12023): Found entity 1: sub_32tb
+Info (12021): Found 1 design units, including 1 entities, in source file sub_32bit.v
+    Info (12023): Found entity 1: sub_32bit
+Info (12127): Elaborating entity "sub_32bit" for the top level hierarchy
+Info (12128): Elaborating entity "add_32_bit" for hierarchy "add_32_bit:negative_sum"
+Info (12128): Elaborating entity "CLA16" for hierarchy "add_32_bit:negative_sum|CLA16:CLA1"
+Info (12128): Elaborating entity "CLA4" for hierarchy "add_32_bit:negative_sum|CLA16:CLA1|CLA4:CLA1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3042 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 64 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 2946 logic cells
+Info (21057): Implemented 263 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 165 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4601 megabytes
-    Info: Processing ended: Wed Mar 15 19:43:29 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4585 megabytes
+    Info: Processing ended: Fri Mar 17 00:09:14 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

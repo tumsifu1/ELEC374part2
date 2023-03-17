@@ -16,9 +16,10 @@ module mul_32bit_tb;
 
   // Initialize the inputs
   initial begin
+	 #10; 
     multiplicand = 16;
     multiplier = 10;
-    #10 $finish;
+    
   end
 
   // Print the output
