@@ -1,39 +1,47 @@
-module div_tb;
+`timescale 1ns/10ps
 
-    // inputs
-    reg [31:0] M;
-    reg [31:0] Q;
+module div_32bit_tb;
 
-    // outputs
-    wire [63:0] z;
+  // Inputs
+  reg [31:0] dividend = 32'd100;    // Set dividend to 100
+  reg [31:0] divisor = 32'd3;       // Set divisor to 3
 
-    // instantiate the module
-    div_32bit divInst(M, Q, z);
-	 assign z = 64'b0;
+  // Outputs
+  reg [31:0] quotient;
 
-    initial begin
-	    //z = 64'b0000000000000000000000000000000000000000000000000000000000000000;
-        // initialize inputs
-        M = 32'h0000_0000;
-        Q = 32'h0000_0000;
-        
-        // wait for a few clock cycles
-        #20;
+  // Instantiate the integer_divider module
+  div_32bit dut (
+    .dividend(dividend),
+    .divisor(divisor),
+    .quotient(quotient)
+  );
 
-        // change inputs
-        M = 32'h0000_0002;
-        Q = 32'h0000_0001;
+  // Stimulus
+  initial begin
+    // Wait for any initial setup to complete
+    #10;
 
-        // wait for a few clock cycles
-        #20;
+    // Print the inputs
+    $display("Inputs:");
+    $display("Dividend = %d", dividend);
+    $display("Divisor = %d", divisor);
 
-        // change inputs again
-        M = 32'h0000_0004;
-        Q = 32'h0000_0002;
+    // Wait for the division to complete
+    #100;
 
-        // wait for a few clock cycles
-        #20;
+    // Print the outputs
+    $display("Outputs:");
+    $display("Quotient = %d", quotient);
 
+    // Check the result
+    if (quotient == dividend/divisor) begin
+      $display("Test Passed");
+    end else begin
+      $display("Test Failed");
     end
+
+    // Stop the simulation
+    $finish;
+  end
 
 endmodule
