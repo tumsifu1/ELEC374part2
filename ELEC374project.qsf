@@ -41,7 +41,11 @@ set_global_assignment -name DEVICE EP3C16F484C6
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 set_global_assignment -name TOP_LEVEL_ENTITY div_32bit
+=======
+set_global_assignment -name TOP_LEVEL_ENTITY datapath
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 set_global_assignment -name TOP_LEVEL_ENTITY datapath
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -66,7 +70,11 @@ set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -sectio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH div_32bit_tb -section_id eda_simulation
+=======
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DIV_ALUtb -section_id eda_simulation
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DIV_ALUtb -section_id eda_simulation
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -98,12 +106,15 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME sub_32tb -section_id sub_
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 set_global_assignment -name VERILOG_FILE div_32bit_tb.v
 set_global_assignment -name VERILOG_FILE div_32bit.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
@@ -182,6 +193,9 @@ set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "600 ns" -section_id DIV_
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DIV_ALUtb -section_id DIV_ALUtb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
@@ -195,7 +209,10 @@ set_global_assignment -name EDA_TEST_BENCH_FILE sub_32tb.v -section_id sub_32tb
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
@@ -208,6 +225,9 @@ set_global_assignment -name EDA_TEST_BENCH_FILE MULTIPLY_ALUtb.v -section_id MUL
 set_global_assignment -name EDA_TEST_BENCH_FILE DIV_ALUtb.v -section_id DIV_ALUtb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6

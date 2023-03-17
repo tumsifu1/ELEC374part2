@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Fri Mar 17 14:33:27 2023
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : ELEC374Project
@@ -31,6 +32,13 @@ Revision Name : ELEC374Project
 Top-level Entity Name : datapath
 Family : Cyclone III
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
+Analysis & Synthesis Status : Successful - Fri Mar 17 14:16:50 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : ELEC374Project
+Top-level Entity Name : datapath
+Family : Cyclone III
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 Total logic elements : 7,402
     Total combinational functions : 6,826
     Dedicated logic registers : 736
@@ -38,6 +46,9 @@ Total registers : 736
 Total pins : 830
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+=======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
