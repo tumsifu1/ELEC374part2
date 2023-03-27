@@ -1,5 +1,4 @@
 //bit pair recoding booth
-
 module mul_32bit(input signed [31:0] multiplicand, multiplier, output[32*2-1:0] product);
 	reg [2:0] column_control[(32 / 2) - 1:0]; // array to hold control bits for each column (16 3 bit register)
 	reg [32:0] partial_products[(32 / 2) - 1:0]; // array to hold partial products for each column

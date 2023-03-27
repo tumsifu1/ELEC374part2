@@ -1,5 +1,4 @@
 
-
 module Register (clr,clk,inputD,enbl,outputQ); //declaring inputs and outputs for register
 	
 	input		enbl;
