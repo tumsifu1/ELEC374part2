@@ -1,0 +1,30 @@
+Warning (10268): Verilog HDL information at SUB_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at OR_TBdatapath.v(52): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at NOT_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at NEGATE_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at MUL_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at MULTIPLY_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at DIV_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R0" differs only in case from object "r0" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R1" differs only in case from object "r1" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R2" differs only in case from object "r2" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R3" differs only in case from object "r3" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R4" differs only in case from object "r4" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R5" differs only in case from object "r5" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R6" differs only in case from object "r6" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R7" differs only in case from object "r7" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R8" differs only in case from object "r8" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R9" differs only in case from object "r9" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R10" differs only in case from object "r10" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R11" differs only in case from object "r11" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R12" differs only in case from object "r12" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R13" differs only in case from object "r13" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R14" differs only in case from object "r14" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "R15" differs only in case from object "r15" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "HI" differs only in case from object "hi" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "LO" differs only in case from object "lo" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "ZHI" differs only in case from object "zhi" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "ZLO" differs only in case from object "zlo" in the same scope
+Info (10281): Verilog HDL Declaration information at datapath.v(25): object "Y" differs only in case from object "y" in the same scope
+Warning (10268): Verilog HDL information at AND_ALUtb.v(46): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ADD_ALUtb.v(46): always construct contains both blocking and non-blocking assignments

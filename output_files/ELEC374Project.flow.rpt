@@ -1,5 +1,8 @@
 Flow report for ELEC374Project
 <<<<<<< HEAD
+Fri Mar 17 14:40:19 2023
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +19,7 @@ Fri Mar 17 14:16:50 2023
 =======
 Fri Mar 17 14:16:50 2023
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -57,6 +61,9 @@ applicable agreement for further details.
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
 <<<<<<< HEAD
+; Flow Status                        ; Successful - Fri Mar 17 14:40:19 2023           ;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -74,6 +81,7 @@ applicable agreement for further details.
 ; Total pins                         ; 128                                             ;
 =======
 ; Flow Status                        ; Successful - Fri Mar 17 14:16:50 2023           ;
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
 ; Top-level Entity Name              ; datapath                                        ;
@@ -135,6 +143,9 @@ applicable agreement for further details.
 ; Option            ; Setting             ;
 +-------------------+---------------------+
 <<<<<<< HEAD
+; Start date & time ; 03/17/2023 14:39:58 ;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +162,7 @@ applicable agreement for further details.
 =======
 ; Start date & time ; 03/17/2023 14:16:29 ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ELEC374Project      ;
 +-------------------+---------------------+
@@ -161,6 +173,9 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+----------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value  ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+----------------+-------------+----------------+
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID                ; 198112238637783.167907839818528       ; --             ; --          ; --             ;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,6 +193,7 @@ applicable agreement for further details.
 =======
 ; COMPILER_SIGNATURE_ID                ; 198112238637783.167907698915112       ; --             ; --          ; --             ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; mul_32bit_tb   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; div_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; div_32bit_tb   ;
@@ -201,6 +217,10 @@ applicable agreement for further details.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; SUB_ALUtb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; MULTIPLY_ALUtb ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; DIV_ALUtb      ;
+<<<<<<< HEAD
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --             ; --          ; AND_ALUtb      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; AND_ALUtb                             ; --             ; --          ; eda_simulation ;
+=======
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                             ; --             ; --          ; eda_simulation ;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -212,6 +232,7 @@ applicable agreement for further details.
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --             ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>         ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --             ; --          ; eda_simulation ;
@@ -226,6 +247,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; SUB_ALUtb.v                           ; --             ; --          ; SUB_ALUtb      ;
 ; EDA_TEST_BENCH_FILE                  ; MULTIPLY_ALUtb.v                      ; --             ; --          ; MULTIPLY_ALUtb ;
 ; EDA_TEST_BENCH_FILE                  ; DIV_ALUtb.v                           ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_FILE                  ; AND_ALUtb.v                           ; --             ; --          ; AND_ALUtb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mul_32bit_tb                          ; --             ; --          ; mul_32bit_tb   ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; div_tb                                ; --             ; --          ; div_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; div_32bit_tb                          ; --             ; --          ; div_32bit_tb   ;
@@ -237,6 +259,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; SUB_ALUtb                             ; --             ; --          ; SUB_ALUtb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; MULTIPLY_ALUtb                        ; --             ; --          ; MULTIPLY_ALUtb ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DIV_ALUtb                             ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; AND_ALUtb                             ; --             ; --          ; AND_ALUtb      ;
 ; EDA_TEST_BENCH_NAME                  ; mul_32bit_tb                          ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; div_tb                                ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; div_32bit_tb                          ; --             ; --          ; eda_simulation ;
@@ -248,6 +271,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; SUB_ALUtb                             ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; MULTIPLY_ALUtb                        ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; DIV_ALUtb                             ; --             ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; AND_ALUtb                             ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 s                                 ; --             ; --          ; mul_32bit_tb   ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 ns                                ; --             ; --          ; div_tb         ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 750 ns                                ; --             ; --          ; NOT_ALUtb      ;
@@ -256,6 +280,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                               ; --             ; --          ; SUB_ALUtb      ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 750 ns                                ; --             ; --          ; MULTIPLY_ALUtb ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                                ; --             ; --          ; AND_ALUtb      ;
 ; EDA_TIME_SCALE                       ; 1 ns                                  ; --             ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --             ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --             ; --          ; --             ;
@@ -316,6 +341,9 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 <<<<<<< HEAD
+; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4614 MB             ; 00:00:21                           ;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -335,6 +363,7 @@ applicable agreement for further details.
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 =======
 ; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4618 MB             ; 00:00:21                           ;
+>>>>>>> f34d9d903ab02d260e3d8c543bbfa0b3c3c7b589
 ; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:21                           ;
 >>>>>>> 6889b348620290086cf5e8c8e14ea4fa5f240fa6
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
