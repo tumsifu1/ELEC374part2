@@ -87,8 +87,7 @@ Register r15(clr,clk,bus,reg_ctrl_in[15],busInR15);
 
 //Program Counter and Instruction Register
 Register IR(clr, clk,  bus, IRin, IROut);
-PC PC(PCin, IncPC, clk, clr, bus, busInPC); // need to make this 
-
+PC PC(clk, clr, PCin, bus, PCout);
 //MAR and MDR
 
 Register MAR(clr,clk,bus,MARin,busInMAR);
