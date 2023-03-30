@@ -93,7 +93,7 @@ parameter Add = 5'b00011,
                     C_reg[31:0]<= div_out;
                     C_reg[63:31]<= remainder_out;
                 end
-                And, ANdi: begin
+                And, Andi: begin
                     C_reg[31:0]<= A_reg & B_reg;
                     C_reg[63:32]<= 32'b0;
                 end
@@ -120,8 +120,10 @@ parameter Add = 5'b00011,
                     C_reg[31:0] <= add_sum[31:0];
 					C_reg[63:32] <= 32'd0;
                 end
-                halt: begin
-                end
+                Jr, Jal: begin
+                    C_reg[31:0] <= A_reg[31:0];
+                    C_reg[63:32] <= 32'b0;
+                end               
                 brnz: begin
                     if (branch_flag == 1) begin
                         if (Y_reg[31:0] != 0) begin
@@ -190,7 +192,8 @@ parameter Add = 5'b00011,
                     else begin
                         C_reg[31:0] <= Y_reg[31:0];
                         C_reg[63:32] <= 32'd0;
-                    end /*
+                    end
+                     /*
                // In: Input
                 In: begin
                     // Assuming a 32-bit input port value
