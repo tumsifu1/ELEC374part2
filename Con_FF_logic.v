@@ -20,4 +20,33 @@ assign greater_than_or_equal = ((bus >= 0) & control_enable[2])  ? 1'b1 : 1'b0;
 assign less_than = ((bus < 0) & control_enable[3]) ? 1'b1 : 1'b0;
 
 // Combine comparison results
-assign eval = equal | not_equal | greater_than_or_equal
+assign eval = equal | not_equal | greater_than_or_equal | less_than;
+
+// Instantiate a synchronous flip-flop with enable and clear signals
+SyncFlipFlop flip_flop(eval, clk, 1'b0, CONin, out);
+
+endmodule
+
+// This module implements a synchronous flip-flop with enable and clear signals.
+module SyncFlipFlop(
+    input enable, clk, clr,
+    input D,
+    output reg Q
+);
+
+    // Initialize the output Q to 0
+    initial Q = 0;
+
+    // Handle the flip-flop logic on the rising edge of the clock
+    always @(posedge clk)
+    begin
+        // If the clear signal is high, set the output Q to 0
+        if (clr) begin
+            Q = 1'b0;
+        end
+        // If the enable signal is high, set the output Q to the input D
+        else if (enable) begin
+            Q = D;
+        end
+    end
+endmodule
