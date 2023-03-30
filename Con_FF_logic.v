@@ -1,9 +1,9 @@
 // This module implements a control flow logic for comparing signed values from a bus.
-module ControlFlowLogic (
+module CON_FF_LOGIC (
     input [31:0] instruction,
     input signed [31:0] bus,
     input CONin, clk,
-    output out
+    output reg CONout
 );
 
 // Declare internal signals
@@ -23,7 +23,7 @@ assign less_than = ((bus < 0) & control_enable[3]) ? 1'b1 : 1'b0;
 assign eval = equal | not_equal | greater_than_or_equal | less_than;
 
 // Instantiate a synchronous flip-flop with enable and clear signals
-SyncFlipFlop flip_flop(eval, clk, 1'b0, CONin, out);
+SyncFlipFlop flip_flop(eval, clk, 1'b0, CONin, CONout);
 
 endmodule
 

@@ -111,11 +111,24 @@ Register y(clr,clk,bus,Yin,YData);
 wire[31:0] Cdata;
 //ALU
 
-ALU alu_instance(clk,bus,YData, ALU_opcode, ZData);
+//ALU alu_instance(clk,bus,YData, ALU_opcode, ZData); old alu
+
+alu alu_instance(
+	.clk(clk),
+	.clr(clr), 
+	.A_reg(bus),
+	.B_reg(bus), //these two might put the same value in 
+	.Y_reg(YData),
+	.opcode(ALU_opcode),
+	.branch_flag(CON_ff_out),
+	.IncPC(IncPC),
+	.C_reg(ZData)
+	); 
 
 select_encode SE(Gra,Grb,Grc,Rin,Rout,BaOut,IROut,Cdata,reg_ctrl_in,reg_ctrl_out);
 
-
+//CON FF
+CON_FF_LOGIC CON_FF_inst(IROut, bus, CON_ff_in, clk, CON_ff_out);
 
 
 //Bus
