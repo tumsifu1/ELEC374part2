@@ -46,7 +46,7 @@ wire [31:0] busInZHI, busInZLO;
 //feeding out of registers into bus
 
 
-Register r0(clr,clk,bus,R0in,busInR0);
+R0_register r0(clr,clk,bus,R0in,BAout, busInR0);
 Register r1(clr,clk,bus,R1in,busInR1);
 Register r2(clr,clk,bus,R2in,busInR2);
 Register r3(clr,clk,bus,R3in,busInR3);
@@ -135,8 +135,5 @@ assign Y = YData;
 assign ZLO = ZLowData;
 assign ZHI = ZHighData;
 assign Z_register = ZData;
-
-
-
 
 endmodule
