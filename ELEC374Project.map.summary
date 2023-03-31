@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Fri Mar 31 14:32:05 2023
+Analysis & Synthesis Status : Successful - Fri Mar 31 16:30:23 2023
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : ELEC374Project
 Top-level Entity Name : datapath
 Family : Cyclone IV GX
-Total logic elements : 6,572
-    Total combinational functions : 6,507
-    Dedicated logic registers : 192
-Total registers : 192
+Total logic elements : 6,669
+    Total combinational functions : 6,513
+    Dedicated logic registers : 284
+Total registers : 284
 Total pins : 807
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 16,384
 Embedded Multiplier 9-bit elements : 0
 Total GXB Receiver Channel PCS : 0
 Total GXB Receiver Channel PMA : 0

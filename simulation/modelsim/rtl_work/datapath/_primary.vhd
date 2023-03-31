@@ -36,8 +36,8 @@ entity datapath is
         ZLOout          : in     vl_logic;
         InPortout       : in     vl_logic;
         RAM_write       : in     vl_logic;
+        MDataIn         : in     vl_logic_vector(31 downto 0);
         ALU_opcode      : in     vl_logic_vector(4 downto 0);
-        Mdatain         : in     vl_logic_vector(31 downto 0);
         R0              : out    vl_logic_vector(31 downto 0);
         R1              : out    vl_logic_vector(31 downto 0);
         R2              : out    vl_logic_vector(31 downto 0);

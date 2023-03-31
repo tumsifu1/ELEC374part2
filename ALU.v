@@ -114,7 +114,7 @@ parameter Add = 5'b00011,
                 Rotate_Left: begin
                     C_reg<= (A_reg << B_reg) | (A_reg >> ~B_reg);
                 end
-                ld, ldi, st:begin //would store instruciton go here?
+                ld, ldi, st:begin 
                     C_reg[31:0] <= add_sum[31:0];
 					C_reg[63:32] <= 32'd0;
                 end

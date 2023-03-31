@@ -1,5 +1,4 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ERROR: No extended dataflow license exists
 # do ELEC374Project_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -196,4 +195,4 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit 
-# Break in Module Register at C:/Users/Admin/Documents/ELEC374part2/Register.v line 10
+# Break in Module z_register at C:/Users/Admin/Documents/ELEC374part2/z_register.v line 9

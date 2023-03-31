@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="ELEC374Project">
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ram:ram_connection|altsyncram:ram_contents_rtl_0" CBX_FILE_NAME="altsyncram_mmi1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,4 +1,4 @@
-// This module implements a control flow logic for comparing signed values from a bus.
+//CON_FF_LOGIC
 module CON_FF_LOGIC (
     input [31:0] Intr,
     input signed [31:0] bus,

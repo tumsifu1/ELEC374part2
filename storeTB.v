@@ -12,7 +12,7 @@ module storeTB;
     wire [4:0] ALU_opcode;
     reg ZLOin, ZHIin;
     wire [63:0] ZReg;
-    wire [31:0] R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, HI, LO, Y, ZLO, ZHI;
+    wire [31:0] R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, HI, LO, Y, ZLO, ZHI, MdataIn;
     //MIISED SIGNAL
     reg PCout, MARin, ZLOout, PCin, Read, MDRout, IRin, BAout, Yin, Loin, Cout, Rout;
     // Instantiate the datapath module
@@ -21,7 +21,7 @@ module storeTB;
 		 .BAOut(BAOut), .CON_ff_in(CON_ff_in), .CON_ff_out(CON_ff_out), .WRen(WRen),
 		 .HIin(HIin), .Loin(Loin), .ZHIin(ZHIin), .ZLOin(ZLOin), .PCin(PCin), .MDRin(MDRin), .MARin(MARin), .IRin(IRin), .Yin(Yin), .Zin(Zin),
 		 .HIout(HIout), .Loout(Loout), .PCout(PCout), .MDRout(MDRout), .MDRread(MDRread), .Cout(Cout), .clk(clk), .clr(clr), .IncPC(IncPC), .ZLowSelect(ZLowSelect), .ZHighSelect(ZHighSelect), .ZHIout(ZHIout), .ZLOout(ZLOout), .InPortout(InPortout),
-		 .ALU_opcode(ALU_opcode), .Mdatain(Mdatain),.RAM_write(RAM_write),
+		 .ALU_opcode(ALU_opcode), .MDataIn(MdataIn),.RAM_write(RAM_write),
 		 .R0(R0), .R1(R1), .R2(R2), .R3(R3), .R4(R4), .R5(R5), .R6(R6), .R7(R7), .R8(R8), .R9(R9), .R10(R10), .R11(R11), .R12(R12), .R13(R13), .R14(R14), .R15(R15), .HI(HI), .LO(LO), .Y(Y), .ZLO(ZLO), .ZHI(ZHI),
 		 .Z_register(ZReg)
 	);

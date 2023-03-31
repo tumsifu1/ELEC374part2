@@ -1,5 +1,5 @@
 Flow report for ELEC374Project
-Fri Mar 31 14:32:05 2023
+Fri Mar 31 16:30:23 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 31 14:32:05 2023           ;
+; Flow Status                        ; Successful - Fri Mar 31 16:30:23 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 6,572                                           ;
-;     Total combinational functions  ; 6,507                                           ;
-;     Dedicated logic registers      ; 192                                             ;
-; Total registers                    ; 192                                             ;
+; Total logic elements               ; 6,669                                           ;
+;     Total combinational functions  ; 6,513                                           ;
+;     Dedicated logic registers      ; 284                                             ;
+; Total registers                    ; 284                                             ;
 ; Total pins                         ; 807                                             ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 16,384                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total GXB Receiver Channel PCS     ; 0                                               ;
 ; Total GXB Receiver Channel PMA     ; 0                                               ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/31/2023 14:31:47 ;
+; Start date & time ; 03/31/2023 16:30:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ELEC374Project      ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------+----------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value  ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 101737509774602.168028750709648 ; --             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 101737509774602.168029460414840 ; --             ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; DIV_ALUtb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; datapath       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; storeTB        ;
@@ -108,8 +108,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4667 MB             ; 00:00:17                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4672 MB             ; 00:00:19                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

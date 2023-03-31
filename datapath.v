@@ -19,16 +19,17 @@ BAOut, CON_ff_in, CON_ff_out, WRen,
 //R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, Yout,
 
 //ins are enables for the registers, outs are input signals for the encoder
-input HIin, Loin, ZHIin, ZLOin, PCin, MDRin, MARin, IRin, Yin, Zin, 
-HIout, Loout, PCout, MDRout, MDRread, Cout, clk, clr, IncPC, ZLowSelect, ZHighSelect, ZHIout, ZLOout, InPortout, 
+input HIin, Loin, ZHIin, ZLOin, PCin, MDRin, MARin, IRin, Yin, Zin,
+HIout, Loout, PCout, MDRout, MDRread, Cout, clk, clr, IncPC, ZLowSelect, ZHighSelect, ZHIout, ZLOout, InPortout, RAM_write,
+
+input [31:0]  MDataIn,
 
 //ram
-RAM_write,
+
 
 input [4:0] ALU_opcode,
-input[31:0] Mdatain,
 
-output[31:0] R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, HI, LO, Y, ZLO, ZHI,
+output[31:0] R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, HI, LO, Y, ZLO, ZHI,  
 
 output  [63:0] Z_register
 
@@ -44,11 +45,13 @@ wire[31:0] ZHighData, ZLowData; //FROM Z_REG_64 to two seperate Z 32 Regs
 //General Registers
 
 wire [31:0] busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8, busInR9, busInZLo, 
-busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInMDR, busInHI, busInLo,  busInInPort, busInC, busInY, PC_data_out; 
+busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInHI, busInLo,  busInInPort, busInC, busInY, PC_data_out; 
 
 wire [8:0] busInMAR;
+wire [31:0] busInMDR;
+wire[31:0] MdataIn;
 
-wire [31:0] busInZHI, busInZLO, data_ram;
+wire [31:0] busInZHI, busInZLO;
 
 wire [15:0] reg_ctrl_in, reg_ctrl_out;
 //General Registers
@@ -98,9 +101,9 @@ PC PC(.clk(clk), .IncPC(IncPC), .enbl(PCin), .D(bus), .Q(PC_data_out));
 mar_unit MAR(.clr(clr),.clk(clk),.bus(bus),.MARin(MARin),.q(busInMAR));
 
 
-MDR MDR_register(.clr(clr),.clk(clk),.MDR_read(MDRread),.BusMuxOut(bus),.MDR_enable(MDRin),.MDataIn(Mdatain),.Q(busInMDR));
+MDR MDR_register(.clr(clr),.clk(clk),.MDR_read(MDRread),.BusMuxOut(bus),.MDR_enable(MDRin),.MDataIn(MdataIn),.Q(busInMDR));
 
-ram ram_connection(.ram_out(data_ram), .ram_in(busInMDR), .addr(busInMAR), .en(RAM_write), .clk(clk) );
+ram ram_connection(.ram_out(MdataIn), .ram_in(busInMDR), .addr(busInMAR), .en(RAM_write), .clk(clk) );
 //Other Special Registers
 
 
