@@ -1,5 +1,5 @@
 Fitter report for ELEC374Project
-Thu Mar 30 18:58:58 2023
+Fri Mar 31 11:51:17 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Thu Mar 30 18:58:57 2023               ;
+; Fitter Status                      ; Failed - Fri Mar 31 11:51:17 2023               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
 ; Top-level Entity Name              ; datapath                                        ;
@@ -160,8 +160,8 @@ Error (119027): Design requires 736 I/O Output Buffer resources -- too many to f
 Error (119003): Cannot find device that meets Compiler settings specifications
 Error: Quartus II 64-Bit Fitter was unsuccessful. 2 errors, 1 warning
     Error: Peak virtual memory: 4745 megabytes
-    Error: Processing ended: Thu Mar 30 18:58:58 2023
-    Error: Elapsed time: 00:00:01
+    Error: Processing ended: Fri Mar 31 11:51:17 2023
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:01
 
 

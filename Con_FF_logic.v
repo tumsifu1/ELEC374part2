@@ -3,7 +3,7 @@ module CON_FF_LOGIC (
     input [31:0] Intr,
     input signed [31:0] bus,
     input CONin, clk,
-    output CONout;
+    output CONout
 );
 
 // Declare internal signals

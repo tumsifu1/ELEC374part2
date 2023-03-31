@@ -11,6 +11,12 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/MAR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mar_unit
+# 
+# Top level modules:
+# 	mar_unit
 # vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/decoder2_to_4.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module decoder_2_to_4
@@ -134,6 +140,12 @@
 # 
 # Top level modules:
 # 	R0_register
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
 # vlog -sv -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/decoder_4_to_16.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module decoder_4_to_16
@@ -155,8 +167,10 @@
 # Loading work.R0_register
 # Loading work.Register
 # Loading work.PC
+# Loading work.mar_unit
 # Loading work.MDR
 # Loading work.mux2_1
+# Loading work.ram
 # Loading work.z_register
 # Loading work.ALU
 # Loading work.add_32_bit
@@ -174,69 +188,6 @@
 # Loading work.bidirectional_bus
 # Loading work.encoder_32to5
 # Loading work.multiplexer32to1
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R0'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R1'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R2'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R3'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R4'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R5'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R6'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R7'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R8'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R9'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R10'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R11'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R12'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R13'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R14'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R15'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'HI'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'LO'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'Y'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'ZLO'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
-# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'ZHI'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
-# 
-#         Region: /storeTB/testDP
 # 
 # add wave *
 # view structure

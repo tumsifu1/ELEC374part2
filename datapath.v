@@ -13,7 +13,7 @@ module datapath(
 
 input Gra, Grb, Grc, Rin, Rout,
 
-BaOut, CON_ff_in, CON_ff_out, WRen,
+BAOut, CON_ff_in, CON_ff_out, WRen,
 
 //input signals for the encoders
 //R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, Yout,
@@ -21,6 +21,9 @@ BaOut, CON_ff_in, CON_ff_out, WRen,
 //ins are enables for the registers, outs are input signals for the encoder
 input HIin, Loin, ZHIin, ZLOin, PCin, MDRin, MARin, IRin, Yin, Zin, 
 HIout, Loout, PCout, MDRout, MDRread, Cout, clk, clr, IncPC, ZLowSelect, ZHighSelect, ZHIout, ZLOout, InPortout, 
+
+//ram
+RAM_write,
 
 input [4:0] ALU_opcode,
 input[31:0] Mdatain,
@@ -41,9 +44,11 @@ wire[31:0] ZHighData, ZLowData; //FROM Z_REG_64 to two seperate Z 32 Regs
 //General Registers
 
 wire [31:0] busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8, busInR9, busInZLo, 
-busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInMAR, busInMDR, busInHI, busInLo,  busInInPort, busInC, busInY, PC_data_out; 
+busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInMDR, busInHI, busInLo,  busInInPort, busInC, busInY, PC_data_out; 
 
-wire [31:0] busInZHI, busInZLO;
+wire [8:0] busInMAR;
+
+wire [31:0] busInZHI, busInZLO, data_ram;
 
 wire [15:0] reg_ctrl_in, reg_ctrl_out;
 //General Registers
@@ -86,13 +91,16 @@ Register r14(clr,clk,bus,reg_ctrl_in[14],busInR14);
 Register r15(clr,clk,bus,reg_ctrl_in[15],busInR15);
 
 //Program Counter and Instruction Register
-Register IR(.clr(clr), .clk(clk),  inputD(bus), .enbl(IRin), .outputQ(IROut));
+Register IR(.clr(clr), .clk(clk),  .inputD(bus), .enbl(IRin), .outputQ(IROut));
 PC PC(.clk(clk), .IncPC(IncPC), .enbl(PCin), .D(bus), .Q(PC_data_out));
 //MAR and MDR
 
-Register MAR(.clr(clr),.clk(clk),.bud(bus),.MARin(MARin),.MAR_data_out(busInMAR));
+mar_unit MAR(.clr(clr),.clk(clk),.bus(bus),.MARin(MARin),.q(busInMAR));
+
+
 MDR MDR_register(.clr(clr),.clk(clk),.MDR_read(MDRread),.BusMuxOut(bus),.MDR_enable(MDRin),.MDataIn(Mdatain),.Q(busInMDR));
 
+ram ram_connection(.ram_out(data_ram), .ram_in(busInMDR), .addr(busInMAR), .en(RAM_write), .clk(clk) );
 //Other Special Registers
 
 
@@ -124,7 +132,7 @@ ALU alu_instance(
 	.C_reg(ZData)
 	); 
 
-select_encode SE(Gra,Grb,Grc,Rin,Rout,BaOut,IROut,Cdata,reg_ctrl_in, reg_ctrl_out);
+select_encode SE(Gra,Grb,Grc,Rin,Rout,BAOut,IROut,Cdata,reg_ctrl_in, reg_ctrl_out);
 
 //CON FF
 CON_FF_LOGIC CON_FF_inst(.Intr(IROut),.bus(bus), .CONin(CON_ff_in), .clk(clk), .CONout(CON_ff_out));

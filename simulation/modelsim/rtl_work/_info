@@ -14,7 +14,7 @@ L0 1
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1680221725.048000
+Z6 !s108 1680287546.786000
 Z7 !s107 C:/Users/Admin/Documents/ELEC374part2/add_32.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/add_32.v|
 Z9 o-vlog01compat -work work -O0
@@ -40,7 +40,7 @@ n@a@l@u
 !i10b 1
 !s100 fMdheKPU::^5hf0jJdGjM2
 !s85 0
-!s108 1680221724.320000
+!s108 1680287545.961000
 !s107 C:/Users/Admin/Documents/ELEC374part2/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/ALU.v|
 !s101 -O0
@@ -60,7 +60,7 @@ R10
 !i10b 1
 !s100 1;:EfURMZ8T:0n<L>dD9S0
 !s85 0
-!s108 1680221725.000000
+!s108 1680287546.728000
 !s107 C:/Users/Admin/Documents/ELEC374part2/bidirectional_bus.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/bidirectional_bus.v|
 !s101 -O0
@@ -107,31 +107,31 @@ n@c@l@a4
 !s85 0
 !s101 -O0
 vCON_FF_LOGIC
-ISP:YlmY0j:iRWL[_93gTX2
-VmB0g3U3[DU>aO4ikGCPl;3
+I`KSI3m84nfKNS2G64bbKj3
+Vh8VLk@YG2?5;6=eEjP;Wj2
 R1
-Z11 w1680215320
+Z11 w1680276458
 Z12 8C:/Users/Admin/Documents/ELEC374part2/CON_FF_LOGIC.v
 Z13 FC:/Users/Admin/Documents/ELEC374part2/CON_FF_LOGIC.v
 L0 2
 R5
 r1
 31
-Z14 !s108 1680221724.259000
+Z14 !s108 1680287545.885000
 Z15 !s107 C:/Users/Admin/Documents/ELEC374part2/CON_FF_LOGIC.v|
 Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/CON_FF_LOGIC.v|
 R9
 R10
 n@c@o@n_@f@f_@l@o@g@i@c
 !i10b 1
-!s100 aH87]D=fT10NHm:V^eSPH1
+!s100 @4o^HI=@GHicB33nmEii93
 !s85 0
 !s101 -O0
 vdatapath
-IV^jj60B^na4fJeIX:0>FV2
-VRm<gB^Y82d[MAe2^7H2@g2
+IUa1W>il:ek`N;]nhe`Shl2
+VW_XYCUXiMB6YYREPI@M6J1
 R1
-w1680219468
+w1680287507
 8C:/Users/Admin/Documents/ELEC374part2/datapath.v
 FC:/Users/Admin/Documents/ELEC374part2/datapath.v
 L0 6
@@ -141,9 +141,9 @@ r1
 R9
 R10
 !i10b 1
-!s100 hao<=Ei;iFGhaOJ^6<g543
+!s100 AKUIH93c9VYFF522gl[8R0
 !s85 0
-!s108 1680221724.949000
+!s108 1680287546.670000
 !s107 C:/Users/Admin/Documents/ELEC374part2/datapath.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/datapath.v|
 !s101 -O0
@@ -163,7 +163,7 @@ R10
 !i10b 1
 !s100 WWFj<NHgaDgVkz^il5FC@3
 !s85 0
-!s108 1680221724.210000
+!s108 1680287545.824000
 !s107 C:/Users/Admin/Documents/ELEC374part2/decoder2_to_4.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/decoder2_to_4.v|
 !s101 -O0
@@ -185,7 +185,7 @@ o-sv -work work -O0
 !s100 T<1fl?6=eDzXaUVZHhY130
 !s105 decoder_4_to_16_sv_unit
 !s85 0
-!s108 1680221725.225000
+!s108 1680287547.049000
 !s107 C:/Users/Admin/Documents/ELEC374part2/decoder_4_to_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/decoder_4_to_16.sv|
 !s101 -O0
@@ -206,7 +206,7 @@ R10
 !i10b 1
 !s100 =a<:[UKo<Ln:Dao>SJP1I0
 !s85 0
-!s108 1680221724.898000
+!s108 1680287546.608000
 !s107 C:/Users/Admin/Documents/ELEC374part2/div_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/div_32bit.v|
 !s101 -O0
@@ -226,9 +226,29 @@ R10
 !i10b 1
 !s100 R3YcRdf>ge7;>EDaA`GiE2
 !s85 0
-!s108 1680221724.849000
+!s108 1680287546.544000
 !s107 C:/Users/Admin/Documents/ELEC374part2/encoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/encoder.v|
+!s101 -O0
+vmar_unit
+IBI][W9kRRVh56VOb==^oz0
+VbXi`YOP4feE68hbf`R0nR1
+R1
+w1680277384
+8C:/Users/Admin/Documents/ELEC374part2/MAR.v
+FC:/Users/Admin/Documents/ELEC374part2/MAR.v
+L0 2
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 98SJZI^kjzli[`O7^ZhN;2
+!s85 0
+!s108 1680287545.768000
+!s107 C:/Users/Admin/Documents/ELEC374part2/MAR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/MAR.v|
 !s101 -O0
 vMDR
 I?j9j^oU6>;D^:3Eee6[500
@@ -247,7 +267,7 @@ n@m@d@r
 !i10b 1
 !s100 9D`z^<n`_IL0HA=bNOcRO0
 !s85 0
-!s108 1680221724.799000
+!s108 1680287546.485000
 !s107 C:/Users/Admin/Documents/ELEC374part2/MDR.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/MDR.v|
 !s101 -O0
@@ -267,7 +287,7 @@ R10
 !i10b 1
 !s100 Bm=0`1UaCP@j0Ah577acW2
 !s85 0
-!s108 1680221724.613000
+!s108 1680287546.266000
 !s107 C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v|
 !s101 -O0
@@ -287,7 +307,7 @@ R10
 !i10b 1
 !s100 9bNm50QWcd3@ZUk^lU_oI2
 !s85 0
-!s108 1680221724.662000
+!s108 1680287546.321000
 !s107 C:/Users/Admin/Documents/ELEC374part2/multiplexer32to1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/multiplexer32to1.v|
 !s101 -O0
@@ -302,7 +322,7 @@ L0 35
 R5
 r1
 31
-Z20 !s108 1680221724.712000
+Z20 !s108 1680287546.384000
 Z21 !s107 C:/Users/Admin/Documents/ELEC374part2/multiplexer.v|
 Z22 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/multiplexer.v|
 R9
@@ -388,7 +408,7 @@ n@p@c
 !i10b 1
 !s100 lVD`cOfbIBLGmCoaUMRXz1
 !s85 0
-!s108 1680221724.558000
+!s108 1680287546.203000
 !s107 C:/Users/Admin/Documents/ELEC374part2/PC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/PC.v|
 !s101 -O0
@@ -409,9 +429,29 @@ n@r0_register
 !i10b 1
 !s100 Dfo;[:BCGgcm`DhBS?ld?2
 !s85 0
-!s108 1680221725.173000
+!s108 1680287546.924000
 !s107 C:/Users/Admin/Documents/ELEC374part2/r0_register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/r0_register.v|
+!s101 -O0
+vram
+I:YXX<fR[;;WX16dZf]ImM0
+V`l_6m>;1X92ngj4fYo8?81
+R1
+w1680285247
+8C:/Users/Admin/Documents/ELEC374part2/ram.v
+FC:/Users/Admin/Documents/ELEC374part2/ram.v
+L0 1
+R5
+r1
+31
+R9
+R10
+!i10b 1
+!s100 0<>dl9_BBLRTE92<cZ>6A0
+!s85 0
+!s108 1680287546.985000
+!s107 C:/Users/Admin/Documents/ELEC374part2/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/ram.v|
 !s101 -O0
 vRegister
 I;fj81EHgW^>US1A2Id3gh1
@@ -430,7 +470,7 @@ n@register
 !i10b 1
 !s100 lo>RzFLVWK_HKHV80VA`K0
 !s85 0
-!s108 1680221724.508000
+!s108 1680287546.146000
 !s107 C:/Users/Admin/Documents/ELEC374part2/Register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/Register.v|
 !s101 -O0
@@ -450,17 +490,17 @@ R10
 !i10b 1
 !s100 ml<B_>d:O^20JSn>fNLdY0
 !s85 0
-!s108 1680221725.115000
+!s108 1680287546.868000
 !s107 C:/Users/Admin/Documents/ELEC374part2/select_encode.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/select_encode.v|
 !s101 -O0
 vstoreTB
 !i10b 1
-!s100 19TU75gN8IdHbW_FaGTTQ1
-I0<MdER9<JRG=C?QGd3L>51
+!s100 n=CT95AUfIEgIz]P5WK`:1
+IaZa^nRDdBj0V81SCG9FVd0
 VVk1Ud64W=fDYJ0]h^DoSZ3
 R1
-w1680221692
+w1680287221
 8C:/Users/Admin/Documents/ELEC374part2/storeTB.v
 FC:/Users/Admin/Documents/ELEC374part2/storeTB.v
 L0 3
@@ -468,7 +508,7 @@ R5
 r1
 !s85 0
 31
-!s108 1680221725.278000
+!s108 1680287547.105000
 !s107 C:/Users/Admin/Documents/ELEC374part2/storeTB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/storeTB.v|
 !s101 -O0
@@ -491,7 +531,7 @@ R10
 !i10b 1
 !s100 06dHc_3M8Ib>jm0<7e@ZD0
 !s85 0
-!s108 1680221724.457000
+!s108 1680287546.084000
 !s107 C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v|
 !s101 -O0
@@ -532,7 +572,7 @@ R10
 !i10b 1
 !s100 W0S5iMhe@IOn8P1^nFZSZ1
 !s85 0
-!s108 1680221724.402000
+!s108 1680287546.025000
 !s107 C:/Users/Admin/Documents/ELEC374part2/z_register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Admin/Documents/ELEC374part2|C:/Users/Admin/Documents/ELEC374part2/z_register.v|
 !s101 -O0

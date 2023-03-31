@@ -7,7 +7,7 @@ entity datapath is
         Grc             : in     vl_logic;
         Rin             : in     vl_logic;
         Rout            : in     vl_logic;
-        BaOut           : in     vl_logic;
+        BAOut           : in     vl_logic;
         CON_ff_in       : in     vl_logic;
         CON_ff_out      : in     vl_logic;
         WRen            : in     vl_logic;
@@ -35,6 +35,7 @@ entity datapath is
         ZHIout          : in     vl_logic;
         ZLOout          : in     vl_logic;
         InPortout       : in     vl_logic;
+        RAM_write       : in     vl_logic;
         ALU_opcode      : in     vl_logic_vector(4 downto 0);
         Mdatain         : in     vl_logic_vector(31 downto 0);
         R0              : out    vl_logic_vector(31 downto 0);

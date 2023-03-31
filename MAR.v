@@ -10,7 +10,7 @@ module mar_unit(
   wire [31:0] MAR_data_out;    // Create a wire to store the output of the MAR register
 
   // Instantiate a general register called MAR
-  Register MAR(MARin, clk, clr, bus, MAR_data_out);
+  Register MAR(.enbl(MARin), .clk(clk), .clr(clr), .inputD(bus), .outputQ(MAR_data_out));
 
   // Assign the lower 9 bits of the MAR register output to the output q
   assign q = MAR_data_out[8:0];
