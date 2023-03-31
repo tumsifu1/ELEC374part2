@@ -5,6 +5,7 @@ Warning (10268): Verilog HDL information at NEGATE_ALUtb.v(46): always construct
 Warning (10268): Verilog HDL information at MUL_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at MULTIPLY_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at DIV_ALUtb.v(47): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at datapath.v(43): object "busInZLo" differs only in case from object "busInZLO" in the same scope
 Info (10281): Verilog HDL Declaration information at datapath.v(28): object "R0" differs only in case from object "r0" in the same scope
 Info (10281): Verilog HDL Declaration information at datapath.v(28): object "R1" differs only in case from object "r1" in the same scope
 Info (10281): Verilog HDL Declaration information at datapath.v(28): object "R2" differs only in case from object "r2" in the same scope

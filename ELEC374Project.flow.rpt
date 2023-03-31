@@ -1,5 +1,5 @@
 Flow report for ELEC374Project
-Tue Mar 28 13:47:08 2023
+Thu Mar 30 20:15:15 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 28 13:47:08 2023           ;
+; Flow Status                        ; Successful - Thu Mar 30 20:15:15 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ELEC374Project                                  ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 6,734                                           ;
-;     Total combinational functions  ; 6,669                                           ;
-;     Dedicated logic registers      ; 224                                             ;
-; Total registers                    ; 224                                             ;
+; Total logic elements               ; 6,572                                           ;
+;     Total combinational functions  ; 6,507                                           ;
+;     Dedicated logic registers      ; 192                                             ;
+; Total registers                    ; 192                                             ;
 ; Total pins                         ; 806                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/28/2023 13:46:53 ;
+; Start date & time ; 03/30/2023 20:14:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ELEC374Project      ;
 +-------------------+---------------------+
@@ -77,16 +77,25 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------+----------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value  ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 198112238637783.168002561315232 ; --             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 101737509774602.168022169816492 ; --             ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; DIV_ALUtb      ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DIV_ALUtb                       ; --             ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --             ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)          ; <None>         ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; datapath       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --             ; --          ; storeTB        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; storeTB                         ; --             ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --             ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>         ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; DIV_ALUtb.v                     ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_FILE                  ; datapath.v                      ; --             ; --          ; datapath       ;
+; EDA_TEST_BENCH_FILE                  ; storeTB.v                       ; --             ; --          ; storeTB        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DIV_ALUtb                       ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; datapath                        ; --             ; --          ; datapath       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; storeTB                         ; --             ; --          ; storeTB        ;
 ; EDA_TEST_BENCH_NAME                  ; DIV_ALUtb                       ; --             ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; datapath                        ; --             ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; storeTB                         ; --             ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 600 ns                          ; --             ; --          ; DIV_ALUtb      ;
+; EDA_TIME_SCALE                       ; 1 ns                            ; --             ; --          ; eda_simulation ;
 ; PARTITION_COLOR                      ; 16764057                        ; --             ; datapath    ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --             ; datapath    ; Top            ;
 ; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --             ; datapath    ; Top            ;
@@ -99,8 +108,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4669 MB             ; 00:00:15                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:15                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4671 MB             ; 00:00:17                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,7 +118,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-4OOFFOT  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-FVO1TV74  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

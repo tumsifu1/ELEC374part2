@@ -1,0 +1,12 @@
+
+State Machine - |storeTB|Present_state
+Name Present_state.T7 Present_state.T6 Present_state.T5 Present_state.T4 Present_state.T3 Present_state.T2 Present_state.T1 Present_state.T0 Present_state.Default 
+Present_state.Default 0 0 0 0 0 0 0 0 0 
+Present_state.T0 0 0 0 0 0 0 0 1 1 
+Present_state.T1 0 0 0 0 0 0 1 0 1 
+Present_state.T2 0 0 0 0 0 1 0 0 1 
+Present_state.T3 0 0 0 0 1 0 0 0 1 
+Present_state.T4 0 0 0 1 0 0 0 0 1 
+Present_state.T5 0 0 1 0 0 0 0 0 1 
+Present_state.T6 0 1 0 0 0 0 0 0 1 
+Present_state.T7 1 0 0 0 0 0 0 0 1 

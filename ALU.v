@@ -1,7 +1,7 @@
 
 
 module ALU(
-	input clk, IncPC, branch_flag,
+	input clk, clr, IncPC, branch_flag,
 	input wire [31:0] A_reg,
 	input wire [31:0] B_reg,
 	input wire [31:0] Y_reg,
@@ -47,10 +47,10 @@ parameter Add = 5'b00011,
           Mfhi = 5'b11000,
           Mflo = 5'b11001,
           Nop = 5'b11010,
-          Halt = 5'b11011;
-          ld = 5'b00000;
-          ldi = 00001;
-
+          Halt = 5'b11011,
+          ld = 5'b00000,
+          ldi = 5'b00001,
+			 st = 5'b00010;
     wire [31:0] IncPC_out, shr_out, shl_out, lor_out, land_out, //where is there IncPcout
                 neg_out, not_out, add_sum, adder_cout, sub_sum,
                 sub_cout, rol_out, ror_out,div_out,remainder_out;
@@ -59,12 +59,10 @@ parameter Add = 5'b00011,
     assign cin=0;
 	wire [63:0] mul_out;
 // think this is all we need 
-
-    wire [31:0] IncPC;//put outputs of each module
     
     add_32_bit adding(A_reg,B_reg,cin,add_sum,cout);
     mul_32bit multiply(A_reg,B_reg,mul_out);
-    sub_32bit subtraction(A_reg,B_reg,cin,sub_out,cout);
+    sub_32bit subtraction(A_reg,B_reg,cin,sub_sum,cout);
     div_32bit division(A_reg,B_reg,div_out,remainder_out);
     
     always @(*)
@@ -74,7 +72,7 @@ parameter Add = 5'b00011,
                     C_reg[31:0]<= A_reg+B_reg;
                     C_reg[63:32]<= 32'b0;
                 end
-				Negate:begin
+					Negate:begin
 							C_reg[31:0]<=~B_reg+1;
 							C_reg[63:32]<=32'b0;
 					 end
@@ -116,7 +114,7 @@ parameter Add = 5'b00011,
                 Rotate_Left: begin
                     C_reg<= (A_reg << B_reg) | (A_reg >> ~B_reg);
                 end
-                ld, ldi, addi:begin //would store instruciton go here?
+                ld, ldi, st:begin //would store instruciton go here?
                     C_reg[31:0] <= add_sum[31:0];
 					C_reg[63:32] <= 32'd0;
                 end
@@ -124,7 +122,7 @@ parameter Add = 5'b00011,
                     C_reg[31:0] <= A_reg[31:0];
                     C_reg[63:32] <= 32'b0;
                 end               
-                brnz: begin
+                Brnz: begin
                     if (branch_flag == 1) begin
                         if (Y_reg[31:0] != 0) begin
                             C_reg[31:0] <= add_sum[31:0];
@@ -142,7 +140,7 @@ parameter Add = 5'b00011,
                 end
 
                 // Brzr: Branch if zero
-                brzr: begin
+                Brzr: begin
                     if (branch_flag == 1) begin
                         if (Y_reg[31:0] == 0) begin
                             C_reg[31:0] <= add_sum[31:0];
@@ -160,7 +158,7 @@ parameter Add = 5'b00011,
                 end 
 
             // Brmi: Branch if negative
-                brmi: begin
+                Brmi: begin
                     if (branch_flag == 1) begin
                         if (Y_reg[31] == 1) begin
                             C_reg[31:0] <= add_sum[31:0];
@@ -178,7 +176,7 @@ parameter Add = 5'b00011,
                 end
 
                 // Brpl: Branch if positive
-                brpl: begin
+                Brpl: begin
                     if (branch_flag == 1) begin
                         if (Y_reg[31] == 0) begin
                             C_reg[31:0] <= add_sum[31:0];

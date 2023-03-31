@@ -4,7 +4,7 @@ module R0_register(
     input	[31:0]D,
 	input enbl,
     input BAout,
-	output reg [31:0]Q,
+	output reg [31:0]Q
 );
 
   // Create a 32-bit register called "temp"
@@ -17,7 +17,7 @@ module R0_register(
   always @(posedge clk) begin
     if (clr) begin
       temp <= 32'b0;
-    end else if (enable) begin
+    end else if (enbl) begin
       temp <= D;
     end
 

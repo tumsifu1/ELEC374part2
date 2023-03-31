@@ -40,10 +40,12 @@ wire[31:0] ZHighData, ZLowData; //FROM Z_REG_64 to two seperate Z 32 Regs
 
 //General Registers
 
-wire [31:0] busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8, busInR9, 
-busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInMAR, busInMDR, busInHI, busInLo,  busInInPort, busInC, busInY; 
+wire [31:0] busInR0, busInR1, busInR2, busInR3, busInR4, busInR5, busInR6, busInR7, busInR8, busInR9, busInZLo, 
+busInR10, busInR11, busInR12, busInR13, busInR14, busInR15, busInPC, busInMAR, busInMDR, busInHI, busInLo,  busInInPort, busInC, busInY, PC_data_out; 
+
 wire [31:0] busInZHI, busInZLO;
 
+wire [15:0] reg_ctrl_in, reg_ctrl_out;
 //General Registers
 wire R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out;
 
@@ -66,8 +68,6 @@ assign R15out = reg_ctrl_out[15];
 
 //feeding out of registers into bus
 
-wire [15:0] reg_ctrl_in, reg_ctrl_out;
-
 R0_register r0(clr,clk,bus,reg_ctrl_in[0],BAout, busInR0);
 Register r1(clr,clk,bus,reg_ctrl_in[1],busInR1);
 Register r2(clr,clk,bus,reg_ctrl_in[2],busInR2);
@@ -87,7 +87,7 @@ Register r15(clr,clk,bus,reg_ctrl_in[15],busInR15);
 
 //Program Counter and Instruction Register
 Register IR(clr, clk,  bus, IRin, IROut);
-PC PC(clk, clr, PCin, bus, PCout);
+PC PC(clk, IncPC, PCin, bus, PC_data_out);
 //MAR and MDR
 
 Register MAR(clr,clk,bus,MARin,busInMAR);
@@ -112,7 +112,7 @@ wire[31:0] Cdata;
 
 //ALU alu_instance(clk,bus,YData, ALU_opcode, ZData); old alu
 
-alu alu_instance(
+ALU alu_instance(
 	.clk(clk),
 	.clr(clr), 
 	.A_reg(bus),

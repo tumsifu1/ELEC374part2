@@ -1,4 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do ELEC374Project_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,43 +11,70 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/z_register.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/decoder2_to_4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder_2_to_4
+# 
+# Top level modules:
+# 	decoder_2_to_4
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/CON_FF_LOGIC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CON_FF_LOGIC
+# -- Compiling module SyncFlipFlop
+# 
+# Top level modules:
+# 	CON_FF_LOGIC
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# ** Warning: C:/Users/Admin/Documents/ELEC374part2/ALU.v(39): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Admin/Documents/ELEC374part2/ALU.v(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Admin/Documents/ELEC374part2/ALU.v(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Admin/Documents/ELEC374part2/ALU.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/z_register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module z_register
 # 
 # Top level modules:
 # 	z_register
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/sub_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sub_32bit
 # 
 # Top level modules:
 # 	sub_32bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/Register.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/PC.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/PC.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/mul_32bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/mul_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mul_32bit
 # 
 # Top level modules:
 # 	mul_32bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer32to1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/multiplexer32to1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module multiplexer32to1
 # 
 # Top level modules:
 # 	multiplexer32to1
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/multiplexer.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/multiplexer.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux2_1
 # -- Compiling module mux8_1
@@ -56,43 +84,37 @@
 # Top level modules:
 # 	mux16_1
 # 	mux32_1
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/MDR.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/MDR.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module MDR
 # 
 # Top level modules:
 # 	MDR
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/encoder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/encoder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module encoder_32to5
 # 
 # Top level modules:
 # 	encoder_32to5
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/div_32bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/div_32bit.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module div_32bit
 # 
 # Top level modules:
 # 	div_32bit
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/datapath.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/bidirectional_bus.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/bidirectional_bus.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bidirectional_bus
 # 
 # Top level modules:
 # 	bidirectional_bus
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/add_32.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/add_32.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module add_32_bit
 # -- Compiling module CLA16
@@ -100,18 +122,37 @@
 # 
 # Top level modules:
 # 	add_32_bit
-# 
-# vlog -vlog01compat -work work +incdir+C:/code/374pt2/ELEC374part2/ELEC374part2 {C:/code/374pt2/ELEC374part2/ELEC374part2/DIV_ALUtb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/select_encode.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module DIV_ALUtb
+# -- Compiling module select_encode
 # 
 # Top level modules:
-# 	DIV_ALUtb
+# 	select_encode
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/r0_register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module R0_register
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  DIV_ALUtb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps DIV_ALUtb 
-# Loading work.DIV_ALUtb
+# Top level modules:
+# 	R0_register
+# vlog -sv -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/decoder_4_to_16.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder_4_to_16
+# 
+# Top level modules:
+# 	decoder_4_to_16
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Admin/Documents/ELEC374part2 {C:/Users/Admin/Documents/ELEC374part2/storeTB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module storeTB
+# 
+# Top level modules:
+# 	storeTB
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  storeTB
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps storeTB 
+# Loading work.storeTB
 # Loading work.datapath
+# Loading work.R0_register
 # Loading work.Register
 # Loading work.PC
 # Loading work.MDR
@@ -124,19 +165,84 @@
 # Loading work.mul_32bit
 # Loading work.sub_32bit
 # Loading work.div_32bit
+# Loading work.select_encode
+# Loading sv_std.std
+# Loading work.decoder_4_to_16
+# Loading work.CON_FF_LOGIC
+# Loading work.decoder_2_to_4
+# Loading work.SyncFlipFlop
 # Loading work.bidirectional_bus
 # Loading work.encoder_32to5
 # Loading work.multiplexer32to1
-# ** Warning: (vsim-3015) C:/code/374pt2/ELEC374part2/ELEC374part2/datapath.v(83): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'outputQ'. The port definition is at: C:/code/374pt2/ELEC374part2/ELEC374part2/Register.v(3).
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R0'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
 # 
-#         Region: /DIV_ALUtb/testDP/zlo
-# ** Warning: (vsim-3015) C:/code/374pt2/ELEC374part2/ELEC374part2/ALU.v(38): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'sum'. The port definition is at: C:/code/374pt2/ELEC374part2/ELEC374part2/sub_32bit.v(1).
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R1'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
 # 
-#         Region: /DIV_ALUtb/testDP/alu_instance/subtraction
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R2'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R3'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R4'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R5'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R6'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R7'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R8'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R9'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R10'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R11'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R12'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R13'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R14'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'R15'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'HI'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'LO'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'Y'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'ZLO'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
+# ** Warning: (vsim-3015) C:/Users/Admin/Documents/ELEC374part2/storeTB.v(24): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'ZHI'. The port definition is at: C:/Users/Admin/Documents/ELEC374part2/datapath.v(28).
+# 
+#         Region: /storeTB/testDP
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 600 ns
+# run -all
+# Break key hit 
+# Break in Module Register at C:/Users/Admin/Documents/ELEC374part2/Register.v line 10

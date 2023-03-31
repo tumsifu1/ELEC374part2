@@ -2,7 +2,7 @@ module select_encode(
 	input Gra,Grb,Grc,Rin,Rout,BaOut,
 	input [31:0] instr,
 	output [31:0] Cdata,
-	output [31:0] cntrl_one, cntrl_two
+	output [15:0] cntrl_one, cntrl_two
 );
 
 	wire[3:0] ra, rb, rc, decoder_in;
