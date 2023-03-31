@@ -1,9 +1,9 @@
 // This module implements a control flow logic for comparing signed values from a bus.
 module CON_FF_LOGIC (
-    input [31:0] instruction,
+    input [31:0] Intr,
     input signed [31:0] bus,
     input CONin, clk,
-    output CONout
+    output CONout;
 );
 
 // Declare internal signals
@@ -11,7 +11,7 @@ wire [3:0] control_enable;
 wire eval, equal, not_equal, greater_than_or_equal, less_than;
 
 // Instantiate a 2-to-4 decoder
-decoder_2_to_4 decoder(instruction[20:19], control_enable);
+decoder_2_to_4 decoder(Intr[20:19], control_enable);
 
 // Compare bus value with 0 based on control_enable signals
 assign equal = ((bus == 0) & control_enable[0]) ? 1'b1 : 1'b0;

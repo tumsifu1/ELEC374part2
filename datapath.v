@@ -86,11 +86,11 @@ Register r14(clr,clk,bus,reg_ctrl_in[14],busInR14);
 Register r15(clr,clk,bus,reg_ctrl_in[15],busInR15);
 
 //Program Counter and Instruction Register
-Register IR(clr, clk,  bus, IRin, IROut);
-PC PC(clk, IncPC, PCin, bus, PC_data_out);
+Register IR(.clr(clr), .clk(clk),  inputD(bus), .enbl(IRin), .outputQ(IROut));
+PC PC(.clk(clk), .IncPC(IncPC), .enbl(PCin), .D(bus), .Q(PC_data_out));
 //MAR and MDR
 
-Register MAR(clr,clk,bus,MARin,busInMAR);
+Register MAR(.clr(clr),.clk(clk),.bud(bus),.MARin(MARin),.MAR_data_out(busInMAR));
 MDR MDR_register(.clr(clr),.clk(clk),.MDR_read(MDRread),.BusMuxOut(bus),.MDR_enable(MDRin),.MDataIn(Mdatain),.Q(busInMDR));
 
 //Other Special Registers
@@ -124,10 +124,10 @@ ALU alu_instance(
 	.C_reg(ZData)
 	); 
 
-select_encode SE(Gra,Grb,Grc,Rin,Rout,BaOut,IROut,Cdata,reg_ctrl_in,reg_ctrl_out);
+select_encode SE(Gra,Grb,Grc,Rin,Rout,BaOut,IROut,Cdata,reg_ctrl_in, reg_ctrl_out);
 
 //CON FF
-CON_FF_LOGIC CON_FF_inst(IROut, bus, CON_ff_in, clk, CON_ff_out);
+CON_FF_LOGIC CON_FF_inst(.Intr(IROut),.bus(bus), .CONin(CON_ff_in), .clk(clk), .CONout(CON_ff_out));
 
 
 //Bus
